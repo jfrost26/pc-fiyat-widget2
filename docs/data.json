@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-14T18:47:34.518Z",
+  "updated_at": "2026-01-14T19:17:29.711Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -7,7 +7,7 @@
       "akakce_url": "https://www.akakce.com/islemci/en-ucuz-amd-ryzen-7-7800x3d-sekiz-cekirdek-4-2-ghz-fiyati,334009206.html",
       "best": null,
       "offers": [],
-      "error": null
+      "error": "AKAKCE_PRICE_NOT_FOUND"
     },
     {
       "id": "mb_gigabyte_x870_gaming_x_wifi7",
@@ -15,7 +15,7 @@
       "akakce_url": "https://www.akakce.com/anakart/en-ucuz-gigabyte-x870-gaming-x-wifi7-amd-am5-ddr5-atx-fiyati,812619495.html",
       "best": null,
       "offers": [],
-      "error": null
+      "error": "AKAKCE_PRICE_NOT_FOUND"
     },
     {
       "id": "ram_kingston_beast_expo_32gb_6000_cl30",
@@ -23,7 +23,7 @@
       "akakce_url": "https://www.akakce.com/ram/en-ucuz-kingston-beast-expo-32-gb-2x16-6000-mhz-cl30-kf560c30bbek2-32tr-ddr5-fiyati,811894497.html",
       "best": null,
       "offers": [],
-      "error": null
+      "error": "AKAKCE_PRICE_NOT_FOUND"
     },
     {
       "id": "gpu_inno3d_rtx_5070_ti_x3_oc",
@@ -31,7 +31,7 @@
       "akakce_url": "https://www.akakce.com/ekran-karti/en-ucuz-inno3d-rtx-5070-ti-x3-oc-n507t3-16d7x-176068n-256-bit-gddr7-16-gb-fiyati,959886374.html",
       "best": null,
       "offers": [],
-      "error": null
+      "error": "AKAKCE_PRICE_NOT_FOUND"
     },
     {
       "id": "ssd_samsung_990_evo_plus_2tb",
@@ -39,7 +39,7 @@
       "akakce_url": "https://www.akakce.com/ssd/en-ucuz-samsung-990-evo-plus-mz-v9s2t0bw-pci-express-2-tb-m-2-fiyati,836325138.html",
       "best": null,
       "offers": [],
-      "error": null
+      "error": "AKAKCE_PRICE_NOT_FOUND"
     },
     {
       "id": "psu_fsp_vita_gm_850w",
@@ -47,7 +47,7 @@
       "akakce_url": "https://www.akakce.com/power-supply/en-ucuz-fsp-vita-gm-gen5-1-850-w-fiyati,792425188.html",
       "best": null,
       "offers": [],
-      "error": null
+      "error": "AKAKCE_PRICE_NOT_FOUND"
     },
     {
       "id": "case_lian_li_lancool_iii_argb_black",
@@ -55,7 +55,7 @@
       "akakce_url": "https://www.akakce.com/bilgisayar-kasasi/en-ucuz-lian-li-lancool-iii-x-argb-3-fanli-black-e-atx-oyuncu-kasasi-fiyati,120885614.html",
       "best": null,
       "offers": [],
-      "error": null
+      "error": "AKAKCE_PRICE_NOT_FOUND"
     }
   ]
 }
