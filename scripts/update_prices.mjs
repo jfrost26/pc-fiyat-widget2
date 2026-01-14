@@ -34,37 +34,39 @@ async function scrapeAkakceOffers(page, url) {
   await page.waitForTimeout(1500);
 
   const offers = await page.evaluate(() => {
-    const out = [];
-    const rows = Array.from(document.querySelectorAll("tr, li, div"));
+  const out = [];
+  const rows = Array.from(document.querySelectorAll("tr, li, div"));
 
-    for (const r of rows) {
-      const text = (r.textContent || "").replace(/\s+/g, " ").trim();
-      if (!text.includes("₺")) continue;
+  for (const r of rows) {
+    const text = (r.textContent || "").replace(/\s+/g, " ").trim();
+    if (!text.includes("₺")) continue;
 
-      const a = r.querySelector("a[href]");
-      const href = a ? a.href : null;
+    const a = r.querySelector("a[href]");
+    const href = a ? a.href : null;
 
-      const m = text.match(/₺\s*[\d.]+(?:,\d{1,2})?/);
-      if (!m) continue;
+    const m = text.match(/₺\s*[\d.]+(?:,\d{1,2})?/);
+    if (!m) continue;
 
-      const store =
-        (a && (a.textContent || "").trim()) ||
-        text.split("₺")[0].trim() ||
-        "Mağaza";
+    const store =
+      (a && (a.textContent || "").trim()) ||
+      text.split("₺")[0].trim() ||
+      "Mağaza";
 
-      out.push({ store, priceText: m[0], url: href });
-    }
+    out.push({ store, priceText: m[0], url: href });
+  }
 
-    const seen = new Set();
-    const dedup = [];
-    for (const o of out) {
-      const key = `${o.store}__${o.priceText}__${o.url || ""}`;
-      if (seen.has(key)) continue;
-      seen.add(key);
-      dedup.push(o);
-    }
-    return dedup;
-  });
+  const seen = new Set();
+  const dedup = [];
+  for (const o of out) {
+    const key = `${o.store}__${o.priceText}__${o.url || ""}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    dedup.push(o);
+  }
+
+  return dedup;
+});
+
 
   const normalized = offers
     .map(o => ({
