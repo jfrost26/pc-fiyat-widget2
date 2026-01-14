@@ -1,311 +1,61 @@
 {
-  "updated_at": "2026-01-14T16:58:48.334Z",
+  "updated_at": "2026-01-14T18:47:34.518Z",
   "products": [
-    {
-      "id": "ssd_samsung_990_evo_plus_2tb",
-      "name": "Samsung 990 EVO Plus 2TB NVMe",
-      "best": {
-        "site": "idefix",
-        "url": "https://www.idefix.com/samsung-2tb-990-evo-plus-pcie-gen-40-x4-50-x2-nvme-20-72506300mbs-p-5047213?vendorId=10405",
-        "currency": "TRY",
-        "fetched_at": "2026-01-14T16:59:23.046Z",
-        "price": 13199,
-        "title": "SAMSUNG 2TB 990 EVO PLUS PCIE GEN 4.0 X4 / 5.0 X2 NVME 2.0 (7250/6300MB/s) - idefix",
-        "image": null
-      },
-      "offers": [
-        {
-          "site": "akakce",
-          "url": "https://www.akakce.com/ssd/en-ucuz-samsung-990-evo-plus-mz-v9s2t0bw-pci-express-2-tb-m-2-fiyati,836325138.html",
-          "currency": "TRY",
-          "fetched_at": "2026-01-14T16:58:48.334Z",
-          "price": null,
-          "error": "HTTP 403 for https://www.akakce.com/ssd/en-ucuz-samsung-990-evo-plus-mz-v9s2t0bw-pci-express-2-tb-m-2-fiyati,836325138.html"
-        },
-        {
-          "site": "n11",
-          "url": "https://www.n11.com/urun/samsung-uyumlu-990-evo-plus-mz-v9s2t0bw-2-tb-pcie-m2-nvme-ssd-62324708",
-          "currency": "TRY",
-          "fetched_at": "2026-01-14T16:58:48.892Z",
-          "price": 13208.7,
-          "title": "Samsung Uyumlu 990 Evo Plus MZ-V9S2T0BW 2 TB PCIE M.2 NVMe SSD Fiyatları ve Özellikleri",
-          "image": null
-        },
-        {
-          "site": "idefix",
-          "url": "https://www.idefix.com/samsung-2tb-990-evo-plus-pcie-gen-40-x4-50-x2-nvme-20-72506300mbs-p-5047213?vendorId=10405",
-          "currency": "TRY",
-          "fetched_at": "2026-01-14T16:59:23.046Z",
-          "price": 13199,
-          "title": "SAMSUNG 2TB 990 EVO PLUS PCIE GEN 4.0 X4 / 5.0 X2 NVME 2.0 (7250/6300MB/s) - idefix",
-          "image": null
-        }
-      ]
-    },
-    {
-      "id": "ram_kingston_beast_expo_32gb_6000_cl30",
-      "name": "Kingston FURY Beast EXPO Black 32GB (2×16GB) DDR5-6000 CL30",
-      "best": {
-        "site": "aykom",
-        "url": "https://www.aykom.com.tr/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr",
-        "currency": "TRY",
-        "fetched_at": "2026-01-14T16:59:27.704Z",
-        "price": 300,
-        "title": "KINGSTON BEAST BLACK EXPO 32GB (2x16GB) 6000MHz DDR5 PC RAM KF560C30BBEK2-32TR | KINGSTON fiyatları | 23.368,84 TL ye sizin, taksit seçenekleri ve ücretsiz kargo ile",
-        "image": "https://www.aykom.com.tr/idea/cy/55/myassets/products/382/f14345a127e34741baacdea8a37f7e52.jpg?revision=1768231084"
-      },
-      "offers": [
-        {
-          "site": "akakce",
-          "url": "https://www.akakce.com/ram/en-ucuz-kingston-beast-expo-32-gb-2x16-6000-mhz-cl30-kf560c30bbek2-32tr-ddr5-fiyati,811894497.html",
-          "currency": "TRY",
-          "fetched_at": "2026-01-14T16:59:27.217Z",
-          "price": null,
-          "error": "HTTP 403 for https://www.akakce.com/ram/en-ucuz-kingston-beast-expo-32-gb-2x16-6000-mhz-cl30-kf560c30bbek2-32tr-ddr5-fiyati,811894497.html"
-        },
-        {
-          "site": "aykom",
-          "url": "https://www.aykom.com.tr/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr",
-          "currency": "TRY",
-          "fetched_at": "2026-01-14T16:59:27.704Z",
-          "price": 300,
-          "title": "KINGSTON BEAST BLACK EXPO 32GB (2x16GB) 6000MHz DDR5 PC RAM KF560C30BBEK2-32TR | KINGSTON fiyatları | 23.368,84 TL ye sizin, taksit seçenekleri ve ücretsiz kargo ile",
-          "image": "https://www.aykom.com.tr/idea/cy/55/myassets/products/382/f14345a127e34741baacdea8a37f7e52.jpg?revision=1768231084"
-        },
-        {
-          "site": "guvenliticaret",
-          "url": "https://www.guvenliticaret.net/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr",
-          "currency": "TRY",
-          "fetched_at": "2026-01-14T16:59:31.091Z",
-          "price": 5000,
-          "title": "KINGSTON BEAST BLACK EXPO 32GB (2x16GB) 6000MHz DDR5 PC RAM KF560C30BBEK2-32TR en uygun fiyat ve ödeme koşulları ile güvenliticaret'te",
-          "image": "https://www.guvenliticaret.net/idea/ql/98/myassets/products/054/f14345a127e34741baacdea8a37f7e52.jpg?revision=1768204631"
-        }
-      ]
-    },
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
       "name": "AMD Ryzen 7 7800X3D",
-      "best": {
-        "site": "n11",
-        "url": "https://www.n11.com/urun/amd-ryzen-7-7800x3d-42-ghz-am5-96-mb-cache-120-w-islemci-tray-44584446",
-        "currency": "TRY",
-        "fetched_at": "2026-01-14T17:00:39.623Z",
-        "price": 16223.12,
-        "title": "AMD Ryzen 7 7800X3D 4.2 GHz AM5 96 MB Cache 120 W İşlemci Tray Fiyatları ve Özellikleri",
-        "image": null
-      },
-      "offers": [
-        {
-          "site": "akakce",
-          "url": "https://www.akakce.com/islemci/en-ucuz-amd-ryzen-7-7800x3d-sekiz-cekirdek-4-2-ghz-fiyati,334009206.html",
-          "currency": "TRY",
-          "fetched_at": "2026-01-14T16:59:34.891Z",
-          "price": null,
-          "error": "HTTP 403 for https://www.akakce.com/islemci/en-ucuz-amd-ryzen-7-7800x3d-sekiz-cekirdek-4-2-ghz-fiyati,334009206.html"
-        },
-        {
-          "site": "incehesap",
-          "url": "https://www.incehesap.com/amd-ryzen-7-7800x3d-4-20ghz-8-cekirdek-96mb-onbellek-soket-am5-tray-islemci-fiyati-66737/",
-          "currency": "TRY",
-          "fetched_at": "2026-01-14T16:59:35.360Z",
-          "price": null,
-          "title": "Attention Required! | Cloudflare",
-          "image": null
-        },
-        {
-          "site": "sinerji",
-          "url": "https://www.sinerji.gen.tr/amd-ryzen-7-7800x3d-500-ghz-8-cekirdek-104mb-am5-5nm-islemci-tray-p-48465",
-          "currency": "TRY",
-          "fetched_at": "2026-01-14T17:00:07.525Z",
-          "price": null,
-          "title": "Bir dakika lütfen...",
-          "image": null
-        },
-        {
-          "site": "n11",
-          "url": "https://www.n11.com/urun/amd-ryzen-7-7800x3d-42-ghz-am5-96-mb-cache-120-w-islemci-tray-44584446",
-          "currency": "TRY",
-          "fetched_at": "2026-01-14T17:00:39.623Z",
-          "price": 16223.12,
-          "title": "AMD Ryzen 7 7800X3D 4.2 GHz AM5 96 MB Cache 120 W İşlemci Tray Fiyatları ve Özellikleri",
-          "image": null
-        }
-      ]
+      "akakce_url": "https://www.akakce.com/islemci/en-ucuz-amd-ryzen-7-7800x3d-sekiz-cekirdek-4-2-ghz-fiyati,334009206.html",
+      "best": null,
+      "offers": [],
+      "error": null
     },
     {
       "id": "mb_gigabyte_x870_gaming_x_wifi7",
       "name": "Gigabyte X870 Gaming X WiFi 7 (AM5, ATX)",
-      "best": {
-        "site": "idefix",
-        "url": "https://www.idefix.com/gigabyte-x870-gaming-x-wifi-7-ddr5-8000mhz-oc-rgb-m2-am5-atx-anakart-p-5687394",
-        "currency": "TRY",
-        "fetched_at": "2026-01-14T17:01:46.490Z",
-        "price": 13689.23,
-        "title": "Gigabyte X870 GAMING X WiFi 7 DDR5 8000MHz (OC) RGB M.2 AM5 ATX Anakart - idefix",
-        "image": null
-      },
-      "offers": [
-        {
-          "site": "akakce",
-          "url": "https://www.akakce.com/anakart/en-ucuz-gigabyte-x870-gaming-x-wifi7-amd-am5-ddr5-atx-fiyati,812619495.html",
-          "currency": "TRY",
-          "fetched_at": "2026-01-14T17:01:13.487Z",
-          "price": null,
-          "error": "HTTP 403 for https://www.akakce.com/anakart/en-ucuz-gigabyte-x870-gaming-x-wifi7-amd-am5-ddr5-atx-fiyati,812619495.html"
-        },
-        {
-          "site": "amazontr",
-          "url": "https://www.amazon.com.tr/GIGABYTE-X870-GAMING-WIFI7-Anakart/dp/B0DHVLP1L9/",
-          "currency": "TRY",
-          "fetched_at": "2026-01-14T17:01:13.981Z",
-          "price": null,
-          "title": "Amazon.com.tr",
-          "image": null
-        },
-        {
-          "site": "idefix",
-          "url": "https://www.idefix.com/gigabyte-x870-gaming-x-wifi-7-ddr5-8000mhz-oc-rgb-m2-am5-atx-anakart-p-5687394",
-          "currency": "TRY",
-          "fetched_at": "2026-01-14T17:01:46.490Z",
-          "price": 13689.23,
-          "title": "Gigabyte X870 GAMING X WiFi 7 DDR5 8000MHz (OC) RGB M.2 AM5 ATX Anakart - idefix",
-          "image": null
-        },
-        {
-          "site": "sinerji",
-          "url": "https://www.sinerji.gen.tr/gigabyte-x870-gaming-x-wifi7-8000mhz-oc-rgb-m2-am5-atx-anakart-p-52258",
-          "currency": "TRY",
-          "fetched_at": "2026-01-14T17:01:50.520Z",
-          "price": null,
-          "title": "Bir dakika lütfen...",
-          "image": null
-        }
-      ]
+      "akakce_url": "https://www.akakce.com/anakart/en-ucuz-gigabyte-x870-gaming-x-wifi7-amd-am5-ddr5-atx-fiyati,812619495.html",
+      "best": null,
+      "offers": [],
+      "error": null
+    },
+    {
+      "id": "ram_kingston_beast_expo_32gb_6000_cl30",
+      "name": "Kingston FURY Beast EXPO Black 32GB (2×16GB) DDR5-6000 CL30",
+      "akakce_url": "https://www.akakce.com/ram/en-ucuz-kingston-beast-expo-32-gb-2x16-6000-mhz-cl30-kf560c30bbek2-32tr-ddr5-fiyati,811894497.html",
+      "best": null,
+      "offers": [],
+      "error": null
     },
     {
       "id": "gpu_inno3d_rtx_5070_ti_x3_oc",
       "name": "Inno3D GeForce RTX 5070 Ti X3 OC 16GB GDDR7",
-      "best": {
-        "site": "revertpro",
-        "url": "https://www.revertpro.com/inno3d-geforce-rtx-5070-ti-x3-oc-16gb-gddr7-256bit-pcie-5.0-ekran-karti",
-        "currency": "TRY",
-        "fetched_at": "2026-01-14T17:02:55.958Z",
-        "price": 4199,
-        "title": "Inno3D RTX 5070 Ti X3 OC 16GB GDDR7 Ekran Kartı",
-        "image": "https://static.ticimax.cloud/cdn-cgi/image/width=-,quality=99/71836/uploads/urunresimleri/buyuk/inno3d-geforce-rtx-5070-ti-x3-oc-16gb--568-92.jpg"
-      },
-      "offers": [
-        {
-          "site": "akakce",
-          "url": "https://www.akakce.com/ekran-karti/en-ucuz-inno3d-rtx-5070-ti-x3-oc-n507t3-16d7x-176068n-256-bit-gddr7-16-gb-fiyati,959886374.html",
-          "currency": "TRY",
-          "fetched_at": "2026-01-14T17:02:22.583Z",
-          "price": null,
-          "error": "HTTP 403 for https://www.akakce.com/ekran-karti/en-ucuz-inno3d-rtx-5070-ti-x3-oc-n507t3-16d7x-176068n-256-bit-gddr7-16-gb-fiyati,959886374.html"
-        },
-        {
-          "site": "n11",
-          "url": "https://www.n11.com/urun/inno3d-rtx5070ti-x3-oc-16-gb-gddr7-256-bit-ekran-karti-70664608",
-          "currency": "TRY",
-          "fetched_at": "2026-01-14T17:02:23.067Z",
-          "price": 48690.46,
-          "title": "Inno3D RTX5070Ti X3 OC 16 GB GDDR7 256 Bit Ekran Kartı Fiyatları ve Özellikleri",
-          "image": null
-        },
-        {
-          "site": "revertpro",
-          "url": "https://www.revertpro.com/inno3d-geforce-rtx-5070-ti-x3-oc-16gb-gddr7-256bit-pcie-5.0-ekran-karti",
-          "currency": "TRY",
-          "fetched_at": "2026-01-14T17:02:55.958Z",
-          "price": 4199,
-          "title": "Inno3D RTX 5070 Ti X3 OC 16GB GDDR7 Ekran Kartı",
-          "image": "https://static.ticimax.cloud/cdn-cgi/image/width=-,quality=99/71836/uploads/urunresimleri/buyuk/inno3d-geforce-rtx-5070-ti-x3-oc-16gb--568-92.jpg"
-        },
-        {
-          "site": "sinerji",
-          "url": "https://www.sinerji.gen.tr/inno3d-geforce-rtx-5070-ti-x3-oc-16gb-gddr7-256-bir-dlss-4-ekran-karti-p-54569",
-          "currency": "TRY",
-          "fetched_at": "2026-01-14T17:03:00.066Z",
-          "price": null,
-          "title": "Bir dakika lütfen...",
-          "image": null
-        }
-      ]
+      "akakce_url": "https://www.akakce.com/ekran-karti/en-ucuz-inno3d-rtx-5070-ti-x3-oc-n507t3-16d7x-176068n-256-bit-gddr7-16-gb-fiyati,959886374.html",
+      "best": null,
+      "offers": [],
+      "error": null
+    },
+    {
+      "id": "ssd_samsung_990_evo_plus_2tb",
+      "name": "Samsung 990 EVO Plus 2TB NVMe",
+      "akakce_url": "https://www.akakce.com/ssd/en-ucuz-samsung-990-evo-plus-mz-v9s2t0bw-pci-express-2-tb-m-2-fiyati,836325138.html",
+      "best": null,
+      "offers": [],
+      "error": null
     },
     {
       "id": "psu_fsp_vita_gm_850w",
       "name": "FSP Vita GM 850W 80+ Gold (PCIe 5.x)",
-      "best": {
-        "site": "n11",
-        "url": "https://www.n11.com/urun/fsp-vita-gm-850w-80-gold-pcie5-guc-kaynagi-60851083",
-        "currency": "TRY",
-        "fetched_at": "2026-01-14T17:04:05.293Z",
-        "price": 6253.51,
-        "title": "FSP Vita GM 850W 80+ Gold PCIE5 Güç Kaynağı Fiyatları ve Özellikleri",
-        "image": null
-      },
-      "offers": [
-        {
-          "site": "akakce",
-          "url": "https://www.akakce.com/power-supply/en-ucuz-fsp-vita-gm-gen5-1-850-w-fiyati,792425188.html",
-          "currency": "TRY",
-          "fetched_at": "2026-01-14T17:03:32.124Z",
-          "price": null,
-          "error": "HTTP 403 for https://www.akakce.com/power-supply/en-ucuz-fsp-vita-gm-gen5-1-850-w-fiyati,792425188.html"
-        },
-        {
-          "site": "amazontr",
-          "url": "https://www.amazon.com.tr/FSP-VITA-850GM-Model/dp/B0D41SJKLV/",
-          "currency": "TRY",
-          "fetched_at": "2026-01-14T17:03:32.599Z",
-          "price": null,
-          "title": "Amazon.com.tr",
-          "image": null
-        },
-        {
-          "site": "n11",
-          "url": "https://www.n11.com/urun/fsp-vita-gm-850w-80-gold-pcie5-guc-kaynagi-60851083",
-          "currency": "TRY",
-          "fetched_at": "2026-01-14T17:04:05.293Z",
-          "price": 6253.51,
-          "title": "FSP Vita GM 850W 80+ Gold PCIE5 Güç Kaynağı Fiyatları ve Özellikleri",
-          "image": null
-        }
-      ]
+      "akakce_url": "https://www.akakce.com/power-supply/en-ucuz-fsp-vita-gm-gen5-1-850-w-fiyati,792425188.html",
+      "best": null,
+      "offers": [],
+      "error": null
     },
     {
       "id": "case_lian_li_lancool_iii_argb_black",
       "name": "Lian Li Lancool III ARGB – Siyah – 3 Fanlı – E-ATX",
+      "akakce_url": "https://www.akakce.com/bilgisayar-kasasi/en-ucuz-lian-li-lancool-iii-x-argb-3-fanli-black-e-atx-oyuncu-kasasi-fiyati,120885614.html",
       "best": null,
-      "offers": [
-        {
-          "site": "akakce",
-          "url": "https://www.akakce.com/bilgisayar-kasasi/en-ucuz-lian-li-lancool-iii-x-argb-3-fanli-black-e-atx-oyuncu-kasasi-fiyati,120885614.html",
-          "currency": "TRY",
-          "fetched_at": "2026-01-14T17:04:39.438Z",
-          "price": null,
-          "error": "HTTP 403 for https://www.akakce.com/bilgisayar-kasasi/en-ucuz-lian-li-lancool-iii-x-argb-3-fanli-black-e-atx-oyuncu-kasasi-fiyati,120885614.html"
-        },
-        {
-          "site": "sinerji",
-          "url": "https://www.sinerji.gen.tr/lian-li-lancool-iii-siyah-rgb-tempered-glass-usb-30-atx-mid-tower-kasa-p-50586",
-          "currency": "TRY",
-          "fetched_at": "2026-01-14T17:04:40.039Z",
-          "price": null,
-          "title": "Bir dakika lütfen...",
-          "image": null
-        },
-        {
-          "site": "incehesap",
-          "url": "https://www.incehesap.com/lian-li-lancool-iii-siyah-rgb-mid-tower-e-atx-gaming-kasa-fiyati-59883/",
-          "currency": "TRY",
-          "fetched_at": "2026-01-14T17:05:12.111Z",
-          "price": null,
-          "title": "Attention Required! | Cloudflare",
-          "image": null
-        }
-      ]
+      "offers": [],
+      "error": null
     }
   ]
 }
