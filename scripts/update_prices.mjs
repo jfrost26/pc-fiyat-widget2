@@ -55,25 +55,29 @@ function extractImageFromHTML(html) {
 function extractAkakcePriceFromHTML(html) {
   const $ = cheerio.load(html);
 
-  const candidates = [
-    '[itemprop="price"]',
-    ".pt_v8",
-    ".p_w_v9",
-    ".p_w_v8",
-    ".p_w",
-    ".price",
-    ".product-price"
+  // 1) Meta fiyatlar (Akakçe sayfalarında bazen burada oluyor)
+  const metaSelectors = [
+    'meta[property="product:price:amount"]',
+    'meta[property="og:price:amount"]',
+    'meta[itemprop="price"]',
+    '[itemprop="price"]'
   ];
+  for (const sel of metaSelectors) {
+    const v = $(sel).attr("content") || $(sel).text();
+    const p = parseTRY(v);
+    if (p) return p;
+  }
 
+  // 2) Görünür fiyat sınıfları (fallback)
+  const candidates = [".pt_v8", ".p_w_v9", ".p_w_v8", ".p_w", ".price", ".product-price"];
   for (const sel of candidates) {
-    const el = $(sel).first();
-    if (!el || !el.length) continue;
-    const t = el.attr("content") || el.text();
+    const t = $(sel).first().text();
     const p = parseTRY(t);
     if (p) return p;
   }
 
-  const m = html.match(/₺\s*[\d.]+\s*(?:,\s*\d{1,2})?/);
+  // 3) Son çare: sayfa içinde geçen ilk ₺ fiyatı
+  const m = html.match(/₺\s*[\d.]+(?:,\d{1,2})?/);
   if (m) return parseTRY(m[0]);
 
   return null;
