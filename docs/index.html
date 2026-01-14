@@ -1,1 +1,49 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PC Fiyat Takip</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="wrap">
+    <h1>PC Fiyat Takip</h1>
+    <div class="meta">
+      <span id="updatedAt">Güncelleniyor…</span>
+      <input id="q" placeholder="Ara (örn: 7800X3D)" />
+      <select id="filter">
+        <option value="all">Hepsi</option>
+        <option value="priced">Fiyatı olanlar</option>
+        <option value="missing">Fiyat bulunamayanlar</option>
+      </select>
+      <select id="sort">
+        <option value="best_asc">En ucuz (artan)</option>
+        <option value="name_asc">İsim (A→Z)</option>
+      </select>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="cards" class="cards"></section>
+
+    <h2 class="mt">Tablo görünümü</h2>
+    <div class="tableWrap">
+      <table id="table">
+        <thead>
+          <tr>
+            <th>Parça</th>
+            <th>En ucuz</th>
+            <th>Site</th>
+            <th>Diğer teklifler</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
 
