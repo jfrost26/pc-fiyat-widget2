@@ -25,63 +25,35 @@ function parseTRY(str) {
   return Number.isFinite(val) ? val : null;
 }
 
-/**
- * Akakçe sayfasından mağaza listesi çıkarmayı dener.
- * DOM zamanla değişebilir; bu yüzden birkaç selector/fallback kullanıyoruz.
- */
 async function scrapeAkakceOffers(page, url) {
   await page.goto(url, { waitUntil: "domcontentloaded", timeout: 60000 });
   await page.waitForTimeout(1500);
 
-  const offers = await page.evaluate(() => {
-  const out = [];
-  const rows = Array.from(document.querySelectorAll("tr, li, div"));
+  const offersRaw = await page.evaluate(() => {
+    const out = [];
 
-  for (const r of rows) {
-    const text = (r.textContent || "").replace(/\s+/g, " ").trim();
-    if (!text.includes("₺")) continue;
+    // Satır benzeri her şeyi dolaş; içinde ₺ geçenleri aday yap
+    const rows = Array.from(document.querySelectorAll("tr, li, div"));
 
-    const a = r.querySelector("a[href]");
-    const href = a ? a.href : null;
+    for (const r of rows) {
+      const text = (r.textContent || "").replace(/\s+/g, " ").trim();
+      if (!text.includes("₺")) continue;
 
-    const m = text.match(/₺\s*[\d.]+(?:,\d{1,2})?/);
-    if (!m) continue;
+      const m = text.match(/₺\s*[\d.]+(?:,\d{1,2})?/);
+      if (!m) continue;
 
-    const store =
-      (a && (a.textContent || "").trim()) ||
-      text.split("₺")[0].trim() ||
-      "Mağaza";
+      const a = r.querySelector("a[href]");
+      const href = a ? a.href : null;
 
-    out.push({ store, priceText: m[0], url: href });
-  }
+      const store =
+        (a && (a.textContent || "").trim()) ||
+        text.split("₺")[0].trim() ||
+        "Mağaza";
 
-  const seen = new Set();
-  const dedup = [];
-  for (const o of out) {
-    const key = `${o.store}__${o.priceText}__${o.url || ""}`;
-    if (seen.has(key)) continue;
-    seen.add(key);
-    dedup.push(o);
-  }
+      out.push({ store, priceText: m[0], url: href });
+    }
 
-  return dedup;
-});
-
-
-  const normalized = offers
-    .map(o => ({
-      site: "akakce",
-      store: o.store,
-      url: o.url,
-      price: parseTRY(o.priceText),
-      currency: "TRY"
-    }))
-    .filter(o => typeof o.price === "number" && o.price > 0);
-
-  normalized.sort((a, b) => a.price - b.price);
-  return normalized;
-}
-    // Çok fazla gürültü olabilir; benzer kayıtları azaltmak için (store+priceText) uniq yap
+    // uniq
     const seen = new Set();
     const dedup = [];
     for (const o of out) {
@@ -94,20 +66,16 @@ async function scrapeAkakceOffers(page, url) {
     return dedup;
   });
 
-  // Node tarafında parse ve filtre
-  const normalized = offers
+  const normalized = offersRaw
     .map(o => ({
-      site: "akakce",
       store: o.store,
-      url: o.url, // yönlendirme linki (varsa)
+      url: o.url,
       price: parseTRY(o.priceText),
       currency: "TRY"
     }))
     .filter(o => typeof o.price === "number" && o.price > 0);
 
-  // En ucuzdan pahalıya sırala
   normalized.sort((a, b) => a.price - b.price);
-
   return normalized;
 }
 
@@ -124,16 +92,12 @@ async function main() {
 
   for (const p of products) {
     const page = await context.newPage();
-     // küçük hack: yukarıdaki fonksiyon page.url() çağırıyor
 
     let offers = [];
     let error = null;
 
     try {
-      await page.goto(p.akakce_url, { waitUntil: "domcontentloaded", timeout: 60000 });
-      await page.waitForTimeout(1500);
       offers = await scrapeAkakceOffers(page, p.akakce_url);
-
     } catch (e) {
       error = String(e?.message || e);
     } finally {
@@ -141,7 +105,7 @@ async function main() {
     }
 
     const best = offers.length
-      ? { site: "akakce", store: offers[0].store, url: offers[0].url || p.akakce_url, price: offers[0].price, currency: "TRY" }
+      ? { store: offers[0].store, url: offers[0].url || p.akakce_url, price: offers[0].price, currency: "TRY" }
       : null;
 
     out.products.push({
