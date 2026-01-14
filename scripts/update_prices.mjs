@@ -25,58 +25,85 @@ function parseTRY(str) {
   return Number.isFinite(val) ? val : null;
 }
 
-async function scrapeAkakceOffers(page, url) {
+async function getBestFromAkakce(page, url) {
   await page.goto(url, { waitUntil: "domcontentloaded", timeout: 60000 });
   await page.waitForTimeout(1500);
 
-  const offersRaw = await page.evaluate(() => {
-    const out = [];
+  // 1) En stabil: meta fiyatlar
+  const metaSelectors = [
+    'meta[property="product:price:amount"]',
+    'meta[property="og:price:amount"]',
+    'meta[itemprop="price"]',
+    'meta[name="twitter:data1"]'
+  ];
 
-    // Satır benzeri her şeyi dolaş; içinde ₺ geçenleri aday yap
-    const rows = Array.from(document.querySelectorAll("tr, li, div"));
-
-    for (const r of rows) {
-      const text = (r.textContent || "").replace(/\s+/g, " ").trim();
-      if (!text.includes("₺")) continue;
-
-      const m = text.match(/₺\s*[\d.]+(?:,\d{1,2})?/);
-      if (!m) continue;
-
-      const a = r.querySelector("a[href]");
-      const href = a ? a.href : null;
-
-      const store =
-        (a && (a.textContent || "").trim()) ||
-        text.split("₺")[0].trim() ||
-        "Mağaza";
-
-      out.push({ store, priceText: m[0], url: href });
+  for (const sel of metaSelectors) {
+    const v = await page.locator(sel).first().getAttribute("content").catch(() => null);
+    const p = parseTRY(v);
+    if (typeof p === "number" && p > 0) {
+      // Mağaza adını stabil yakalayamazsak "Akakçe" döneceğiz
+      return { price: p, store: "Akakçe", url };
     }
+  }
 
-    // uniq
-    const seen = new Set();
-    const dedup = [];
-    for (const o of out) {
-      const key = `${o.store}__${o.priceText}__${o.url || ""}`;
-      if (seen.has(key)) continue;
-      seen.add(key);
-      dedup.push(o);
+  // 2) JSON-LD (structured data) içinde fiyat arama
+  const jsonldPrice = await page.evaluate(() => {
+    const scripts = Array.from(document.querySelectorAll('script[type="application/ld+json"]'));
+    for (const s of scripts) {
+      const t = (s.textContent || "").trim();
+      if (!t) continue;
+      try {
+        const data = JSON.parse(t);
+
+        const scan = (obj) => {
+          if (!obj) return null;
+          if (Array.isArray(obj)) {
+            for (const it of obj) {
+              const r = scan(it);
+              if (r) return r;
+            }
+          } else if (typeof obj === "object") {
+            // offer price pattern
+            if (obj.price) return obj.price;
+            if (obj.offers) {
+              const r = scan(obj.offers);
+              if (r) return r;
+            }
+            for (const k of Object.keys(obj)) {
+              const r = scan(obj[k]);
+              if (r) return r;
+            }
+          }
+          return null;
+        };
+
+        const found = scan(data);
+        if (found) return String(found);
+      } catch {
+        // ignore
+      }
     }
-
-    return dedup;
+    return null;
   });
 
-  const normalized = offersRaw
-    .map(o => ({
-      store: o.store,
-      url: o.url,
-      price: parseTRY(o.priceText),
-      currency: "TRY"
-    }))
-    .filter(o => typeof o.price === "number" && o.price > 0);
+  {
+    const p = parseTRY(jsonldPrice);
+    if (typeof p === "number" && p > 0) return { price: p, store: "Akakçe", url };
+  }
 
-  normalized.sort((a, b) => a.price - b.price);
-  return normalized;
+  // 3) Son çare: sayfada görünen ilk ₺ fiyatı
+  const visiblePriceText = await page.evaluate(() => {
+    const text = document.body ? (document.body.innerText || "") : "";
+    const m = text.match(/₺\s*[\d.]+(?:,\d{1,2})?/);
+    return m ? m[0] : null;
+  });
+
+  {
+    const p = parseTRY(visiblePriceText);
+    if (typeof p === "number" && p > 0) return { price: p, store: "Akakçe", url };
+  }
+
+  return null;
 }
 
 async function main() {
@@ -92,21 +119,18 @@ async function main() {
 
   for (const p of products) {
     const page = await context.newPage();
-
-    let offers = [];
+    let best = null;
+    let offers = []; // stabil mod: boş bırakıyoruz
     let error = null;
 
     try {
-      offers = await scrapeAkakceOffers(page, p.akakce_url);
+      best = await getBestFromAkakce(page, p.akakce_url);
+      if (!best) error = "AKAKCE_PRICE_NOT_FOUND";
     } catch (e) {
       error = String(e?.message || e);
     } finally {
       await page.close();
     }
-
-    const best = offers.length
-      ? { store: offers[0].store, url: offers[0].url || p.akakce_url, price: offers[0].price, currency: "TRY" }
-      : null;
 
     out.products.push({
       id: p.id,
