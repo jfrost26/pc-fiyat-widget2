@@ -7,8 +7,8 @@ async function load() {
   const res = await fetch("./data.json", { cache: "no-store" });
   const data = await res.json();
 
-  document.getElementById("updatedAt").textContent =
-    "Son güncelleme: " + new Date(data.updated_at).toLocaleString("tr-TR");
+  const updatedAt = document.getElementById("updatedAt");
+  updatedAt.textContent = "Son güncelleme: " + new Date(data.updated_at).toLocaleString("tr-TR");
 
   const q = document.getElementById("q");
   const filter = document.getElementById("filter");
@@ -40,6 +40,10 @@ async function load() {
   render();
 }
 
+function safeLink(url, fallback) {
+  return url || fallback || "#";
+}
+
 function renderCards(items) {
   const root = document.getElementById("cards");
   root.innerHTML = "";
@@ -48,13 +52,14 @@ function renderCards(items) {
     const best = p.best;
     const bestText = best ? fmtTRY(best.price) : "N/A";
     const bestStore = best ? (best.store || "—") : "—";
+    const bestLink = safeLink(best?.url, p.akakce_url);
 
     const offersHtml = (p.offers || []).map(o => {
-  const price = fmtTRY(o.price);
-  const store = o.store || "Mağaza";
-  const link = o.url || p.akakce_url || "#";
-  return `<div class="offer"><a href="${link}" target="_blank" rel="noreferrer">${store}</a><span>${price}</span></div>`;
-}).join("");
+      const price = fmtTRY(o.price);
+      const store = o.store || "Mağaza";
+      const link = safeLink(o.url, p.akakce_url);
+      return `<div class="offer"><a href="${link}" target="_blank" rel="noreferrer">${store}</a><span>${price}</span></div>`;
+    }).join("");
 
     const card = document.createElement("div");
     card.className = "card";
@@ -62,9 +67,10 @@ function renderCards(items) {
       <h3>${p.name}</h3>
       <div class="badge">
         <strong>En ucuz: ${bestText}</strong>
-       <span class="muted">(${bestStore})</span>
+        <span class="muted">(<a href="${bestLink}" target="_blank" rel="noreferrer">${bestStore}</a>)</span>
       </div>
-      <div class="offers">${offersHtml}</div>
+      <div class="offers">${offersHtml || `<div class="muted">Mağaza listesi bulunamadı. <a href="${safeLink(p.akakce_url)}" target="_blank" rel="noreferrer">Akakçe</a></div>`}</div>
+      ${p.error ? `<div class="muted" style="margin-top:10px">Hata: ${p.error}</div>` : ""}
     `;
     root.appendChild(card);
   }
@@ -77,20 +83,19 @@ function renderTable(items) {
   for (const p of items) {
     const best = p.best;
     const bestPrice = best ? fmtTRY(best.price) : "N/A";
-   const bestStore = best ? (best.store || "—") : "—";
+    const bestStore = best ? (best.store || "—") : "—";
+    const bestLink = safeLink(best?.url, p.akakce_url);
 
     const others = (p.offers || [])
-    .filter(o => !best || o.url !== best.url)
-    .map(o => `${o.store || "Mağaza"}: ${fmtTRY(o.price)}`)
-    .join(" • ");
-    const bestLink = best?.url || p.akakce_url || "#";
-    <td>${best ? `<a href="${bestLink}" target="_blank" rel="noreferrer">${bestStore}</a>` : "—"}</td>
+      .filter(o => !best || o.url !== best.url)
+      .map(o => `${o.store || "Mağaza"}: ${fmtTRY(o.price)}`)
+      .join(" • ");
 
     const tr = document.createElement("tr");
     tr.innerHTML = `
       <td>${p.name}</td>
       <td>${bestPrice}</td>
-      <td>${best ? `<a href="${best.url}" target="_blank" rel="noreferrer">${bestSite}</a>` : "—"}</td>
+      <td>${best ? `<a href="${bestLink}" target="_blank" rel="noreferrer">${bestStore}</a>` : "—"}</td>
       <td class="muted">${others || "—"}</td>
     `;
     tbody.appendChild(tr);
@@ -98,7 +103,7 @@ function renderTable(items) {
 }
 
 load().catch((e) => {
-  document.getElementById("updatedAt").textContent = "Hata: data.json okunamadı";
   console.error(e);
+  const updatedAt = document.getElementById("updatedAt");
+  if (updatedAt) updatedAt.textContent = "Hata: data.json okunamadı";
 });
-
