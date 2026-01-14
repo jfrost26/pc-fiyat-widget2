@@ -29,45 +29,56 @@ function parseTRY(str) {
  * Akakçe sayfasından mağaza listesi çıkarmayı dener.
  * DOM zamanla değişebilir; bu yüzden birkaç selector/fallback kullanıyoruz.
  */
-async function scrapeAkakceOffers(page) {
-  // Sayfayı aç
-  await page.goto(page.url(), { waitUntil: "domcontentloaded", timeout: 60000 });
+async function scrapeAkakceOffers(page, url) {
+  await page.goto(url, { waitUntil: "domcontentloaded", timeout: 60000 });
   await page.waitForTimeout(1500);
 
-  // Sayfada "₺" içeren fiyatlar ve mağaza isimleri genelde listede olur.
-  // Aşağıdaki evaluate içinde olabildiğince esnek davranıyoruz.
   const offers = await page.evaluate(() => {
     const out = [];
-
-    // 1) Akakçe'de çoğu üründe satıcı listesi bir tablo/liste halinde olur.
-    // Çok spesifik selector vermek kırılgan; bu yüzden "₺" içeren satırları yakalıyoruz.
     const rows = Array.from(document.querySelectorAll("tr, li, div"));
 
     for (const r of rows) {
       const text = (r.textContent || "").replace(/\s+/g, " ").trim();
       if (!text.includes("₺")) continue;
 
-      // Satır içinde bir link varsa onu al (yönlendirme linki)
       const a = r.querySelector("a[href]");
       const href = a ? a.href : null;
 
-      // "₺12.345" benzeri fiyatı yakala
       const m = text.match(/₺\s*[\d.]+(?:,\d{1,2})?/);
       if (!m) continue;
 
-      // Mağaza adı: link metni veya satırın başı
       const store =
         (a && (a.textContent || "").trim()) ||
         text.split("₺")[0].trim() ||
         "Mağaza";
 
-      out.push({
-        store,
-        priceText: m[0],
-        url: href
-      });
+      out.push({ store, priceText: m[0], url: href });
     }
 
+    const seen = new Set();
+    const dedup = [];
+    for (const o of out) {
+      const key = `${o.store}__${o.priceText}__${o.url || ""}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      dedup.push(o);
+    }
+    return dedup;
+  });
+
+  const normalized = offers
+    .map(o => ({
+      site: "akakce",
+      store: o.store,
+      url: o.url,
+      price: parseTRY(o.priceText),
+      currency: "TRY"
+    }))
+    .filter(o => typeof o.price === "number" && o.price > 0);
+
+  normalized.sort((a, b) => a.price - b.price);
+  return normalized;
+}
     // Çok fazla gürültü olabilir; benzer kayıtları azaltmak için (store+priceText) uniq yap
     const seen = new Set();
     const dedup = [];
@@ -111,7 +122,7 @@ async function main() {
 
   for (const p of products) {
     const page = await context.newPage();
-    page.url = () => p.akakce_url; // küçük hack: yukarıdaki fonksiyon page.url() çağırıyor
+     // küçük hack: yukarıdaki fonksiyon page.url() çağırıyor
 
     let offers = [];
     let error = null;
@@ -119,7 +130,8 @@ async function main() {
     try {
       await page.goto(p.akakce_url, { waitUntil: "domcontentloaded", timeout: 60000 });
       await page.waitForTimeout(1500);
-      offers = await scrapeAkakceOffers(page);
+      offers = await scrapeAkakceOffers(page, p.akakce_url);
+
     } catch (e) {
       error = String(e?.message || e);
     } finally {
