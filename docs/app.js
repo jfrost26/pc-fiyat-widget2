@@ -3,21 +3,6 @@ function fmtTRY(n) {
   return new Intl.NumberFormat("tr-TR", { style: "currency", currency: "TRY" }).format(n);
 }
 
-function siteLabel(s) {
-  const map = {
-    akakce: "Akakçe",
-    amazontr: "Amazon TR",
-    incehesap: "İncehesap",
-    sinerji: "Sinerji",
-    n11: "n11",
-    idefix: "idefix",
-    aykom: "Aykom",
-    guvenliticaret: "GüvenliTicaret",
-    revertpro: "RevertPro"
-  };
-  return map[s] || s;
-}
-
 async function load() {
   const res = await fetch("./data.json", { cache: "no-store" });
   const data = await res.json();
@@ -62,13 +47,14 @@ function renderCards(items) {
   for (const p of items) {
     const best = p.best;
     const bestText = best ? fmtTRY(best.price) : "N/A";
-    const bestSite = best ? siteLabel(best.site) : "—";
+    const bestStore = best ? (best.store || "—") : "—";
 
     const offersHtml = (p.offers || []).map(o => {
-      const price = fmtTRY(o.price);
-      const site = siteLabel(o.site);
-      return `<div class="offer"><a href="${o.url}" target="_blank" rel="noreferrer">${site}</a><span>${price}</span></div>`;
-    }).join("");
+  const price = fmtTRY(o.price);
+  const store = o.store || "Mağaza";
+  const link = o.url || p.akakce_url || "#";
+  return `<div class="offer"><a href="${link}" target="_blank" rel="noreferrer">${store}</a><span>${price}</span></div>`;
+}).join("");
 
     const card = document.createElement("div");
     card.className = "card";
@@ -76,7 +62,7 @@ function renderCards(items) {
       <h3>${p.name}</h3>
       <div class="badge">
         <strong>En ucuz: ${bestText}</strong>
-        <span class="muted">(${bestSite})</span>
+       <span class="muted">(${bestStore})</span>
       </div>
       <div class="offers">${offersHtml}</div>
     `;
@@ -91,12 +77,14 @@ function renderTable(items) {
   for (const p of items) {
     const best = p.best;
     const bestPrice = best ? fmtTRY(best.price) : "N/A";
-    const bestSite = best ? siteLabel(best.site) : "—";
+   const bestStore = best ? (best.store || "—") : "—";
 
     const others = (p.offers || [])
-      .filter(o => !best || o.url !== best.url)
-      .map(o => `${siteLabel(o.site)}: ${fmtTRY(o.price)}`)
-      .join(" • ");
+    .filter(o => !best || o.url !== best.url)
+    .map(o => `${o.store || "Mağaza"}: ${fmtTRY(o.price)}`)
+    .join(" • ");
+    const bestLink = best?.url || p.akakce_url || "#";
+    <td>${best ? `<a href="${bestLink}" target="_blank" rel="noreferrer">${bestStore}</a>` : "—"}</td>
 
     const tr = document.createElement("tr");
     tr.innerHTML = `
