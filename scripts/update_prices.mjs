@@ -5,9 +5,10 @@ import { chromium } from "playwright";
 const ROOT = process.cwd();
 const PRODUCTS_PATH = path.join(ROOT, "products.json");
 const OUT_PATH = path.join(ROOT, "docs", "data.json");
+const DEBUG_DIR = path.join(ROOT, "docs", "debug");
 
 const UA =
-  "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36";
+  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36";
 
 function nowISO() {
   return new Date().toISOString();
@@ -16,7 +17,8 @@ function nowISO() {
 // "12.345,67" -> 12345.67
 function parseTRY(str) {
   if (!str) return null;
-  const cleaned = String(str)
+  const s = String(str);
+  const cleaned = s
     .replace(/\s/g, "")
     .replace(/[^\d.,]/g, "")
     .replace(/\.(?=\d{3}(\D|$))/g, "")
@@ -25,11 +27,58 @@ function parseTRY(str) {
   return Number.isFinite(val) ? val : null;
 }
 
-async function getBestFromAkakce(page, url) {
-  await page.goto(url, { waitUntil: "domcontentloaded", timeout: 60000 });
-  await page.waitForTimeout(1500);
+function looksBlocked(text) {
+  const t = (text || "").toLowerCase();
+  return (
+    t.includes("captcha") ||
+    t.includes("robot") ||
+    t.includes("doğrula") ||
+    t.includes("erişim") ||
+    t.includes("engellendi") ||
+    t.includes("blocked") ||
+    t.includes("unusual traffic")
+  );
+}
 
-  // 1) En stabil: meta fiyatlar
+function ensureDebugDir() {
+  fs.mkdirSync(DEBUG_DIR, { recursive: true });
+}
+
+async function saveDebug(page, id) {
+  ensureDebugDir();
+  const safe = id.replace(/[^a-z0-9_-]+/gi, "_");
+  const htmlPath = path.join(DEBUG_DIR, `${safe}.html`);
+  const pngPath = path.join(DEBUG_DIR, `${safe}.png`);
+
+  try {
+    const html = await page.content();
+    fs.writeFileSync(htmlPath, html, "utf8");
+  } catch {}
+
+  try {
+    await page.screenshot({ path: pngPath, fullPage: true });
+  } catch {}
+
+  return { htmlPath: `docs/debug/${safe}.html`, pngPath: `docs/debug/${safe}.png` };
+}
+
+async function getBestFromAkakce(page, url, idForDebug) {
+  await page.setExtraHTTPHeaders({
+    "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+  });
+
+  await page.goto(url, { waitUntil: "domcontentloaded", timeout: 45000 });
+  await page.waitForTimeout(2000);
+
+  const title = await page.title().catch(() => "");
+  const bodyText = await page.evaluate(() => document.body?.innerText || "").catch(() => "");
+
+  if (looksBlocked(title + "\n" + bodyText)) {
+    const dbg = await saveDebug(page, `${idForDebug}_blocked`);
+    throw new Error(`AKAKCE_BLOCKED_OR_CAPTCHA (debug: ${dbg.pngPath})`);
+  }
+
+  // 1) Meta price (en stabil)
   const metaSelectors = [
     'meta[property="product:price:amount"]',
     'meta[property="og:price:amount"]',
@@ -40,61 +89,75 @@ async function getBestFromAkakce(page, url) {
   for (const sel of metaSelectors) {
     const v = await page.locator(sel).first().getAttribute("content").catch(() => null);
     const p = parseTRY(v);
-    if (typeof p === "number" && p > 0) {
-      // Mağaza adını stabil yakalayamazsak "Akakçe" döneceğiz
-      return { price: p, store: "Akakçe", url };
-    }
+    if (typeof p === "number" && p > 0) return { price: p, store: "Akakçe", url };
   }
 
-  // 2) JSON-LD (structured data) içinde fiyat arama
-  const jsonldPrice = await page.evaluate(() => {
+  // 2) JSON-LD taraması
+  const jsonldCandidate = await page.evaluate(() => {
     const scripts = Array.from(document.querySelectorAll('script[type="application/ld+json"]'));
+
+    const scan = (obj) => {
+      if (!obj) return null;
+      if (Array.isArray(obj)) {
+        for (const it of obj) {
+          const r = scan(it);
+          if (r) return r;
+        }
+      } else if (typeof obj === "object") {
+        if (obj.price) return obj.price;
+        if (obj.offers) {
+          const r = scan(obj.offers);
+          if (r) return r;
+        }
+        for (const k of Object.keys(obj)) {
+          const r = scan(obj[k]);
+          if (r) return r;
+        }
+      }
+      return null;
+    };
+
     for (const s of scripts) {
       const t = (s.textContent || "").trim();
       if (!t) continue;
       try {
         const data = JSON.parse(t);
-
-        const scan = (obj) => {
-          if (!obj) return null;
-          if (Array.isArray(obj)) {
-            for (const it of obj) {
-              const r = scan(it);
-              if (r) return r;
-            }
-          } else if (typeof obj === "object") {
-            // offer price pattern
-            if (obj.price) return obj.price;
-            if (obj.offers) {
-              const r = scan(obj.offers);
-              if (r) return r;
-            }
-            for (const k of Object.keys(obj)) {
-              const r = scan(obj[k]);
-              if (r) return r;
-            }
-          }
-          return null;
-        };
-
         const found = scan(data);
         if (found) return String(found);
-      } catch {
-        // ignore
-      }
+      } catch {}
     }
     return null;
   });
 
   {
-    const p = parseTRY(jsonldPrice);
+    const p = parseTRY(jsonldCandidate);
     if (typeof p === "number" && p > 0) return { price: p, store: "Akakçe", url };
   }
 
-  // 3) Son çare: sayfada görünen ilk ₺ fiyatı
+  // 3) Görünür fiyat selector’leri
+  const selectorCandidates = [
+    '[itemprop="price"]',
+    ".pt_v8",
+    ".p_w_v9",
+    ".p_w_v8",
+    ".p_w",
+    ".price",
+    ".product-price"
+  ];
+
+  for (const sel of selectorCandidates) {
+    const txt = await page.locator(sel).first().innerText().catch(() => null);
+    const p = parseTRY(txt);
+    if (typeof p === "number" && p > 0) return { price: p, store: "Akakçe", url };
+  }
+
+  // 4) Son çare: ₺ veya TL metin araması (networkidle + kısa bekleme)
+  await page.waitForLoadState("networkidle", { timeout: 15000 }).catch(() => {});
+  await page.waitForTimeout(800);
+
   const visiblePriceText = await page.evaluate(() => {
     const text = document.body ? (document.body.innerText || "") : "";
-    const m = text.match(/₺\s*[\d.]+(?:,\d{1,2})?/);
+    const m = text.match(/(?:₺|TL)\s*[\d.]+(?:,\d{1,2})?/);
     return m ? m[0] : null;
   });
 
@@ -103,14 +166,20 @@ async function getBestFromAkakce(page, url) {
     if (typeof p === "number" && p > 0) return { price: p, store: "Akakçe", url };
   }
 
-  return null;
+  // Debug kaydı
+  const dbg = await saveDebug(page, `${idForDebug}_noprice`);
+  return { error: `AKAKCE_PRICE_NOT_FOUND (debug: ${dbg.pngPath})` };
 }
 
 async function main() {
   const products = JSON.parse(fs.readFileSync(PRODUCTS_PATH, "utf8"));
 
   const browser = await chromium.launch({ headless: true });
-  const context = await browser.newContext({ userAgent: UA, locale: "tr-TR" });
+  const context = await browser.newContext({
+    userAgent: UA,
+    locale: "tr-TR",
+    viewport: { width: 1280, height: 800 }
+  });
 
   const out = {
     updated_at: nowISO(),
@@ -118,14 +187,19 @@ async function main() {
   };
 
   for (const p of products) {
+    console.log("Fetching:", p.name);
     const page = await context.newPage();
+
     let best = null;
-    let offers = []; // stabil mod: boş bırakıyoruz
     let error = null;
 
     try {
-      best = await getBestFromAkakce(page, p.akakce_url);
-      if (!best) error = "AKAKCE_PRICE_NOT_FOUND";
+      const result = await getBestFromAkakce(page, p.akakce_url, p.id);
+      if (result?.price) {
+        best = { price: result.price, store: result.store || "Akakçe", url: result.url || p.akakce_url, currency: "TRY" };
+      } else {
+        error = result?.error || "AKAKCE_PRICE_NOT_FOUND";
+      }
     } catch (e) {
       error = String(e?.message || e);
     } finally {
@@ -137,12 +211,11 @@ async function main() {
       name: p.name,
       akakce_url: p.akakce_url,
       best,
-      offers,
+      offers: [],
       error
     });
 
-    // Akakçe'yi yormamak için küçük bekleme
-    await new Promise(r => setTimeout(r, 800));
+    await new Promise(r => setTimeout(r, 900));
   }
 
   await context.close();
