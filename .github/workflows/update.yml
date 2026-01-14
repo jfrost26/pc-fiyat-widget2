@@ -1,9 +1,14 @@
 name: Update prices
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "0 */6 * * *"
-  workflow_dispatch:
+
+concurrency:
+  group: update-prices
+  cancel-in-progress: true
+
 
 permissions:
   contents: write
