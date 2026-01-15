@@ -6,7 +6,7 @@
     "offers": [
       { "store": "aykom", "url": "https://www.aykom.com.tr/urun/amd-ryzen-7-7800x3d-4-20-ghz-96mb-am5-tray-islemci-120w" },
       { "store": "revertpro", "url": "https://www.revertpro.com/amd-ryzen-7-7800x3d-42ghz-96mb-120w-am5-fansiz-tray-5971" },
-      { "store": "itopya", "url": "https://www.itopya.com/amd-ryzen-7-7800x3d-42ghz-96mb-onbellek-8-cekirdek-am5-5nm-tray-islemci_u24307" }
+      { "store": "atomgaming", "url": "https://www.atomgaming.com.tr/amd-ryzen-7-7800x3d-4.20ghz-96mb-tray" }
     ]
   },
   {
@@ -25,8 +25,7 @@
     "ref_url": "https://www.akakce.com/ram/en-ucuz-kingston-beast-expo-32-gb-2x16-6000-mhz-cl30-kf560c30bbek2-32tr-ddr5-fiyati,811894497.html",
     "offers": [
       { "store": "aykom", "url": "https://www.aykom.com.tr/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr" },
-      { "store": "guvenliticaret", "url": "https://www.guvenliticaret.net/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr" },
-      { "store": "itopya", "url": "https://www.itopya.com/kingston-32gb2x16gb-beast-black-expoxmp-6000mhz-cl30-ddr5-dual-kit-ram_u31003" }
+      { "store": "guvenliticaret", "url": "https://www.guvenliticaret.net/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr" }
     ]
   },
   {
@@ -35,7 +34,6 @@
     "ref_url": "https://www.akakce.com/ekran-karti/en-ucuz-inno3d-rtx-5070-ti-x3-oc-n507t3-16d7x-176068n-256-bit-gddr7-16-gb-fiyati,959886374.html",
     "offers": [
       { "store": "revertpro", "url": "https://www.revertpro.com/inno3d-geforce-rtx-5070-ti-x3-oc-16gb-gddr7-256bit-pcie-5.0-ekran-karti" },
-      { "store": "n11", "url": "https://www.n11.com/urun/inno3d-rtx5070ti-x3-oc-16-gb-gddr7-256-bit-ekran-karti-70664608" },
       { "store": "pazarama", "url": "https://www.pazarama.com/inno3d-x3-geforce-rtx-5070-ti-oc-16gb-gddr7-256bit-hdmidp-ekran-karti-p-8886307700247" }
     ]
   },
@@ -46,7 +44,7 @@
     "offers": [
       { "store": "aykom", "url": "https://www.aykom.com.tr/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw" },
       { "store": "guvenliticaret", "url": "https://www.guvenliticaret.net/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw" },
-      { "store": "netsiparis", "url": "https://www.netsiparis.com/samsung-mz-v9s2t0bw-990-evo-plus-2-tb-nvme-gen4-ssd-72506300" }
+      { "store": "bilendenal", "url": "https://bilendenal.com/Samsung-990-EVO-Plus-2TB-PCIe-Gen-4.0-x4-NVMe-7250-6300-M.2-22x80mm-SSD-MZ-V9S2T0BW.html" }
     ]
   },
   {
