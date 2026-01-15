@@ -1,66 +1,71 @@
 {
-  "updated_at": "2026-01-15T12:57:43.266Z",
+  "updated_at": "2026-01-15T15:17:27.797Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
       "name": "AMD Ryzen 7 7800X3D",
       "ref_url": "https://www.akakce.com/islemci/en-ucuz-amd-ryzen-7-7800x3d-sekiz-cekirdek-4-2-ghz-fiyati,334009206.html",
-      "best": null,
+      "best": {
+        "price": 14550.48,
+        "store": "revertpro",
+        "url": "https://www.revertpro.com/amd-ryzen-7-7800x3d-42ghz-96mb-120w-am5-fansiz-tray-5971",
+        "currency": "TRY"
+      },
       "offers": [
         {
-          "store": "incehesap",
-          "url": "https://www.incehesap.com/amd-ryzen-7-7800x3d-4-20ghz-8-cekirdek-96mb-onbellek-soket-am5-tray-islemci-fiyati-66737/",
-          "price": null,
-          "error": "BLOCKED (debug: docs/debug/cpu_amd_ryzen_7_7800x3d_incehesap_blocked.png)"
+          "store": "aykom",
+          "url": "https://www.aykom.com.tr/urun/amd-ryzen-7-7800x3d-4-20-ghz-96mb-am5-tray-islemci-120w",
+          "price": 17577.56
         },
         {
-          "store": "sinerji",
-          "url": "https://www.sinerji.gen.tr/amd-ryzen-7-7800x3d-500-ghz-8-cekirdek-104mb-am5-5nm-islemci-tray-p-48465",
-          "price": null,
-          "error": "BLOCKED (debug: docs/debug/cpu_amd_ryzen_7_7800x3d_sinerji_blocked.png)"
+          "store": "revertpro",
+          "url": "https://www.revertpro.com/amd-ryzen-7-7800x3d-42ghz-96mb-120w-am5-fansiz-tray-5971",
+          "price": 14550.48
         },
         {
-          "store": "n11",
-          "url": "https://www.n11.com/urun/amd-ryzen-7-7800x3d-42-ghz-am5-96-mb-cache-120-w-islemci-tray-44584446",
+          "store": "itopya",
+          "url": "https://www.itopya.com/amd-ryzen-7-7800x3d-42ghz-96mb-onbellek-8-cekirdek-am5-5nm-tray-islemci_u24307",
           "price": null,
-          "error": "BLOCKED (debug: docs/debug/cpu_amd_ryzen_7_7800x3d_n11_blocked.png)"
+          "error": "BLOCKED (debug: docs/debug/cpu_amd_ryzen_7_7800x3d_itopya_blocked.png)"
         }
       ],
-      "error": "NO_PRICES_FOUND"
+      "error": null
     },
     {
       "id": "mb_gigabyte_x870_gaming_x_wifi7",
       "name": "Gigabyte X870 Gaming X WiFi 7 (AM5, ATX)",
       "ref_url": "https://www.akakce.com/anakart/en-ucuz-gigabyte-x870-gaming-x-wifi7-amd-am5-ddr5-atx-fiyati,812619495.html",
-      "best": null,
+      "best": {
+        "price": 13954.5,
+        "store": "gamemar",
+        "url": "https://www.gamemar.com/gigabyte-x870-gaming-x-wifi7-g10-4xddr5-3xm2-dp-hdmi-type-c-wi-fi-7e-bluetooth-54-am5-gaming-anakart-pmu17866",
+        "currency": "TRY"
+      },
       "offers": [
         {
-          "store": "amazon",
-          "url": "https://www.amazon.com.tr/GIGABYTE-X870-GAMING-WIFI7-Anakart/dp/B0DHVLP1L9/",
-          "price": null,
-          "error": "PRICE_NOT_FOUND (debug: docs/debug/mb_gigabyte_x870_gaming_x_wifi7_amazon_noprice.png)"
+          "store": "aykom",
+          "url": "https://www.aykom.com.tr/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
+          "price": 15917.46
         },
         {
-          "store": "idefix",
-          "url": "https://www.idefix.com/gigabyte-x870-gaming-x-wifi-7-ddr5-8000mhz-oc-rgb-m2-am5-atx-anakart-p-5687394",
-          "price": null,
-          "error": "BLOCKED (debug: docs/debug/mb_gigabyte_x870_gaming_x_wifi7_idefix_blocked.png)"
+          "store": "gamemar",
+          "url": "https://www.gamemar.com/gigabyte-x870-gaming-x-wifi7-g10-4xddr5-3xm2-dp-hdmi-type-c-wi-fi-7e-bluetooth-54-am5-gaming-anakart-pmu17866",
+          "price": 13954.5
         },
         {
-          "store": "sinerji",
-          "url": "https://www.sinerji.gen.tr/gigabyte-x870-gaming-x-wifi7-8000mhz-oc-rgb-m2-am5-atx-anakart-p-52258",
-          "price": null,
-          "error": "BLOCKED (debug: docs/debug/mb_gigabyte_x870_gaming_x_wifi7_sinerji_blocked.png)"
+          "store": "guvenliticaret",
+          "url": "https://www.guvenliticaret.net/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
+          "price": 15304.92
         }
       ],
-      "error": "NO_PRICES_FOUND"
+      "error": null
     },
     {
       "id": "ram_kingston_beast_expo_32gb_6000_cl30",
-      "name": "Kingston FURY Beast EXPO 32GB (2x16) DDR5-6000 CL30",
+      "name": "Kingston FURY Beast EXPO Black 32GB (2x16) DDR5-6000 CL30 (KF560C30BBEK2-32TR)",
       "ref_url": "https://www.akakce.com/ram/en-ucuz-kingston-beast-expo-32-gb-2x16-6000-mhz-cl30-kf560c30bbek2-32tr-ddr5-fiyati,811894497.html",
       "best": {
-        "price": 22478.59,
+        "price": 22481.19,
         "store": "guvenliticaret",
         "url": "https://www.guvenliticaret.net/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr",
         "currency": "TRY"
@@ -69,12 +74,18 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr",
-          "price": 23368.84
+          "price": 23380.95
         },
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr",
-          "price": 22478.59
+          "price": 22481.19
+        },
+        {
+          "store": "itopya",
+          "url": "https://www.itopya.com/kingston-32gb2x16gb-beast-black-expoxmp-6000mhz-cl30-ddr5-dual-kit-ram_u31003",
+          "price": null,
+          "error": "BLOCKED (debug: docs/debug/ram_kingston_beast_expo_32gb_6000_cl30_itopya_blocked.png)"
         }
       ],
       "error": null
@@ -84,12 +95,17 @@
       "name": "Inno3D GeForce RTX 5070 Ti X3 OC 16GB GDDR7",
       "ref_url": "https://www.akakce.com/ekran-karti/en-ucuz-inno3d-rtx-5070-ti-x3-oc-n507t3-16d7x-176068n-256-bit-gddr7-16-gb-fiyati,959886374.html",
       "best": {
-        "price": 48000,
-        "store": "revertpro",
-        "url": "https://www.revertpro.com/inno3d-geforce-rtx-5070-ti-x3-oc-16gb-gddr7-256bit-pcie-5.0-ekran-karti",
+        "price": 47935.11,
+        "store": "pazarama",
+        "url": "https://www.pazarama.com/inno3d-x3-geforce-rtx-5070-ti-oc-16gb-gddr7-256bit-hdmidp-ekran-karti-p-8886307700247",
         "currency": "TRY"
       },
       "offers": [
+        {
+          "store": "revertpro",
+          "url": "https://www.revertpro.com/inno3d-geforce-rtx-5070-ti-x3-oc-16gb-gddr7-256bit-pcie-5.0-ekran-karti",
+          "price": 48000
+        },
         {
           "store": "n11",
           "url": "https://www.n11.com/urun/inno3d-rtx5070ti-x3-oc-16-gb-gddr7-256-bit-ekran-karti-70664608",
@@ -97,81 +113,95 @@
           "error": "BLOCKED (debug: docs/debug/gpu_inno3d_rtx_5070_ti_x3_oc_16gb_n11_blocked.png)"
         },
         {
-          "store": "revertpro",
-          "url": "https://www.revertpro.com/inno3d-geforce-rtx-5070-ti-x3-oc-16gb-gddr7-256bit-pcie-5.0-ekran-karti",
-          "price": 48000
-        },
-        {
-          "store": "sinerji",
-          "url": "https://www.sinerji.gen.tr/inno3d-geforce-rtx-5070-ti-x3-oc-16gb-gddr7-256-bir-dlss-4-ekran-karti-p-54569",
-          "price": null,
-          "error": "BLOCKED (debug: docs/debug/gpu_inno3d_rtx_5070_ti_x3_oc_16gb_sinerji_blocked.png)"
+          "store": "pazarama",
+          "url": "https://www.pazarama.com/inno3d-x3-geforce-rtx-5070-ti-oc-16gb-gddr7-256bit-hdmidp-ekran-karti-p-8886307700247",
+          "price": 47935.11
         }
       ],
       "error": null
     },
     {
       "id": "ssd_samsung_990_evo_plus_2tb",
-      "name": "Samsung 990 EVO Plus 2TB NVMe",
+      "name": "Samsung 990 EVO Plus 2TB NVMe M.2 (MZ-V9S2T0BW)",
       "ref_url": "https://www.akakce.com/ssd/en-ucuz-samsung-990-evo-plus-mz-v9s2t0bw-pci-express-2-tb-m-2-fiyati,836325138.html",
-      "best": null,
+      "best": {
+        "price": 13950.14,
+        "store": "guvenliticaret",
+        "url": "https://www.guvenliticaret.net/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
+        "currency": "TRY"
+      },
       "offers": [
         {
-          "store": "idefix",
-          "url": "https://www.idefix.com/samsung-2tb-990-evo-plus-pcie-gen-40-x4-50-x2-nvme-20-72506300mbs-p-5047213?vendorId=10405",
-          "price": null,
-          "error": "BLOCKED (debug: docs/debug/ssd_samsung_990_evo_plus_2tb_idefix_blocked.png)"
+          "store": "aykom",
+          "url": "https://www.aykom.com.tr/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
+          "price": 14508.46
         },
         {
-          "store": "n11",
-          "url": "https://www.n11.com/urun/samsung-uyumlu-990-evo-plus-mz-v9s2t0bw-2-tb-pcie-m2-nvme-ssd-62324708",
+          "store": "guvenliticaret",
+          "url": "https://www.guvenliticaret.net/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
+          "price": 13950.14
+        },
+        {
+          "store": "netsiparis",
+          "url": "https://www.netsiparis.com/samsung-mz-v9s2t0bw-990-evo-plus-2-tb-nvme-gen4-ssd-72506300",
           "price": null,
-          "error": "BLOCKED (debug: docs/debug/ssd_samsung_990_evo_plus_2tb_n11_blocked.png)"
+          "error": "PRICE_NOT_FOUND (debug: docs/debug/ssd_samsung_990_evo_plus_2tb_netsiparis_noprice.png)"
         }
       ],
-      "error": "NO_PRICES_FOUND"
+      "error": null
     },
     {
-      "id": "psu_fsp_vita_gm_850w",
-      "name": "FSP VITA GM 850W 80+ Gold (PCIe 5.x)",
+      "id": "psu_fsp_vita_850gm_850w",
+      "name": "FSP VITA GM 850GM 850W 80+ Gold (PCIe 5.x)",
       "ref_url": "https://www.akakce.com/power-supply/en-ucuz-fsp-vita-gm-gen5-1-850-w-fiyati,792425188.html",
-      "best": null,
+      "best": {
+        "price": 6267.97,
+        "store": "muyubi",
+        "url": "https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/",
+        "currency": "TRY"
+      },
       "offers": [
         {
-          "store": "amazon",
-          "url": "https://www.amazon.com.tr/FSP-VITA-850GM-Model/dp/B0D41SJKLV/",
-          "price": null,
-          "error": "PRICE_NOT_FOUND (debug: docs/debug/psu_fsp_vita_gm_850w_amazon_noprice.png)"
+          "store": "aykom",
+          "url": "https://www.aykom.com.tr/urun/fsp-vita-gm-850w-80-gold-power-supply-vita-850gm",
+          "price": 7182.86
         },
         {
-          "store": "n11",
-          "url": "https://www.n11.com/urun/fsp-vita-gm-850w-80-gold-pcie5-guc-kaynagi-60851083",
-          "price": null,
-          "error": "BLOCKED (debug: docs/debug/psu_fsp_vita_gm_850w_n11_blocked.png)"
+          "store": "muyubi",
+          "url": "https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/",
+          "price": 6267.97
+        },
+        {
+          "store": "ucuzsepet",
+          "url": "https://www.ucuzsepet.com/urun/fsp-vita-850w-vita-850gm-850w-80gold-psu-7145030",
+          "price": 7601.09
         }
       ],
-      "error": "NO_PRICES_FOUND"
+      "error": null
     },
     {
-      "id": "case_lian_li_lancool_iii_argb_black",
-      "name": "Lian Li Lancool III ARGB Siyah (3 Fanlı, E-ATX)",
+      "id": "case_lian_li_lancool_iii_4fan_white",
+      "name": "Lian Li Lancool III (4 Fan) Beyaz ATX Mid Tower (G99-LAN3RW-00)",
       "ref_url": "https://www.akakce.com/bilgisayar-kasasi/en-ucuz-lian-li-lancool-iii-x-argb-3-fanli-black-e-atx-oyuncu-kasasi-fiyati,120885614.html",
-      "best": null,
+      "best": {
+        "price": 9917.32,
+        "store": "guvenliticaret",
+        "url": "https://www.guvenliticaret.net/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
+        "currency": "TRY"
+      },
       "offers": [
         {
-          "store": "sinerji",
-          "url": "https://www.sinerji.gen.tr/lian-li-lancool-iii-siyah-rgb-tempered-glass-usb-30-atx-mid-tower-kasa-p-50586",
-          "price": null,
-          "error": "BLOCKED (debug: docs/debug/case_lian_li_lancool_iii_argb_black_sinerji_blocked.png)"
+          "store": "aykom",
+          "url": "https://www.aykom.com.tr/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
+          "price": 10196.15
         },
         {
-          "store": "incehesap",
-          "url": "https://www.incehesap.com/lian-li-lancool-iii-siyah-rgb-mid-tower-e-atx-gaming-kasa-fiyati-59883/",
-          "price": null,
-          "error": "BLOCKED (debug: docs/debug/case_lian_li_lancool_iii_argb_black_incehesap_blocked.png)"
+          "store": "guvenliticaret",
+          "url": "https://www.guvenliticaret.net/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
+          "price": 9917.32
         }
       ],
-      "error": "NO_PRICES_FOUND"
+      "error": null
     }
   ]
 }
