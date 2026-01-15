@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-14T20:45:11.646Z",
+  "updated_at": "2026-01-15T02:06:09.837Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -147,7 +147,7 @@
           "store": "n11",
           "url": "https://www.n11.com/urun/fsp-vita-gm-850w-80-gold-pcie5-guc-kaynagi-60851083",
           "price": null,
-          "error": "BLOCKED (debug: docs/debug/psu_fsp_vita_gm_850w_n11_blocked.png)"
+          "error": "PRICE_NOT_FOUND (debug: docs/debug/psu_fsp_vita_gm_850w_n11_noprice.png)"
         }
       ],
       "error": "NO_PRICES_FOUND"
