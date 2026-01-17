@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-16T18:40:42.631Z",
+  "updated_at": "2026-01-17T02:02:02.029Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -113,9 +113,9 @@
       "name": "Samsung 990 EVO Plus 2TB NVMe M.2 (MZ-V9S2T0BW)",
       "ref_url": "https://www.akakce.com/ssd/en-ucuz-samsung-990-evo-plus-mz-v9s2t0bw-pci-express-2-tb-m-2-fiyati,836325138.html",
       "best": {
-        "price": 13956.6,
-        "store": "guvenliticaret",
-        "url": "https://www.guvenliticaret.net/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
+        "price": 9255.66714,
+        "store": "bilendenal",
+        "url": "https://bilendenal.com/Samsung-990-EVO-Plus-2TB-PCIe-Gen-4.0-x4-NVMe-7250-6300-M.2-22x80mm-SSD-MZ-V9S2T0BW.html",
         "currency": "TRY"
       },
       "offers": [
@@ -132,8 +132,7 @@
         {
           "store": "bilendenal",
           "url": "https://bilendenal.com/Samsung-990-EVO-Plus-2TB-PCIe-Gen-4.0-x4-NVMe-7250-6300-M.2-22x80mm-SSD-MZ-V9S2T0BW.html",
-          "price": null,
-          "error": "PRICE_NOT_FOUND (debug: docs/debug/ssd_samsung_990_evo_plus_2tb_bilendenal_noprice.png)"
+          "price": 9255.66714
         }
       ],
       "error": null
