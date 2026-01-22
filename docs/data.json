@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-22T06:43:02.119Z",
+  "updated_at": "2026-01-22T13:02:36.946Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -65,9 +65,9 @@
       "name": "Kingston FURY Beast EXPO Black 32GB (2x16) DDR5-6000 CL30 (KF560C30BBEK2-32TR)",
       "ref_url": "https://www.akakce.com/ram/en-ucuz-kingston-beast-expo-32-gb-2x16-6000-mhz-cl30-kf560c30bbek2-32tr-ddr5-fiyati,811894497.html",
       "best": {
-        "price": 23436.14,
-        "store": "aykom",
-        "url": "https://www.aykom.com.tr/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr",
+        "price": 22543.64,
+        "store": "guvenliticaret",
+        "url": "https://www.guvenliticaret.net/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr",
         "currency": "TRY"
       },
       "offers": [
@@ -79,7 +79,7 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr",
-          "price": 24503.96
+          "price": 22543.64
         }
       ],
       "error": null
@@ -127,7 +127,7 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
-          "price": 14302.9
+          "price": 14293
         },
         {
           "store": "bilendenal",
@@ -171,7 +171,7 @@
       "name": "Lian Li Lancool III (4 Fan) Beyaz ATX Mid Tower (G99-LAN3RW-00)",
       "ref_url": "https://www.akakce.com/bilgisayar-kasasi/en-ucuz-lian-li-lancool-iii-x-argb-3-fanli-black-e-atx-oyuncu-kasasi-fiyati,120885614.html",
       "best": {
-        "price": 9847,
+        "price": 9840.18,
         "store": "guvenliticaret",
         "url": "https://www.guvenliticaret.net/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
         "currency": "TRY"
@@ -180,12 +180,12 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
-          "price": 10220.22
+          "price": 10222.18
         },
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
-          "price": 9847
+          "price": 9840.18
         }
       ],
       "error": null
