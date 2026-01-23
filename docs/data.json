@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-23T06:42:47.480Z",
+  "updated_at": "2026-01-23T12:59:39.537Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -127,7 +127,7 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
-          "price": 14293
+          "price": 14512.89
         },
         {
           "store": "bilendenal",
