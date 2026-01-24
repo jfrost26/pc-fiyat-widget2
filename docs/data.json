@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-01-24T06:39:08.306Z",
+  "updated_at": "2026-01-24T12:52:19.335Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
       "name": "AMD Ryzen 7 7800X3D",
       "ref_url": "https://www.akakce.com/islemci/en-ucuz-amd-ryzen-7-7800x3d-sekiz-cekirdek-4-2-ghz-fiyati,334009206.html",
       "best": {
-        "price": 14315.32,
+        "price": 14451.66,
         "store": "revertpro",
         "url": "https://www.revertpro.com/amd-ryzen-7-7800x3d-42ghz-96mb-120w-am5-fansiz-tray-5971",
         "currency": "TRY"
@@ -20,7 +20,7 @@
         {
           "store": "revertpro",
           "url": "https://www.revertpro.com/amd-ryzen-7-7800x3d-42ghz-96mb-120w-am5-fansiz-tray-5971",
-          "price": 14315.32
+          "price": 14451.66
         },
         {
           "store": "atomgaming",
@@ -122,7 +122,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
-          "price": 14538.35
+          "price": 14762.02
         },
         {
           "store": "guvenliticaret",
