@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-01-26T06:46:54.368Z",
+  "updated_at": "2026-01-26T13:00:38.379Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
       "name": "AMD Ryzen 7 7800X3D",
       "ref_url": "https://www.akakce.com/islemci/en-ucuz-amd-ryzen-7-7800x3d-sekiz-cekirdek-4-2-ghz-fiyati,334009206.html",
       "best": {
-        "price": 4528.97,
-        "store": "revertpro",
-        "url": "https://www.revertpro.com/amd-ryzen-7-7800x3d-42ghz-96mb-120w-am5-fansiz-tray-5971",
+        "price": 17613.77,
+        "store": "aykom",
+        "url": "https://www.aykom.com.tr/urun/amd-ryzen-7-7800x3d-4-20-ghz-96mb-am5-tray-islemci-120w",
         "currency": "TRY"
       },
       "offers": [
@@ -20,7 +20,8 @@
         {
           "store": "revertpro",
           "url": "https://www.revertpro.com/amd-ryzen-7-7800x3d-42ghz-96mb-120w-am5-fansiz-tray-5971",
-          "price": 4528.97
+          "price": null,
+          "error": "PRICE_NOT_FOUND (debug: docs/debug/cpu_amd_ryzen_7_7800x3d_revertpro_noprice.png)"
         },
         {
           "store": "atomgaming",
