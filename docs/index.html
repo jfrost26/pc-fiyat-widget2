@@ -1,49 +1,56 @@
 <!doctype html>
 <html lang="tr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>PC Fiyat Takip</title>
-  <link rel="stylesheet" href="./style.css" />
-</head>
-<body>
-  <header class="wrap">
-    <h1>PC Fiyat Takip</h1>
-    <div class="meta">
-      <span id="updatedAt">Güncelleniyor…</span>
-      <input id="q" placeholder="Ara (örn: 7800X3D)" />
-      <select id="filter">
-        <option value="all">Hepsi</option>
-        <option value="priced">Fiyatı olanlar</option>
-        <option value="missing">Fiyat bulunamayanlar</option>
-      </select>
-      <select id="sort">
-        <option value="best_asc">En ucuz (artan)</option>
-        <option value="name_asc">İsim (A→Z)</option>
-      </select>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>PC Parça Fiyat Takibi</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <div>
+        <h1>PC Parça Fiyat Takibi</h1>
+        <div id="updatedAt" class="muted">Yükleniyor…</div>
+      </div>
 
-  <main class="wrap">
-    <section id="cards" class="cards"></section>
+      <div class="controls">
+        <input id="q" placeholder="Ara (örn: 7800x3d, x870, 990…)" />
+        <select id="filter">
+          <option value="all">Tümü</option>
+          <option value="priced">Fiyatı olanlar</option>
+          <option value="missing">Fiyatı olmayanlar</option>
+        </select>
+        <select id="sort">
+          <option value="name">İsme göre</option>
+          <option value="best_asc">En ucuza göre</option>
+        </select>
 
-    <h2 class="mt">Tablo görünümü</h2>
-    <div class="tableWrap">
-      <table id="table">
-        <thead>
-          <tr>
-            <th>Parça</th>
-            <th>En ucuz</th>
-            <th>Site</th>
-            <th>Diğer teklifler</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-  </main>
+        <label class="toggle">
+          <input id="showHistory" type="checkbox" />
+          <span>History göster</span>
+        </label>
+      </div>
+    </header>
 
-  <script src="./app.js"></script>
-</body>
+    <main class="container">
+      <section id="cards" class="cards"></section>
+
+      <section class="tableWrap">
+        <h2>Özet</h2>
+        <table id="table">
+          <thead>
+            <tr>
+              <th>Ürün</th>
+              <th>En ucuz</th>
+              <th>Mağaza</th>
+              <th>Diğer fiyatlar</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
 </html>
-
