@@ -38,7 +38,7 @@ jobs:
           git config user.name "price-bot"
           git config user.email "price-bot@users.noreply.github.com"
 
-          git add docs/data.json docs/debug || true
+          git add docs/data.json docs/history.json docs/debug || true
 
           if git diff --cached --quiet; then
             echo "No changes"
