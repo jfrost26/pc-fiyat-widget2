@@ -4,9 +4,18 @@
     "name": "AMD Ryzen 7 7800X3D",
     "ref_url": "https://www.akakce.com/islemci/en-ucuz-amd-ryzen-7-7800x3d-sekiz-cekirdek-4-2-ghz-fiyati,334009206.html",
     "offers": [
-      { "store": "aykom", "url": "https://www.aykom.com.tr/urun/amd-ryzen-7-7800x3d-4-20-ghz-96mb-am5-tray-islemci-120w" },
-      { "store": "revertpro", "url": "https://www.revertpro.com/amd-ryzen-7-7800x3d-42ghz-96mb-120w-am5-fansiz-tray-5971" },
-      { "store": "atomgaming", "url": "https://www.atomgaming.com.tr/amd-ryzen-7-7800x3d-4.20ghz-96mb-tray" }
+      {
+        "store": "aykom",
+        "url": "https://www.aykom.com.tr/urun/amd-ryzen-7-7800x3d-4-20-ghz-96mb-am5-tray-islemci-120w"
+      },
+      {
+        "store": "revertpro",
+        "url": "https://www.revertpro.com/amd-ryzen-7-7800x3d-42ghz-96mb-120w-am5-fansiz-tray-5971"
+      },
+      {
+        "store": "inventus",
+        "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328"
+      }
     ]
   },
   {
@@ -14,9 +23,18 @@
     "name": "Gigabyte X870 Gaming X WiFi 7 (AM5, ATX)",
     "ref_url": "https://www.akakce.com/anakart/en-ucuz-gigabyte-x870-gaming-x-wifi7-amd-am5-ddr5-atx-fiyati,812619495.html",
     "offers": [
-      { "store": "aykom", "url": "https://www.aykom.com.tr/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart" },
-      { "store": "gamemar", "url": "https://www.gamemar.com/gigabyte-x870-gaming-x-wifi7-g10-4xddr5-3xm2-dp-hdmi-type-c-wi-fi-7e-bluetooth-54-am5-gaming-anakart-pmu17866" },
-      { "store": "guvenliticaret", "url": "https://www.guvenliticaret.net/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart" }
+      {
+        "store": "aykom",
+        "url": "https://www.aykom.com.tr/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart"
+      },
+      {
+        "store": "gamemar",
+        "url": "https://www.gamemar.com/gigabyte-x870-gaming-x-wifi7-g10-4xddr5-3xm2-dp-hdmi-type-c-wi-fi-7e-bluetooth-54-am5-gaming-anakart-pmu17866"
+      },
+      {
+        "store": "guvenliticaret",
+        "url": "https://www.guvenliticaret.net/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart"
+      }
     ]
   },
   {
@@ -24,8 +42,14 @@
     "name": "Kingston FURY Beast EXPO Black 32GB (2x16) DDR5-6000 CL30 (KF560C30BBEK2-32TR)",
     "ref_url": "https://www.akakce.com/ram/en-ucuz-kingston-beast-expo-32-gb-2x16-6000-mhz-cl30-kf560c30bbek2-32tr-ddr5-fiyati,811894497.html",
     "offers": [
-      { "store": "aykom", "url": "https://www.aykom.com.tr/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr" },
-      { "store": "guvenliticaret", "url": "https://www.guvenliticaret.net/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr" }
+      {
+        "store": "aykom",
+        "url": "https://www.aykom.com.tr/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr"
+      },
+      {
+        "store": "guvenliticaret",
+        "url": "https://www.guvenliticaret.net/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr"
+      }
     ]
   },
   {
@@ -33,8 +57,14 @@
     "name": "Inno3D GeForce RTX 5070 Ti X3 OC 16GB GDDR7",
     "ref_url": "https://www.akakce.com/ekran-karti/en-ucuz-inno3d-rtx-5070-ti-x3-oc-n507t3-16d7x-176068n-256-bit-gddr7-16-gb-fiyati,959886374.html",
     "offers": [
-      { "store": "revertpro", "url": "https://www.revertpro.com/inno3d-geforce-rtx-5070-ti-x3-oc-16gb-gddr7-256bit-pcie-5.0-ekran-karti" },
-      { "store": "pazarama", "url": "https://www.pazarama.com/inno3d-x3-geforce-rtx-5070-ti-oc-16gb-gddr7-256bit-hdmidp-ekran-karti-p-8886307700247" }
+      {
+        "store": "revertpro",
+        "url": "https://www.revertpro.com/inno3d-geforce-rtx-5070-ti-x3-oc-16gb-gddr7-256bit-pcie-5.0-ekran-karti"
+      },
+      {
+        "store": "pazarama",
+        "url": "https://www.pazarama.com/inno3d-x3-geforce-rtx-5070-ti-oc-16gb-gddr7-256bit-hdmidp-ekran-karti-p-8886307700247"
+      }
     ]
   },
   {
@@ -42,9 +72,18 @@
     "name": "Samsung 990 EVO Plus 2TB NVMe M.2 (MZ-V9S2T0BW)",
     "ref_url": "https://www.akakce.com/ssd/en-ucuz-samsung-990-evo-plus-mz-v9s2t0bw-pci-express-2-tb-m-2-fiyati,836325138.html",
     "offers": [
-      { "store": "aykom", "url": "https://www.aykom.com.tr/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw" },
-      { "store": "guvenliticaret", "url": "https://www.guvenliticaret.net/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw" },
-      { "store": "bilendenal", "url": "https://bilendenal.com/Samsung-990-EVO-Plus-2TB-PCIe-Gen-4.0-x4-NVMe-7250-6300-M.2-22x80mm-SSD-MZ-V9S2T0BW.html" }
+      {
+        "store": "aykom",
+        "url": "https://www.aykom.com.tr/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw"
+      },
+      {
+        "store": "guvenliticaret",
+        "url": "https://www.guvenliticaret.net/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw"
+      },
+      {
+        "store": "bilendenal",
+        "url": "https://bilendenal.com/Samsung-990-EVO-Plus-2TB-PCIe-Gen-4.0-x4-NVMe-7250-6300-M.2-22x80mm-SSD-MZ-V9S2T0BW.html"
+      }
     ]
   },
   {
@@ -52,9 +91,18 @@
     "name": "FSP VITA GM 850GM 850W 80+ Gold (PCIe 5.x)",
     "ref_url": "https://www.akakce.com/power-supply/en-ucuz-fsp-vita-gm-gen5-1-850-w-fiyati,792425188.html",
     "offers": [
-      { "store": "aykom", "url": "https://www.aykom.com.tr/urun/fsp-vita-gm-850w-80-gold-power-supply-vita-850gm" },
-      { "store": "muyubi", "url": "https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/" },
-      { "store": "ucuzsepet", "url": "https://www.ucuzsepet.com/urun/fsp-vita-850w-vita-850gm-850w-80gold-psu-7145030" }
+      {
+        "store": "aykom",
+        "url": "https://www.aykom.com.tr/urun/fsp-vita-gm-850w-80-gold-power-supply-vita-850gm"
+      },
+      {
+        "store": "muyubi",
+        "url": "https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/"
+      },
+      {
+        "store": "ucuzsepet",
+        "url": "https://www.ucuzsepet.com/urun/fsp-vita-850w-vita-850gm-850w-80gold-psu-7145030"
+      }
     ]
   },
   {
@@ -62,8 +110,14 @@
     "name": "Lian Li Lancool III (4 Fan) Beyaz ATX Mid Tower (G99-LAN3RW-00)",
     "ref_url": "https://www.akakce.com/bilgisayar-kasasi/en-ucuz-lian-li-lancool-iii-x-argb-3-fanli-black-e-atx-oyuncu-kasasi-fiyati,120885614.html",
     "offers": [
-      { "store": "aykom", "url": "https://www.aykom.com.tr/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00" },
-      { "store": "guvenliticaret", "url": "https://www.guvenliticaret.net/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00" }
+      {
+        "store": "aykom",
+        "url": "https://www.aykom.com.tr/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00"
+      },
+      {
+        "store": "guvenliticaret",
+        "url": "https://www.guvenliticaret.net/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00"
+      }
     ]
   }
 ]
