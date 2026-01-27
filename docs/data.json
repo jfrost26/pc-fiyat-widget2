@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-27T18:48:45.989Z",
+  "updated_at": "2026-01-27T21:59:54.883Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -23,10 +23,9 @@
           "price": 4499.08
         },
         {
-          "store": "atomgaming",
-          "url": "https://www.atomgaming.com.tr/amd-ryzen-7-7800x3d-4.20ghz-96mb-tray",
-          "price": null,
-          "error": "BLOCKED (debug: docs/debug/cpu_amd_ryzen_7_7800x3d_atomgaming_blocked.png)"
+          "store": "inventus",
+          "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
+          "price": 18130.23
         }
       ],
       "error": null
@@ -171,7 +170,7 @@
       "name": "Lian Li Lancool III (4 Fan) Beyaz ATX Mid Tower (G99-LAN3RW-00)",
       "ref_url": "https://www.akakce.com/bilgisayar-kasasi/en-ucuz-lian-li-lancool-iii-x-argb-3-fanli-black-e-atx-oyuncu-kasasi-fiyati,120885614.html",
       "best": {
-        "price": 9860.62,
+        "price": 9865.17,
         "store": "guvenliticaret",
         "url": "https://www.guvenliticaret.net/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
         "currency": "TRY"
@@ -185,7 +184,7 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
-          "price": 9860.62
+          "price": 9865.17
         }
       ],
       "error": null
