@@ -19,48 +19,11 @@ function escapeHtml(s) {
     .replaceAll("'", "&#039;");
 }
 
-function trendArrow(a, b) {
-  if (typeof a !== "number" || typeof b !== "number") return "";
-  if (a > b) return "↓";
-  if (a < b) return "↑";
+function trendArrow(curr, prev) {
+  if (typeof curr !== "number" || typeof prev !== "number") return "";
+  if (curr > prev) return "↑";
+  if (curr < prev) return "↓";
   return "→";
-}
-
-// history entry: {price, store, url, first_seen_at, last_seen_at}
-function renderHistoryList(entries) {
-  if (!Array.isArray(entries) || entries.length === 0) {
-    return `<div class="muted">History yok.</div>`;
-  }
-
-  const last5 = entries.slice(-5).reverse();
-  const items = last5
-    .map((e, idx) => {
-      const price = fmtTRY(e.price);
-      const store = escapeHtml(e.store || "—");
-      const url = e.url || "#";
-      const first = fmtDT(e.first_seen_at);
-      const last = fmtDT(e.last_seen_at);
-
-      // Trend: mevcut entry vs bir önceki entry
-      const prev = entries[entries.length - (idx + 2)];
-      const arrow = prev ? trendArrow(e.price, prev.price) : "";
-
-      return `
-        <div class="histRow">
-          <div class="histLeft">
-            <span class="histPrice">${arrow} ${price}</span>
-            <span class="muted">— <a href="${url}" target="_blank" rel="noreferrer">${store}</a></span>
-          </div>
-          <div class="histRight muted">
-            <div>İlk: ${first}</div>
-            <div>Son: ${last}</div>
-          </div>
-        </div>
-      `;
-    })
-    .join("");
-
-  return items;
 }
 
 async function safeFetchJson(url) {
@@ -73,48 +36,83 @@ async function safeFetchJson(url) {
   }
 }
 
-async function load() {
-  const data = await safeFetchJson("./data.json");
-  const history = await safeFetchJson("./history.json"); // yoksa null döner
+/**
+ * History dosyası formatı farklı olsa bile entries çıkarmaya çalışır.
+ * Beklenen: history.products[productId] -> array
+ */
+function getHistoryEntries(history, productId) {
+  if (!history) return [];
 
-  if (!data) {
-    document.getElementById("updatedAt").textContent = "Hata: data.json okunamadı";
-    return;
+  // beklenen format
+  if (history.products && typeof history.products === "object" && Array.isArray(history.products[productId])) {
+    return history.products[productId];
   }
 
-  document.getElementById("updatedAt").textContent =
-    "Son güncelleme: " + new Date(data.updated_at).toLocaleString("tr-TR");
+  // bazı alternatif olası formatlar (ileride değiştirirsen bile UI çalışsın diye)
+  if (Array.isArray(history[productId])) return history[productId];
+  if (history.items && Array.isArray(history.items[productId])) return history.items[productId];
 
-  const q = document.getElementById("q");
-  const filter = document.getElementById("filter");
-  const sort = document.getElementById("sort");
-  const showHistory = document.getElementById("showHistory");
+  return [];
+}
 
-  const render = () => {
-    const query = (q.value || "").toLowerCase().trim();
-    let items = (data.products || []).slice();
+function renderHistoryList(entries) {
+  if (!Array.isArray(entries) || entries.length === 0) {
+    return `<div class="muted">History yok.</div>`;
+  }
 
-    if (query) items = items.filter((p) => (p.name || "").toLowerCase().includes(query));
+  const last5 = entries.slice(-5).reverse();
 
-    if (filter.value === "priced") items = items.filter((p) => p.best && typeof p.best.price === "number");
-    if (filter.value === "missing") items = items.filter((p) => !p.best || typeof p.best.price !== "number");
+  return last5
+    .map((e, idx) => {
+      const price = fmtTRY(e.price);
+      const store = escapeHtml(e.store || "—");
+      const url = e.url || "#";
+      const first = fmtDT(e.first_seen_at);
+      const last = fmtDT(e.last_seen_at);
 
-    if (sort.value === "best_asc") {
-      items.sort((a, b) => (a.best?.price ?? Infinity) - (b.best?.price ?? Infinity));
-    } else {
-      items.sort((a, b) => (a.name || "").localeCompare(b.name || "", "tr"));
-    }
+      const prevEntry = entries[entries.length - (idx + 2)];
+      const arrow = prevEntry ? trendArrow(e.price, prevEntry.price) : "";
 
-    renderCards(items, history, showHistory.checked);
-    renderTable(items);
-  };
+      return `
+        <div class="histRow" style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(0,0,0,.08)">
+          <div>
+            <strong>${arrow} ${price}</strong>
+            <span class="muted"> — <a href="${url}" target="_blank" rel="noreferrer">${store}</a></span>
+          </div>
+          <div class="muted" style="margin-top:4px;font-size:0.9em">
+            İlk: ${first} • Son: ${last}
+          </div>
+        </div>
+      `;
+    })
+    .join("");
+}
 
-  q.addEventListener("input", render);
-  filter.addEventListener("change", render);
-  sort.addEventListener("change", render);
-  showHistory.addEventListener("change", render);
+function renderTable(items) {
+  const tbody = document.querySelector("#table tbody");
+  tbody.innerHTML = "";
 
-  render();
+  for (const p of items) {
+    const best = p.best;
+    const bestPrice = best ? fmtTRY(best.price) : "N/A";
+    const bestStore = best ? (best.store || "—") : "—";
+    const bestLink = best?.url || p.ref_url || "#";
+
+    const others = (p.offers || [])
+      .filter((o) => typeof o.price === "number")
+      .sort((a, b) => a.price - b.price)
+      .map((o) => `${o.store}: ${fmtTRY(o.price)}`)
+      .join(" • ");
+
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${escapeHtml(p.name)}</td>
+      <td>${bestPrice}</td>
+      <td>${best ? `<a href="${bestLink}" target="_blank" rel="noreferrer">${escapeHtml(bestStore)}</a>` : "—"}</td>
+      <td class="muted">${escapeHtml(others || "—")}</td>
+    `;
+    tbody.appendChild(tr);
+  }
 }
 
 function renderCards(items, history, showHist) {
@@ -146,16 +144,16 @@ function renderCards(items, history, showHist) {
       ? `<div class="muted" style="margin-top:10px">Referans: <a href="${p.ref_url}" target="_blank" rel="noreferrer">Akakçe</a></div>`
       : "";
 
-    const histEntries = history?.products?.[p.id] || [];
-    const histCount = Array.isArray(histEntries) ? histEntries.length : 0;
+    const entries = getHistoryEntries(history, p.id);
+    const histCount = Array.isArray(entries) ? entries.length : 0;
 
     const historyHtml = showHist
-      ? `<div class="history">
-          <div class="histHeader">
+      ? `<div class="history" style="margin-top:12px;padding:10px;border:1px solid rgba(0,0,0,.08);border-radius:10px">
+          <div style="display:flex;gap:10px;align-items:baseline">
             <strong>History</strong>
             <span class="muted">(${histCount} değişim)</span>
           </div>
-          ${renderHistoryList(histEntries)}
+          ${renderHistoryList(entries)}
         </div>`
       : "";
 
@@ -179,31 +177,54 @@ function renderCards(items, history, showHist) {
   }
 }
 
-function renderTable(items) {
-  const tbody = document.querySelector("#table tbody");
-  tbody.innerHTML = "";
+async function load() {
+  const data = await safeFetchJson("./data.json");
+  const history = await safeFetchJson("./history.json");
 
-  for (const p of items) {
-    const best = p.best;
-    const bestPrice = best ? fmtTRY(best.price) : "N/A";
-    const bestStore = best ? (best.store || "—") : "—";
-    const bestLink = best?.url || p.ref_url || "#";
-
-    const others = (p.offers || [])
-      .filter((o) => typeof o.price === "number")
-      .sort((a, b) => a.price - b.price)
-      .map((o) => `${o.store}: ${fmtTRY(o.price)}`)
-      .join(" • ");
-
-    const tr = document.createElement("tr");
-    tr.innerHTML = `
-      <td>${escapeHtml(p.name)}</td>
-      <td>${bestPrice}</td>
-      <td>${best ? `<a href="${bestLink}" target="_blank" rel="noreferrer">${escapeHtml(bestStore)}</a>` : "—"}</td>
-      <td class="muted">${escapeHtml(others || "—")}</td>
-    `;
-    tbody.appendChild(tr);
+  if (!data) {
+    document.getElementById("updatedAt").textContent = "Hata: data.json okunamadı";
+    return;
   }
+
+  document.getElementById("updatedAt").textContent =
+    "Son güncelleme: " + new Date(data.updated_at).toLocaleString("tr-TR");
+
+  const hi = document.getElementById("historyInfo");
+  if (hi) {
+    hi.textContent = history?.updated_at ? ("History güncelleme: " + new Date(history.updated_at).toLocaleString("tr-TR")) : "History: bulunamadı (history.json yoksa normal)";
+  }
+
+  const q = document.getElementById("q");
+  const filter = document.getElementById("filter");
+  const sort = document.getElementById("sort");
+  const showHistory = document.getElementById("showHistory");
+
+  const render = () => {
+    const query = (q.value || "").toLowerCase().trim();
+    let items = (data.products || []).slice();
+
+    if (query) items = items.filter((p) => (p.name || "").toLowerCase().includes(query));
+
+    if (filter.value === "priced") items = items.filter((p) => p.best && typeof p.best.price === "number");
+    if (filter.value === "missing") items = items.filter((p) => !p.best || typeof p.best.price !== "number");
+
+    if (sort.value === "best_asc") {
+      items.sort((a, b) => (a.best?.price ?? Infinity) - (b.best?.price ?? Infinity));
+    } else {
+      items.sort((a, b) => (a.name || "").localeCompare(b.name || "", "tr"));
+    }
+
+    const showHist = !!showHistory?.checked;
+    renderCards(items, history, showHist);
+    renderTable(items);
+  };
+
+  q.addEventListener("input", render);
+  filter.addEventListener("change", render);
+  sort.addEventListener("change", render);
+  showHistory.addEventListener("change", render);
+
+  render();
 }
 
 load().catch((e) => {
