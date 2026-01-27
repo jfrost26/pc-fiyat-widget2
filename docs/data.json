@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-26T18:44:26.359Z",
+  "updated_at": "2026-01-27T02:20:51.431Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -90,9 +90,9 @@
       "name": "Inno3D GeForce RTX 5070 Ti X3 OC 16GB GDDR7",
       "ref_url": "https://www.akakce.com/ekran-karti/en-ucuz-inno3d-rtx-5070-ti-x3-oc-n507t3-16d7x-176068n-256-bit-gddr7-16-gb-fiyati,959886374.html",
       "best": {
-        "price": 47935.11,
-        "store": "pazarama",
-        "url": "https://www.pazarama.com/inno3d-x3-geforce-rtx-5070-ti-oc-16gb-gddr7-256bit-hdmidp-ekran-karti-p-8886307700247",
+        "price": 48000,
+        "store": "revertpro",
+        "url": "https://www.revertpro.com/inno3d-geforce-rtx-5070-ti-x3-oc-16gb-gddr7-256bit-pcie-5.0-ekran-karti",
         "currency": "TRY"
       },
       "offers": [
@@ -104,7 +104,7 @@
         {
           "store": "pazarama",
           "url": "https://www.pazarama.com/inno3d-x3-geforce-rtx-5070-ti-oc-16gb-gddr7-256bit-hdmidp-ekran-karti-p-8886307700247",
-          "price": 47935.11
+          "price": 48080.68
         }
       ],
       "error": null
