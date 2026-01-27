@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-01-27T06:44:30.278Z",
+  "updated_at": "2026-01-27T13:02:50.505Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
       "name": "AMD Ryzen 7 7800X3D",
       "ref_url": "https://www.akakce.com/islemci/en-ucuz-amd-ryzen-7-7800x3d-sekiz-cekirdek-4-2-ghz-fiyati,334009206.html",
       "best": {
-        "price": 17652.21,
-        "store": "aykom",
-        "url": "https://www.aykom.com.tr/urun/amd-ryzen-7-7800x3d-4-20-ghz-96mb-am5-tray-islemci-120w",
+        "price": 4497.2,
+        "store": "revertpro",
+        "url": "https://www.revertpro.com/amd-ryzen-7-7800x3d-42ghz-96mb-120w-am5-fansiz-tray-5971",
         "currency": "TRY"
       },
       "offers": [
@@ -20,8 +20,7 @@
         {
           "store": "revertpro",
           "url": "https://www.revertpro.com/amd-ryzen-7-7800x3d-42ghz-96mb-120w-am5-fansiz-tray-5971",
-          "price": null,
-          "error": "PRICE_NOT_FOUND (debug: docs/debug/cpu_amd_ryzen_7_7800x3d_revertpro_noprice.png)"
+          "price": 4497.2
         },
         {
           "store": "atomgaming",
@@ -56,7 +55,7 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
-          "price": 15697.36
+          "price": 15710.03
         }
       ],
       "error": null
@@ -66,7 +65,7 @@
       "name": "Kingston FURY Beast EXPO Black 32GB (2x16) DDR5-6000 CL30 (KF560C30BBEK2-32TR)",
       "ref_url": "https://www.akakce.com/ram/en-ucuz-kingston-beast-expo-32-gb-2x16-6000-mhz-cl30-kf560c30bbek2-32tr-ddr5-fiyati,811894497.html",
       "best": {
-        "price": 22567.06,
+        "price": 22585.27,
         "store": "guvenliticaret",
         "url": "https://www.guvenliticaret.net/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr",
         "currency": "TRY"
@@ -80,7 +79,7 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr",
-          "price": 22567.06
+          "price": 22585.27
         }
       ],
       "error": null
@@ -128,7 +127,7 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
-          "price": 14527.97
+          "price": 14539.69
         },
         {
           "store": "bilendenal",
@@ -152,7 +151,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/fsp-vita-gm-850w-80-gold-power-supply-vita-850gm",
-          "price": 7213.36
+          "price": 7216.37
         },
         {
           "store": "muyubi",
@@ -172,7 +171,7 @@
       "name": "Lian Li Lancool III (4 Fan) Beyaz ATX Mid Tower (G99-LAN3RW-00)",
       "ref_url": "https://www.akakce.com/bilgisayar-kasasi/en-ucuz-lian-li-lancool-iii-x-argb-3-fanli-black-e-atx-oyuncu-kasasi-fiyati,120885614.html",
       "best": {
-        "price": 9850.4,
+        "price": 9858.35,
         "store": "guvenliticaret",
         "url": "https://www.guvenliticaret.net/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
         "currency": "TRY"
@@ -181,12 +180,12 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
-          "price": 10239.45
+          "price": 10243.72
         },
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
-          "price": 9850.4
+          "price": 9858.35
         }
       ],
       "error": null
