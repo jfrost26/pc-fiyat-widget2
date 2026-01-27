@@ -4,7 +4,8 @@ import { chromium } from "playwright";
 
 const ROOT = process.cwd();
 const PRODUCTS_PATH = path.join(ROOT, "products.json");
-const OUT_PATH = path.join(ROOT, "docs", "data.json");
+const OUT_DATA_PATH = path.join(ROOT, "docs", "data.json");
+const OUT_HISTORY_PATH = path.join(ROOT, "docs", "history.json");
 const DEBUG_DIR = path.join(ROOT, "docs", "debug");
 
 const UA =
@@ -40,9 +41,18 @@ async function saveDebug(page, id) {
   return { pngPath: `docs/debug/${safe}.png` };
 }
 
-// Site bağımsız “fiyat bulma” (meta + jsonld + text fallback)
+function readJsonSafe(filePath, fallback) {
+  try {
+    if (!fs.existsSync(filePath)) return fallback;
+    const raw = fs.readFileSync(filePath, "utf8");
+    return JSON.parse(raw);
+  } catch {
+    return fallback;
+  }
+}
+
+// Site bağımsız fiyat çıkarma
 async function extractPriceFromPage(page) {
-  // meta fiyat
   const metaSelectors = [
     'meta[property="product:price:amount"]',
     'meta[property="og:price:amount"]',
@@ -57,7 +67,6 @@ async function extractPriceFromPage(page) {
     if (typeof p === "number" && p > 0) return p;
   }
 
-  // JSON-LD price taraması
   const jsonldCandidate = await page.evaluate(() => {
     const scripts = Array.from(document.querySelectorAll('script[type="application/ld+json"]'));
     const scan = (obj) => {
@@ -98,7 +107,6 @@ async function extractPriceFromPage(page) {
     if (typeof p === "number" && p > 0) return p;
   }
 
-  // Görünür metinden ₺/TL yakala
   await page.waitForLoadState("networkidle", { timeout: 15000 }).catch(() => {});
   await page.waitForTimeout(600);
 
@@ -123,7 +131,6 @@ async function fetchOffer(context, productId, offer) {
     await page.waitForTimeout(1200);
 
     const title = await page.title().catch(() => "");
-    // basit bot/captcha tespiti
     const bodyText = await page.evaluate(() => document.body?.innerText || "").catch(() => "");
     const blocked = /captcha|robot|blocked|doğrula|erişim|engellendi|unusual traffic/i.test(title + " " + bodyText);
     if (blocked) {
@@ -146,6 +153,49 @@ async function fetchOffer(context, productId, offer) {
   }
 }
 
+/**
+ * HISTORY FORMAT:
+ * {
+ *   "updated_at": "...",
+ *   "products": {
+ *     "<productId>": [
+ *        { "price": 12345.67, "store": "aykom", "url": "...", "first_seen_at": "...", "last_seen_at": "..." },
+ *        ...
+ *     ]
+ *   }
+ * }
+ */
+function updateHistory(history, productId, best) {
+  if (!best || typeof best.price !== "number") return;
+
+  if (!history.products) history.products = {};
+  if (!history.products[productId]) history.products[productId] = [];
+
+  const arr = history.products[productId];
+  const ts = nowISO();
+
+  const last = arr.length ? arr[arr.length - 1] : null;
+
+  // Aynı fiyat + aynı mağaza => yeni kayıt ekleme, sadece last_seen_at güncelle
+  if (last && last.price === best.price && last.store === best.store) {
+    last.last_seen_at = ts;
+    // URL değişmişse güncelle (bazı mağazalarda URL değişebilir)
+    last.url = best.url || last.url;
+  } else {
+    arr.push({
+      price: best.price,
+      store: best.store || "—",
+      url: best.url || "",
+      first_seen_at: ts,
+      last_seen_at: ts
+    });
+  }
+
+  // limit: 200 değişim
+  const MAX = 200;
+  if (arr.length > MAX) history.products[productId] = arr.slice(arr.length - MAX);
+}
+
 async function main() {
   const products = JSON.parse(fs.readFileSync(PRODUCTS_PATH, "utf8"));
 
@@ -156,10 +206,13 @@ async function main() {
     viewport: { width: 1280, height: 800 }
   });
 
-  const out = {
+  const outData = {
     updated_at: nowISO(),
     products: []
   };
+
+  // History'yi oku (varsa)
+  const history = readJsonSafe(OUT_HISTORY_PATH, { updated_at: null, products: {} });
 
   for (const p of products) {
     console.log("Product:", p.name);
@@ -169,18 +222,17 @@ async function main() {
       console.log("  -", offer.store);
       const r = await fetchOffer(context, p.id, offer);
       offersOut.push(r);
-      // siteyi yormamak için kısa bekleme
-      await new Promise(res => setTimeout(res, 700));
+      await new Promise((res) => setTimeout(res, 700));
     }
 
-    const priced = offersOut.filter(o => typeof o.price === "number" && o.price > 0);
+    const priced = offersOut.filter((o) => typeof o.price === "number" && o.price > 0);
     priced.sort((a, b) => a.price - b.price);
 
     const best = priced.length
       ? { price: priced[0].price, store: priced[0].store, url: priced[0].url, currency: "TRY" }
       : null;
 
-    out.products.push({
+    outData.products.push({
       id: p.id,
       name: p.name,
       ref_url: p.ref_url,
@@ -189,18 +241,27 @@ async function main() {
       error: best ? null : "NO_PRICES_FOUND"
     });
 
-    await new Promise(res => setTimeout(res, 1000));
+    // history güncelle
+    updateHistory(history, p.id, best);
+
+    await new Promise((res) => setTimeout(res, 900));
   }
 
   await context.close();
   await browser.close();
 
-  fs.mkdirSync(path.dirname(OUT_PATH), { recursive: true });
-  fs.writeFileSync(OUT_PATH, JSON.stringify(out, null, 2), "utf8");
-  console.log("Wrote", OUT_PATH);
+  // dosyalara yaz
+  fs.mkdirSync(path.dirname(OUT_DATA_PATH), { recursive: true });
+  fs.writeFileSync(OUT_DATA_PATH, JSON.stringify(outData, null, 2), "utf8");
+
+  history.updated_at = nowISO();
+  fs.writeFileSync(OUT_HISTORY_PATH, JSON.stringify(history, null, 2), "utf8");
+
+  console.log("Wrote", OUT_DATA_PATH);
+  console.log("Wrote", OUT_HISTORY_PATH);
 }
 
-main().catch(err => {
+main().catch((err) => {
   console.error(err);
   process.exit(1);
 });
