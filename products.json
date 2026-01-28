@@ -10,10 +10,6 @@
         "url": "https://www.aykom.com.tr/urun/amd-ryzen-7-7800x3d-4-20-ghz-96mb-am5-tray-islemci-120w"
       },
       {
-        "store": "revertpro",
-        "url": "https://www.revertpro.com/amd-ryzen-7-7800x3d-42ghz-96mb-120w-am5-fansiz-tray-5971"
-      },
-      {
         "store": "inventus",
         "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328"
       }
@@ -84,10 +80,6 @@
       {
         "store": "guvenliticaret",
         "url": "https://www.guvenliticaret.net/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw"
-      },
-      {
-        "store": "bilendenal",
-        "url": "https://bilendenal.com/Samsung-990-EVO-Plus-2TB-PCIe-Gen-4.0-x4-NVMe-7250-6300-M.2-22x80mm-SSD-MZ-V9S2T0BW.html"
       }
     ]
   },
