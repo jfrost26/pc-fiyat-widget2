@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-28T07:10:52.049Z",
+  "updated_at": "2026-01-28T13:29:25.620Z",
   "products": {
     "cpu_amd_ryzen_7_7800x3d": [
       {
@@ -7,7 +7,7 @@
         "store": "revertpro",
         "url": "https://www.revertpro.com/amd-ryzen-7-7800x3d-42ghz-96mb-120w-am5-fansiz-tray-5971",
         "first_seen_at": "2026-01-27T22:52:22.735Z",
-        "last_seen_at": "2026-01-28T06:51:19.949Z"
+        "last_seen_at": "2026-01-28T13:09:48.481Z"
       }
     ],
     "mb_gigabyte_x870_gaming_x_wifi7": [
@@ -16,7 +16,7 @@
         "store": "gamemar",
         "url": "https://www.gamemar.com/gigabyte-x870-gaming-x-wifi7-g10-4xddr5-3xm2-dp-hdmi-type-c-wi-fi-7e-bluetooth-54-am5-gaming-anakart-pmu17866",
         "first_seen_at": "2026-01-27T22:57:06.137Z",
-        "last_seen_at": "2026-01-28T06:56:03.705Z"
+        "last_seen_at": "2026-01-28T13:14:32.693Z"
       }
     ],
     "ram_kingston_beast_expo_32gb_6000_cl30": [
@@ -25,7 +25,7 @@
         "store": "guvenliticaret",
         "url": "https://www.guvenliticaret.net/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr",
         "first_seen_at": "2026-01-27T22:59:13.411Z",
-        "last_seen_at": "2026-01-28T06:58:11.627Z"
+        "last_seen_at": "2026-01-28T13:16:39.608Z"
       }
     ],
     "gpu_inno3d_rtx_5070_ti_x3_oc_16gb": [
@@ -34,7 +34,7 @@
         "store": "revertpro",
         "url": "https://www.revertpro.com/inno3d-geforce-rtx-5070-ti-x3-oc-16gb-gddr7-256bit-pcie-5.0-ekran-karti",
         "first_seen_at": "2026-01-27T23:04:21.728Z",
-        "last_seen_at": "2026-01-28T07:03:20.311Z"
+        "last_seen_at": "2026-01-28T13:21:48.682Z"
       }
     ],
     "ssd_samsung_990_evo_plus_2tb": [
@@ -43,7 +43,7 @@
         "store": "bilendenal",
         "url": "https://bilendenal.com/Samsung-990-EVO-Plus-2TB-PCIe-Gen-4.0-x4-NVMe-7250-6300-M.2-22x80mm-SSD-MZ-V9S2T0BW.html",
         "first_seen_at": "2026-01-27T23:07:33.037Z",
-        "last_seen_at": "2026-01-28T07:06:31.120Z"
+        "last_seen_at": "2026-01-28T13:24:59.114Z"
       }
     ],
     "psu_fsp_vita_850gm_850w": [
@@ -52,7 +52,7 @@
         "store": "muyubi",
         "url": "https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/",
         "first_seen_at": "2026-01-27T23:09:44.237Z",
-        "last_seen_at": "2026-01-28T07:08:43.957Z"
+        "last_seen_at": "2026-01-28T13:27:17.549Z"
       }
     ],
     "case_lian_li_lancool_iii_4fan_white": [
@@ -61,7 +61,7 @@
         "store": "guvenliticaret",
         "url": "https://www.guvenliticaret.net/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
         "first_seen_at": "2026-01-27T23:11:51.895Z",
-        "last_seen_at": "2026-01-28T07:10:51.108Z"
+        "last_seen_at": "2026-01-28T13:29:24.681Z"
       }
     ]
   }
