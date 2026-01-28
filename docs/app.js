@@ -270,9 +270,65 @@ function renderBuildTotal(allProducts, history) {
   }
 }
 
+function renderComparisonTable(items, history, productsPublic, category) {
+  const tbody = document.querySelector("#comparisonTable tbody");
+  if (!tbody) return;
+
+  const categoryMap = new Map(
+    Array.isArray(productsPublic)
+      ? productsPublic.map((p) => [p.id, p.category])
+      : []
+  );
+
+  const filtered = (items || []).filter((p) => categoryMap.get(p.id) === category);
+  filtered.sort((a, b) => (a.best?.price ?? Infinity) - (b.best?.price ?? Infinity));
+
+  tbody.innerHTML = "";
+
+  if (filtered.length === 0) {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `<td colspan="5" class="muted">Seçili kategoride ürün bulunamadı.</td>`;
+    tbody.appendChild(tr);
+    return;
+  }
+
+  for (const p of filtered) {
+    const bestPrice = p.best ? fmtTRY(p.best.price) : "N/A";
+
+    const entries = getHistoryEntries(history, p.id);
+    const stats = computeHistoryStats(entries);
+    const minPrice = stats?.minEntry?.price;
+    const maxPrice = stats?.maxEntry?.price;
+    const firstPrice = stats?.first?.price;
+    const lastPrice = stats?.last?.price;
+
+    const diff = (typeof lastPrice === "number" && typeof firstPrice === "number") ? (lastPrice - firstPrice) : null;
+    const pct = pctChange(lastPrice, firstPrice);
+
+    const diffTxt =
+      diff === null ? "—" :
+      (diff === 0 ? fmtTRY(0) : (diff > 0 ? `+${fmtTRY(diff)}` : `-${fmtTRY(Math.abs(diff))}`));
+
+    const pctTxt =
+      pct === null ? "" :
+      ` (${pct > 0 ? "+" : ""}${pct.toFixed(1)}%)`;
+
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${escapeHtml(p.name)}</td>
+      <td>${bestPrice}</td>
+      <td>${typeof minPrice === "number" ? fmtTRY(minPrice) : "—"}</td>
+      <td>${typeof maxPrice === "number" ? fmtTRY(maxPrice) : "—"}</td>
+      <td>${diffTxt}${pctTxt}</td>
+    `;
+    tbody.appendChild(tr);
+  }
+}
+
 async function load() {
   const data = await safeFetchJson("./data.json");
   const history = await safeFetchJson("./history.json");
+  const productsPublic = await safeFetchJson("./products.public.json");
 
   if (!data) {
     document.getElementById("updatedAt").textContent = "Hata: data.json okunamadı";
@@ -296,6 +352,7 @@ async function load() {
   const filter = document.getElementById("filter");
   const sort = document.getElementById("sort");
   const showHistory = document.getElementById("showHistory");
+  const comparisonCategory = document.getElementById("comparisonCategory");
 
   const render = () => {
     const query = (q.value || "").toLowerCase().trim();
@@ -314,12 +371,14 @@ async function load() {
 
     renderCards(items, history, !!showHistory?.checked);
     renderTable(items);
+    renderComparisonTable(data.products || [], history, productsPublic, comparisonCategory?.value || "gpu");
   };
 
   q.addEventListener("input", render);
   filter.addEventListener("change", render);
   sort.addEventListener("change", render);
   showHistory.addEventListener("change", render);
+  comparisonCategory?.addEventListener("change", render);
 
   render();
 }
