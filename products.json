@@ -68,6 +68,44 @@
     ]
   },
   {
+    "id": "gpu_asus_prime_rtx_5070_ti_o16g",
+    "name": "ASUS Prime GeForce RTX 5070 Ti O16G 16GB GDDR7",
+    "category": "gpu",
+    "offers": [
+      {
+        "store": "guvenliticaret",
+        "url": "https://www.guvenliticaret.net/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi"
+      },
+      {
+        "store": "revertpro",
+        "url": "https://www.revertpro.com/asus-geforce-prime-rtx5070ti-o16g-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6164"
+      },
+      {
+        "store": "aykom",
+        "url": "https://www.aykom.com.tr/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi"
+      }
+    ]
+  },
+  {
+    "id": "gpu_msi_rtx_5070_ti_shadow_3x_oc",
+    "name": "MSI GeForce RTX 5070 Ti Shadow 3X OC 16GB GDDR7",
+    "category": "gpu",
+    "offers": [
+      {
+        "store": "netsiparis",
+        "url": "https://www.netsiparis.com/msi-16gb-geforce-rtx-5070-ti-16g-shadow-3x-oc-gdrr7-256bit-pcie-50-1xhdmi-3x"
+      },
+      {
+        "store": "revertpro",
+        "url": "https://www.revertpro.com/msi-geforce-rtx5070ti-16g-shadow-3x-oc-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6245"
+      },
+      {
+        "store": "pazarama",
+        "url": "https://www.pazarama.com/msi-vga-geforce-rtx-5070-ti-16g-shadow-3x-oc-p-4711377317184"
+      }
+    ]
+  },
+  {
     "id": "ssd_samsung_990_evo_plus_2tb",
     "name": "Samsung 990 EVO Plus 2TB NVMe M.2 (MZ-V9S2T0BW)",
     "category": "ssd",
