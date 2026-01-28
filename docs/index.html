@@ -22,6 +22,19 @@
           </div>
           <div id="buildNote" class="muted" style="margin-top:6px;font-size:.9em"></div>
         </div>
+
+        <div id="comparisonBox" style="margin-top:10px;padding:10px;border:1px solid rgba(0,0,0,.08);border-radius:10px">
+          <label for="comparisonCategory"><strong>Karşılaştırma:</strong></label>
+          <select id="comparisonCategory" style="margin-left:8px">
+            <option value="gpu">GPU</option>
+            <option value="cpu">CPU</option>
+            <option value="ssd">SSD</option>
+            <option value="ram">RAM</option>
+            <option value="mb">Anakart</option>
+            <option value="psu">PSU</option>
+            <option value="case">Kasa</option>
+          </select>
+        </div>
       </div>
 
       <div class="controls">
@@ -45,6 +58,22 @@
 
     <main class="container">
       <section id="cards" class="cards"></section>
+
+      <section class="tableWrap">
+        <h2>Karşılaştırma</h2>
+        <table id="comparisonTable">
+          <thead>
+            <tr>
+              <th>Ürün</th>
+              <th>Şu an (best)</th>
+              <th>Min</th>
+              <th>Max</th>
+              <th>Değişim (ilk→son)</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
 
       <section class="tableWrap">
         <h2>Özet</h2>

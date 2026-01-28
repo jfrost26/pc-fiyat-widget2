@@ -6,6 +6,7 @@ const ROOT = process.cwd();
 const PRODUCTS_PATH = path.join(ROOT, "products.json");
 const OUT_DATA_PATH = path.join(ROOT, "docs", "data.json");
 const OUT_HISTORY_PATH = path.join(ROOT, "docs", "history.json");
+const OUT_PUBLIC_PRODUCTS_PATH = path.join(ROOT, "docs", "products.public.json");
 const DEBUG_DIR = path.join(ROOT, "docs", "debug");
 
 const UA =
@@ -257,8 +258,18 @@ async function main() {
   history.updated_at = nowISO();
   fs.writeFileSync(OUT_HISTORY_PATH, JSON.stringify(history, null, 2), "utf8");
 
+  const publicProducts = products.map((p) => ({
+    id: p.id,
+    name: p.name,
+    category: p.category || null,
+    ref_url: p.ref_url,
+    offers: p.offers || []
+  }));
+  fs.writeFileSync(OUT_PUBLIC_PRODUCTS_PATH, JSON.stringify(publicProducts, null, 2), "utf8");
+
   console.log("Wrote", OUT_DATA_PATH);
   console.log("Wrote", OUT_HISTORY_PATH);
+  console.log("Wrote", OUT_PUBLIC_PRODUCTS_PATH);
 }
 
 main().catch((err) => {
