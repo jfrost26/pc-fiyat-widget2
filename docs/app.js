@@ -26,6 +26,11 @@ function trendArrow(curr, prev) {
   return "→";
 }
 
+function pctChange(curr, base) {
+  if (typeof curr !== "number" || typeof base !== "number" || base === 0) return null;
+  return ((curr - base) / base) * 100;
+}
+
 async function safeFetchJson(url) {
   try {
     const res = await fetch(url, { cache: "no-store" });
@@ -36,23 +41,39 @@ async function safeFetchJson(url) {
   }
 }
 
-/**
- * History dosyası formatı farklı olsa bile entries çıkarmaya çalışır.
- * Beklenen: history.products[productId] -> array
- */
 function getHistoryEntries(history, productId) {
   if (!history) return [];
-
-  // beklenen format
   if (history.products && typeof history.products === "object" && Array.isArray(history.products[productId])) {
     return history.products[productId];
   }
-
-  // bazı alternatif olası formatlar (ileride değiştirirsen bile UI çalışsın diye)
   if (Array.isArray(history[productId])) return history[productId];
   if (history.items && Array.isArray(history.items[productId])) return history.items[productId];
-
   return [];
+}
+
+function computeHistoryStats(entries) {
+  if (!Array.isArray(entries) || entries.length === 0) return null;
+
+  let min = Infinity, max = -Infinity;
+  let minEntry = null, maxEntry = null;
+
+  for (const e of entries) {
+    if (typeof e.price !== "number") continue;
+    if (e.price < min) { min = e.price; minEntry = e; }
+    if (e.price > max) { max = e.price; maxEntry = e; }
+  }
+  if (!Number.isFinite(min) || !Number.isFinite(max)) return null;
+
+  const first = entries[0];
+  const last = entries[entries.length - 1];
+
+  return {
+    count: entries.length,
+    first,
+    last,
+    minEntry,
+    maxEntry
+  };
 }
 
 function renderHistoryList(entries) {
@@ -145,15 +166,46 @@ function renderCards(items, history, showHist) {
       : "";
 
     const entries = getHistoryEntries(history, p.id);
-    const histCount = Array.isArray(entries) ? entries.length : 0;
+    const stats = computeHistoryStats(entries);
+
+    let statsHtml = "";
+    if (showHist) {
+      if (!stats) {
+        statsHtml = `<div class="muted">History yok.</div>`;
+      } else {
+        const firstPrice = stats.first?.price;
+        const lastPrice = stats.last?.price;
+        const minPrice = stats.minEntry?.price;
+        const maxPrice = stats.maxEntry?.price;
+
+        const diff = (typeof lastPrice === "number" && typeof firstPrice === "number") ? (lastPrice - firstPrice) : null;
+        const pct = pctChange(lastPrice, firstPrice);
+
+        const diffTxt =
+          diff === null ? "—" :
+          (diff === 0 ? "0" : (diff > 0 ? `+${fmtTRY(diff)}` : `-${fmtTRY(Math.abs(diff))}`));
+
+        const pctTxt =
+          pct === null ? "" :
+          ` (${pct > 0 ? "+" : ""}${pct.toFixed(1)}%)`;
+
+        statsHtml = `
+          <div class="muted" style="margin-top:8px">
+            <div><strong>İlk:</strong> ${fmtTRY(firstPrice)} • <strong>Min:</strong> ${fmtTRY(minPrice)} • <strong>Max:</strong> ${fmtTRY(maxPrice)}</div>
+            <div><strong>Değişim:</strong> ${diffTxt}${pctTxt} • <strong>Kayıt:</strong> ${stats.count}</div>
+          </div>
+        `;
+      }
+    }
 
     const historyHtml = showHist
       ? `<div class="history" style="margin-top:12px;padding:10px;border:1px solid rgba(0,0,0,.08);border-radius:10px">
           <div style="display:flex;gap:10px;align-items:baseline">
             <strong>History</strong>
-            <span class="muted">(${histCount} değişim)</span>
+            <span class="muted">(${Array.isArray(entries) ? entries.length : 0} değişim)</span>
           </div>
-          ${renderHistoryList(entries)}
+          ${statsHtml}
+          <div style="margin-top:8px">${renderHistoryList(entries)}</div>
         </div>`
       : "";
 
@@ -191,7 +243,9 @@ async function load() {
 
   const hi = document.getElementById("historyInfo");
   if (hi) {
-    hi.textContent = history?.updated_at ? ("History güncelleme: " + new Date(history.updated_at).toLocaleString("tr-TR")) : "History: bulunamadı (history.json yoksa normal)";
+    hi.textContent = history?.updated_at
+      ? ("History güncelleme: " + new Date(history.updated_at).toLocaleString("tr-TR"))
+      : "History: bulunamadı (ilk run ise normal)";
   }
 
   const q = document.getElementById("q");
@@ -214,8 +268,7 @@ async function load() {
       items.sort((a, b) => (a.name || "").localeCompare(b.name || "", "tr"));
     }
 
-    const showHist = !!showHistory?.checked;
-    renderCards(items, history, showHist);
+    renderCards(items, history, !!showHistory?.checked);
     renderTable(items);
   };
 
