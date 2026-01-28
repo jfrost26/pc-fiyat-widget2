@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-01-28T18:00:28.709Z",
+  "updated_at": "2026-01-28T18:44:57.858Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
       "name": "AMD Ryzen 7 7800X3D",
       "ref_url": "https://www.akakce.com/islemci/en-ucuz-amd-ryzen-7-7800x3d-sekiz-cekirdek-4-2-ghz-fiyati,334009206.html",
       "best": {
-        "price": 4499.08,
+        "price": 4500.83,
         "store": "revertpro",
         "url": "https://www.revertpro.com/amd-ryzen-7-7800x3d-42ghz-96mb-120w-am5-fansiz-tray-5971",
         "currency": "TRY"
@@ -20,7 +20,7 @@
         {
           "store": "revertpro",
           "url": "https://www.revertpro.com/amd-ryzen-7-7800x3d-42ghz-96mb-120w-am5-fansiz-tray-5971",
-          "price": 4499.08
+          "price": 4500.83
         },
         {
           "store": "inventus",
@@ -35,7 +35,7 @@
       "name": "Gigabyte X870 Gaming X WiFi 7 (AM5, ATX)",
       "ref_url": "https://www.akakce.com/anakart/en-ucuz-gigabyte-x870-gaming-x-wifi7-amd-am5-ddr5-atx-fiyati,812619495.html",
       "best": {
-        "price": 14020.95,
+        "price": 14087.4,
         "store": "gamemar",
         "url": "https://www.gamemar.com/gigabyte-x870-gaming-x-wifi7-g10-4xddr5-3xm2-dp-hdmi-type-c-wi-fi-7e-bluetooth-54-am5-gaming-anakart-pmu17866",
         "currency": "TRY"
@@ -49,7 +49,7 @@
         {
           "store": "gamemar",
           "url": "https://www.gamemar.com/gigabyte-x870-gaming-x-wifi7-g10-4xddr5-3xm2-dp-hdmi-type-c-wi-fi-7e-bluetooth-54-am5-gaming-anakart-pmu17866",
-          "price": 14020.95
+          "price": 14087.4
         },
         {
           "store": "guvenliticaret",
@@ -112,9 +112,9 @@
       "name": "Samsung 990 EVO Plus 2TB NVMe M.2 (MZ-V9S2T0BW)",
       "ref_url": "https://www.akakce.com/ssd/en-ucuz-samsung-990-evo-plus-mz-v9s2t0bw-pci-express-2-tb-m-2-fiyati,836325138.html",
       "best": {
-        "price": 14549.74,
-        "store": "guvenliticaret",
-        "url": "https://www.guvenliticaret.net/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
+        "price": 5922.589512,
+        "store": "bilendenal",
+        "url": "https://bilendenal.com/Samsung-990-EVO-Plus-2TB-PCIe-Gen-4.0-x4-NVMe-7250-6300-M.2-22x80mm-SSD-MZ-V9S2T0BW.html",
         "currency": "TRY"
       },
       "offers": [
@@ -131,8 +131,7 @@
         {
           "store": "bilendenal",
           "url": "https://bilendenal.com/Samsung-990-EVO-Plus-2TB-PCIe-Gen-4.0-x4-NVMe-7250-6300-M.2-22x80mm-SSD-MZ-V9S2T0BW.html",
-          "price": null,
-          "error": "PRICE_NOT_FOUND (debug: docs/debug/ssd_samsung_990_evo_plus_2tb_bilendenal_noprice.png)"
+          "price": 5922.589512
         }
       ],
       "error": null
