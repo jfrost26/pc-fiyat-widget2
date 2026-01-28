@@ -67,13 +67,10 @@ function computeHistoryStats(entries) {
   const first = entries[0];
   const last = entries[entries.length - 1];
 
-  return {
-    count: entries.length,
-    first,
-    last,
-    minEntry,
-    maxEntry
-  };
+  // “Bir önceki değişim” (varsa) — build delta için kullanacağız
+  const prev = entries.length >= 2 ? entries[entries.length - 2] : null;
+
+  return { count: entries.length, first, last, prev, minEntry, maxEntry };
 }
 
 function renderHistoryList(entries) {
@@ -95,7 +92,7 @@ function renderHistoryList(entries) {
       const arrow = prevEntry ? trendArrow(e.price, prevEntry.price) : "";
 
       return `
-        <div class="histRow" style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(0,0,0,.08)">
+        <div style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(0,0,0,.08)">
           <div>
             <strong>${arrow} ${price}</strong>
             <span class="muted"> — <a href="${url}" target="_blank" rel="noreferrer">${store}</a></span>
@@ -168,10 +165,15 @@ function renderCards(items, history, showHist) {
     const entries = getHistoryEntries(history, p.id);
     const stats = computeHistoryStats(entries);
 
-    let statsHtml = "";
+    let historyHtml = "";
     if (showHist) {
       if (!stats) {
-        statsHtml = `<div class="muted">History yok.</div>`;
+        historyHtml = `
+          <div style="margin-top:12px;padding:10px;border:1px solid rgba(0,0,0,.08);border-radius:10px">
+            <strong>History</strong> <span class="muted">(0 değişim)</span>
+            <div class="muted" style="margin-top:8px">History yok.</div>
+          </div>
+        `;
       } else {
         const firstPrice = stats.first?.price;
         const lastPrice = stats.last?.price;
@@ -189,25 +191,23 @@ function renderCards(items, history, showHist) {
           pct === null ? "" :
           ` (${pct > 0 ? "+" : ""}${pct.toFixed(1)}%)`;
 
-        statsHtml = `
-          <div class="muted" style="margin-top:8px">
-            <div><strong>İlk:</strong> ${fmtTRY(firstPrice)} • <strong>Min:</strong> ${fmtTRY(minPrice)} • <strong>Max:</strong> ${fmtTRY(maxPrice)}</div>
-            <div><strong>Değişim:</strong> ${diffTxt}${pctTxt} • <strong>Kayıt:</strong> ${stats.count}</div>
+        historyHtml = `
+          <div style="margin-top:12px;padding:10px;border:1px solid rgba(0,0,0,.08);border-radius:10px">
+            <div style="display:flex;gap:10px;align-items:baseline;flex-wrap:wrap">
+              <strong>History</strong>
+              <span class="muted">(${stats.count} değişim)</span>
+            </div>
+
+            <div class="muted" style="margin-top:8px">
+              <div><strong>İlk:</strong> ${fmtTRY(firstPrice)} • <strong>Min:</strong> ${fmtTRY(minPrice)} • <strong>Max:</strong> ${fmtTRY(maxPrice)}</div>
+              <div><strong>Değişim:</strong> ${diffTxt}${pctTxt}</div>
+            </div>
+
+            <div style="margin-top:8px">${renderHistoryList(entries)}</div>
           </div>
         `;
       }
     }
-
-    const historyHtml = showHist
-      ? `<div class="history" style="margin-top:12px;padding:10px;border:1px solid rgba(0,0,0,.08);border-radius:10px">
-          <div style="display:flex;gap:10px;align-items:baseline">
-            <strong>History</strong>
-            <span class="muted">(${Array.isArray(entries) ? entries.length : 0} değişim)</span>
-          </div>
-          ${statsHtml}
-          <div style="margin-top:8px">${renderHistoryList(entries)}</div>
-        </div>`
-      : "";
 
     const card = document.createElement("div");
     card.className = "card";
@@ -219,13 +219,54 @@ function renderCards(items, history, showHist) {
       </div>
 
       <div class="offers">${offersHtml || `<div class="muted">Teklif yok.</div>`}</div>
-
       ${p.error ? `<div class="muted" style="margin-top:10px">Ürün durumu: ${escapeHtml(p.error)}</div>` : ""}
 
       ${historyHtml}
       ${refHtml}
     `;
     root.appendChild(card);
+  }
+}
+
+function renderBuildTotal(allProducts, history) {
+  const totalEl = document.getElementById("buildTotal");
+  const deltaEl = document.getElementById("buildDelta");
+  const noteEl = document.getElementById("buildNote");
+
+  if (!totalEl || !deltaEl || !noteEl) return;
+
+  const priced = (allProducts || []).filter(p => p.best && typeof p.best.price === "number");
+  const missing = (allProducts || []).filter(p => !p.best || typeof p.best.price !== "number");
+
+  const total = priced.reduce((sum, p) => sum + p.best.price, 0);
+
+  // Approx delta: sum(current_best - previous_change_price)
+  let delta = 0;
+  let deltaCount = 0;
+
+  for (const p of priced) {
+    const entries = getHistoryEntries(history, p.id);
+    const stats = computeHistoryStats(entries);
+    const prevPrice = stats?.prev?.price;
+    if (typeof prevPrice === "number") {
+      delta += (p.best.price - prevPrice);
+      deltaCount++;
+    }
+  }
+
+  totalEl.textContent = fmtTRY(total);
+
+  if (deltaCount > 0) {
+    const sign = delta > 0 ? "+" : "";
+    deltaEl.textContent = `• Son değişimlere göre: ${sign}${fmtTRY(delta)}`;
+  } else {
+    deltaEl.textContent = "";
+  }
+
+  if (missing.length === 0) {
+    noteEl.textContent = "Tüm parçalar fiyatlandı (en ucuz mağazalar üzerinden).";
+  } else {
+    noteEl.textContent = `Not: ${missing.length} parçada fiyat yoksa toplam eksik/az çıkabilir.`;
   }
 }
 
@@ -247,6 +288,9 @@ async function load() {
       ? ("History güncelleme: " + new Date(history.updated_at).toLocaleString("tr-TR"))
       : "History: bulunamadı (ilk run ise normal)";
   }
+
+  // build total (always)
+  renderBuildTotal(data.products || [], history);
 
   const q = document.getElementById("q");
   const filter = document.getElementById("filter");
