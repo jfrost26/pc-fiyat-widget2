@@ -378,7 +378,18 @@ async function load() {
   filter.addEventListener("change", render);
   sort.addEventListener("change", render);
   showHistory.addEventListener("change", render);
-  comparisonCategory?.addEventListener("change", render);
+  const scrollToComparison = () => {
+    const target =
+      document.querySelector("#comparisonSection") ||
+      document.querySelector("#comparisonTable")?.closest(".tableWrap") ||
+      document.querySelector("#comparisonTable");
+    target?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  comparisonCategory?.addEventListener("change", () => {
+    render();
+    scrollToComparison();
+  });
 
   render();
 }
