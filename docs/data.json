@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-30T18:53:04.005Z",
+  "updated_at": "2026-01-31T02:27:56.680Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -20,7 +20,7 @@
         {
           "store": "inventus",
           "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
-          "price": 18137.28
+          "price": 18140.91
         }
       ],
       "error": null
@@ -44,8 +44,7 @@
         {
           "store": "gamemar",
           "url": "https://www.gamemar.com/gigabyte-x870-gaming-x-wifi7-g10-4xddr5-3xm2-dp-hdmi-type-c-wi-fi-7e-bluetooth-54-am5-gaming-anakart-pmu17866",
-          "price": null,
-          "error": "ERROR: page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.gamemar.com/gigabyte-x870-gaming-x-wifi7-g10-4xddr5-3xm2-dp-hdmi-type-c-wi-fi-7e-bluetooth-54-am5-gaming-anakart-pmu17866\", waiting until \"domcontentloaded\"\n (debug: docs/debug/mb_gigabyte_x870_gaming_x_wifi7_gamemar_error.png)"
+          "price": 14087.4
         },
         {
           "store": "guvenliticaret",
