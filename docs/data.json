@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-04T07:00:58.365Z",
+  "updated_at": "2026-02-04T13:12:58.680Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -30,7 +30,7 @@
       "name": "Gigabyte X870 Gaming X WiFi 7 (AM5, ATX)",
       "ref_url": "https://www.akakce.com/anakart/en-ucuz-gigabyte-x870-gaming-x-wifi7-amd-am5-ddr5-atx-fiyati,812619495.html",
       "best": {
-        "price": 13790.39,
+        "price": 13793.56,
         "store": "guvenliticaret",
         "url": "https://www.guvenliticaret.net/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
         "currency": "TRY"
@@ -49,7 +49,7 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
-          "price": 13790.39
+          "price": 13793.56
         }
       ],
       "error": null
@@ -59,7 +59,7 @@
       "name": "Kingston FURY Beast EXPO Black 32GB (2x16) DDR5-6000 CL30 (KF560C30BBEK2-32TR)",
       "ref_url": "https://www.akakce.com/ram/en-ucuz-kingston-beast-expo-32-gb-2x16-6000-mhz-cl30-kf560c30bbek2-32tr-ddr5-fiyati,811894497.html",
       "best": {
-        "price": 22637.31,
+        "price": 22642.52,
         "store": "guvenliticaret",
         "url": "https://www.guvenliticaret.net/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr",
         "currency": "TRY"
@@ -68,12 +68,12 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr",
-          "price": 23652.88
+          "price": 23658.47
         },
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr",
-          "price": 22637.31
+          "price": 22642.52
         }
       ],
       "error": null
@@ -115,7 +115,7 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi",
-          "price": 63211.59
+          "price": 64600.6
         },
         {
           "store": "revertpro",
@@ -125,7 +125,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi",
-          "price": 66047.41
+          "price": 66063.03
         }
       ],
       "error": null
@@ -143,7 +143,7 @@
         {
           "store": "netsiparis",
           "url": "https://www.netsiparis.com/msi-16gb-geforce-rtx-5070-ti-16g-shadow-3x-oc-gdrr7-256bit-pcie-50-1xhdmi-3x",
-          "price": 61035.37
+          "price": 61042.39
         },
         {
           "store": "revertpro",
@@ -163,7 +163,7 @@
       "name": "Samsung 990 EVO Plus 2TB NVMe M.2 (MZ-V9S2T0BW)",
       "ref_url": "https://www.akakce.com/ssd/en-ucuz-samsung-990-evo-plus-mz-v9s2t0bw-pci-express-2-tb-m-2-fiyati,836325138.html",
       "best": {
-        "price": 14263.13,
+        "price": 14266.41,
         "store": "guvenliticaret",
         "url": "https://www.guvenliticaret.net/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
         "currency": "TRY"
@@ -172,12 +172,12 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
-          "price": 14903.01
+          "price": 14906.53
         },
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
-          "price": 14263.13
+          "price": 14266.41
         }
       ],
       "error": null
@@ -187,7 +187,7 @@
       "name": "FSP VITA GM 850GM 850W 80+ Gold (PCIe 5.x)",
       "ref_url": "https://www.akakce.com/power-supply/en-ucuz-fsp-vita-gm-gen5-1-850-w-fiyati,792425188.html",
       "best": {
-        "price": 6311.51,
+        "price": 6313,
         "store": "muyubi",
         "url": "https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/",
         "currency": "TRY"
@@ -196,12 +196,12 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/fsp-vita-gm-850w-80-gold-power-supply-vita-850gm",
-          "price": 7265.42
+          "price": 7267.14
         },
         {
           "store": "muyubi",
           "url": "https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/",
-          "price": 6311.51
+          "price": 6313
         },
         {
           "store": "ucuzsepet",
@@ -216,7 +216,7 @@
       "name": "Lian Li Lancool III (4 Fan) Beyaz ATX Mid Tower (G99-LAN3RW-00)",
       "ref_url": "https://www.akakce.com/bilgisayar-kasasi/en-ucuz-lian-li-lancool-iii-x-argb-3-fanli-black-e-atx-oyuncu-kasasi-fiyati,120885614.html",
       "best": {
-        "price": 9881.07,
+        "price": 9883.34,
         "store": "guvenliticaret",
         "url": "https://www.guvenliticaret.net/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
         "currency": "TRY"
@@ -225,12 +225,12 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
-          "price": 10313.77
+          "price": 10316.21
         },
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
-          "price": 9881.07
+          "price": 9883.34
         }
       ],
       "error": null
