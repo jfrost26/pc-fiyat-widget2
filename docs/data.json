@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-03T19:03:07.733Z",
+  "updated_at": "2026-02-04T02:33:29.318Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -20,7 +20,7 @@
         {
           "store": "inventus",
           "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
-          "price": 18172.49
+          "price": 18171.4
         }
       ],
       "error": null
@@ -187,7 +187,7 @@
       "name": "FSP VITA GM 850GM 850W 80+ Gold (PCIe 5.x)",
       "ref_url": "https://www.akakce.com/power-supply/en-ucuz-fsp-vita-gm-gen5-1-850-w-fiyati,792425188.html",
       "best": {
-        "price": 6303.15,
+        "price": 6311.51,
         "store": "muyubi",
         "url": "https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/",
         "currency": "TRY"
@@ -201,7 +201,7 @@
         {
           "store": "muyubi",
           "url": "https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/",
-          "price": 6303.15
+          "price": 6311.51
         },
         {
           "store": "ucuzsepet",
