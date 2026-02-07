@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-07T13:01:21.133Z",
+  "updated_at": "2026-02-07T18:43:21.098Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -20,7 +20,8 @@
         {
           "store": "inventus",
           "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
-          "price": 18188.13
+          "price": null,
+          "error": "ERROR: page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://inventus.com.tr/mi_products/Product.aspx?PID=15328\", waiting until \"domcontentloaded\"\n (debug: docs/debug/cpu_amd_ryzen_7_7800x3d_inventus_error.png)"
         }
       ],
       "error": null
