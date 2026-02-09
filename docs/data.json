@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-09T02:43:33.802Z",
+  "updated_at": "2026-02-09T07:12:29.981Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -146,7 +146,7 @@
         {
           "store": "netsiparis",
           "url": "https://www.netsiparis.com/msi-16gb-geforce-rtx-5070-ti-16g-shadow-3x-oc-gdrr7-256bit-pcie-50-1xhdmi-3x",
-          "price": 61105.53
+          "price": 61175.68
         },
         {
           "store": "revertpro",
