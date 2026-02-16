@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-16T02:42:03.671Z",
+  "updated_at": "2026-02-16T07:12:14.849Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -144,7 +144,7 @@
         {
           "store": "netsiparis",
           "url": "https://www.netsiparis.com/msi-16gb-geforce-rtx-5070-ti-16g-shadow-3x-oc-gdrr7-256bit-pcie-50-1xhdmi-3x",
-          "price": 63385.61
+          "price": 63495.96
         },
         {
           "store": "revertpro",
@@ -207,7 +207,8 @@
         {
           "store": "ucuzsepet",
           "url": "https://www.ucuzsepet.com/urun/fsp-vita-850w-vita-850gm-850w-80gold-psu-7145030",
-          "price": 7601.09
+          "price": null,
+          "error": "PRICE_NOT_FOUND (debug: docs/debug/psu_fsp_vita_850gm_850w_ucuzsepet_noprice.png)"
         }
       ],
       "error": null
