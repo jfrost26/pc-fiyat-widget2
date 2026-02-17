@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-02-17T13:16:36.848Z",
+  "updated_at": "2026-02-17T19:05:07.722Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
       "name": "AMD Ryzen 7 7800X3D",
       "ref_url": "https://www.akakce.com/islemci/en-ucuz-amd-ryzen-7-7800x3d-sekiz-cekirdek-4-2-ghz-fiyati,334009206.html",
       "best": {
-        "price": 17873.44,
+        "price": 17879.56,
         "store": "aykom",
         "url": "https://www.aykom.com.tr/urun/amd-ryzen-7-7800x3d-4-20-ghz-96mb-am5-tray-islemci-120w",
         "currency": "TRY"
@@ -15,7 +15,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/amd-ryzen-7-7800x3d-4-20-ghz-96mb-am5-tray-islemci-120w",
-          "price": 17873.44
+          "price": 17879.56
         },
         {
           "store": "inventus",
@@ -39,7 +39,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
-          "price": 14483.16
+          "price": 14488.12
         },
         {
           "store": "gamemar",
@@ -154,7 +154,7 @@
         {
           "store": "pazarama",
           "url": "https://www.pazarama.com/msi-vga-geforce-rtx-5070-ti-16g-shadow-3x-oc-p-4711377317184",
-          "price": 56399.01
+          "price": 59650
         }
       ],
       "error": null
@@ -208,7 +208,8 @@
         {
           "store": "ucuzsepet",
           "url": "https://www.ucuzsepet.com/urun/fsp-vita-850w-vita-850gm-850w-80gold-psu-7145030",
-          "price": 7601.09
+          "price": null,
+          "error": "PRICE_NOT_FOUND (debug: docs/debug/psu_fsp_vita_850gm_850w_ucuzsepet_noprice.png)"
         }
       ],
       "error": null
