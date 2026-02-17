@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-16T18:53:21.511Z",
+  "updated_at": "2026-02-17T02:38:18.312Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -20,7 +20,7 @@
         {
           "store": "inventus",
           "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
-          "price": 18225.43
+          "price": 18264.85
         }
       ],
       "error": null
@@ -154,7 +154,7 @@
         {
           "store": "pazarama",
           "url": "https://www.pazarama.com/msi-vga-geforce-rtx-5070-ti-16g-shadow-3x-oc-p-4711377317184",
-          "price": 58457
+          "price": 56399.01
         }
       ],
       "error": null
