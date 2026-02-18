@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-17T19:05:07.722Z",
+  "updated_at": "2026-02-18T02:41:57.767Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -20,7 +20,7 @@
         {
           "store": "inventus",
           "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
-          "price": 18264.85
+          "price": 18271.11
         }
       ],
       "error": null
@@ -208,8 +208,7 @@
         {
           "store": "ucuzsepet",
           "url": "https://www.ucuzsepet.com/urun/fsp-vita-850w-vita-850gm-850w-80gold-psu-7145030",
-          "price": null,
-          "error": "PRICE_NOT_FOUND (debug: docs/debug/psu_fsp_vita_850gm_850w_ucuzsepet_noprice.png)"
+          "price": 7601.09
         }
       ],
       "error": null
