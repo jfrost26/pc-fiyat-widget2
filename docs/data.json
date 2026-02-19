@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-19T02:41:08.228Z",
+  "updated_at": "2026-02-19T07:08:05.171Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -203,7 +203,7 @@
           "store": "muyubi",
           "url": "https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/",
           "price": null,
-          "error": "BLOCKED (debug: docs/debug/psu_fsp_vita_850gm_850w_muyubi_blocked.png)"
+          "error": "ERROR: page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/\", waiting until \"domcontentloaded\"\n (debug: docs/debug/psu_fsp_vita_850gm_850w_muyubi_error.png)"
         },
         {
           "store": "ucuzsepet",
