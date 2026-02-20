@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-20T07:04:14.296Z",
+  "updated_at": "2026-02-20T13:11:00.932Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -59,7 +59,7 @@
       "name": "Kingston FURY Beast EXPO Black 32GB (2x16) DDR5-6000 CL30 (KF560C30BBEK2-32TR)",
       "ref_url": "https://www.akakce.com/ram/en-ucuz-kingston-beast-expo-32-gb-2x16-6000-mhz-cl30-kf560c30bbek2-32tr-ddr5-fiyati,811894497.html",
       "best": {
-        "price": 23803.84,
+        "price": 23802.15,
         "store": "aykom",
         "url": "https://www.aykom.com.tr/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr",
         "currency": "TRY"
@@ -68,7 +68,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr",
-          "price": 23803.84
+          "price": 23802.15
         },
         {
           "store": "guvenliticaret",
@@ -126,7 +126,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi",
-          "price": 66468.95
+          "price": 66464.25
         }
       ],
       "error": null
@@ -173,7 +173,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
-          "price": 14998.12
+          "price": 14997.06
         },
         {
           "store": "guvenliticaret",
@@ -188,7 +188,7 @@
       "name": "FSP VITA GM 850GM 850W 80+ Gold (PCIe 5.x)",
       "ref_url": "https://www.akakce.com/power-supply/en-ucuz-fsp-vita-gm-gen5-1-850-w-fiyati,792425188.html",
       "best": {
-        "price": 7311.79,
+        "price": 7311.28,
         "store": "aykom",
         "url": "https://www.aykom.com.tr/urun/fsp-vita-gm-850w-80-gold-power-supply-vita-850gm",
         "currency": "TRY"
@@ -197,7 +197,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/fsp-vita-gm-850w-80-gold-power-supply-vita-850gm",
-          "price": 7311.79
+          "price": 7311.28
         },
         {
           "store": "muyubi",
@@ -227,7 +227,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
-          "price": 10379.59
+          "price": 10378.86
         },
         {
           "store": "guvenliticaret",
