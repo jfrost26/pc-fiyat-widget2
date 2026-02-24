@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-23T19:12:16.615Z",
+  "updated_at": "2026-02-24T02:39:09.784Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -20,7 +20,7 @@
         {
           "store": "inventus",
           "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
-          "price": 18286.08
+          "price": 18313.7
         }
       ],
       "error": null
@@ -116,7 +116,7 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi",
-          "price": 63720.19
+          "price": 63373.88
         },
         {
           "store": "revertpro",
