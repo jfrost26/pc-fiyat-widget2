@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-27T18:53:45.309Z",
+  "updated_at": "2026-02-28T02:23:31.805Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -20,7 +20,7 @@
         {
           "store": "inventus",
           "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
-          "price": 18333.98
+          "price": 18332.85
         }
       ],
       "error": null
