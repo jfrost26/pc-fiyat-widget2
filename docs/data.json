@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-02T02:36:50.876Z",
+  "updated_at": "2026-03-02T07:06:12.515Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -20,7 +20,8 @@
         {
           "store": "inventus",
           "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
-          "price": 18332.85
+          "price": null,
+          "error": "ERROR: page.goto: net::ERR_TIMED_OUT at https://inventus.com.tr/mi_products/Product.aspx?PID=15328\nCall log:\n  - navigating to \"https://inventus.com.tr/mi_products/Product.aspx?PID=15328\", waiting until \"domcontentloaded\"\n (debug: docs/debug/cpu_amd_ryzen_7_7800x3d_inventus_error.png)"
         }
       ],
       "error": null
@@ -203,7 +204,7 @@
           "store": "muyubi",
           "url": "https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/",
           "price": null,
-          "error": "ERROR: page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/\", waiting until \"domcontentloaded\"\n (debug: docs/debug/psu_fsp_vita_850gm_850w_muyubi_error.png)"
+          "error": "BLOCKED (debug: docs/debug/psu_fsp_vita_850gm_850w_muyubi_blocked.png)"
         },
         {
           "store": "ucuzsepet",
