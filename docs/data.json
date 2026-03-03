@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-03T02:40:02.275Z",
+  "updated_at": "2026-03-03T07:00:13.460Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -15,7 +15,8 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/amd-ryzen-7-7800x3d-4-20-ghz-96mb-am5-tray-islemci-120w",
-          "price": 17974.81
+          "price": null,
+          "error": "PRICE_NOT_FOUND (debug: docs/debug/cpu_amd_ryzen_7_7800x3d_aykom_noprice.png)"
         },
         {
           "store": "inventus",
