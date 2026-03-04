@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-04T06:56:56.850Z",
+  "updated_at": "2026-03-04T13:09:05.070Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -116,7 +116,7 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi",
-          "price": 66718.08
+          "price": 66023.1
         },
         {
           "store": "revertpro",
@@ -126,7 +126,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi",
-          "price": 66773.12
+          "price": 66776
         }
       ],
       "error": null
@@ -144,7 +144,7 @@
         {
           "store": "netsiparis",
           "url": "https://www.netsiparis.com/msi-16gb-geforce-rtx-5070-ti-16g-shadow-3x-oc-gdrr7-256bit-pcie-50-1xhdmi-3x",
-          "price": 61458.85
+          "price": 61485.41
         },
         {
           "store": "revertpro",
@@ -173,7 +173,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
-          "price": 16265.25
+          "price": 16265.95
         },
         {
           "store": "guvenliticaret",
@@ -188,7 +188,7 @@
       "name": "FSP VITA GM 850GM 850W 80+ Gold (PCIe 5.x)",
       "ref_url": "https://www.akakce.com/power-supply/en-ucuz-fsp-vita-gm-gen5-1-850-w-fiyati,792425188.html",
       "best": {
-        "price": 6380.86,
+        "price": 6381.14,
         "store": "muyubi",
         "url": "https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/",
         "currency": "TRY"
@@ -197,12 +197,12 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/fsp-vita-gm-850w-80-gold-power-supply-vita-850gm",
-          "price": 7345.25
+          "price": 7345.57
         },
         {
           "store": "muyubi",
           "url": "https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/",
-          "price": 6380.86
+          "price": 6381.14
         },
         {
           "store": "ucuzsepet",
@@ -226,7 +226,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
-          "price": 10427.09
+          "price": 10427.54
         },
         {
           "store": "guvenliticaret",
