@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-08T18:42:20.361Z",
+  "updated_at": "2026-03-09T02:40:46.203Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -107,7 +107,7 @@
       "id": "gpu_asus_prime_rtx_5070_ti_o16g",
       "name": "ASUS Prime GeForce RTX 5070 Ti O16G 16GB GDDR7",
       "best": {
-        "price": 4350.83,
+        "price": 52799.12,
         "store": "revertpro",
         "url": "https://www.revertpro.com/asus-geforce-prime-rtx5070ti-o16g-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6164",
         "currency": "TRY"
@@ -121,7 +121,7 @@
         {
           "store": "revertpro",
           "url": "https://www.revertpro.com/asus-geforce-prime-rtx5070ti-o16g-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6164",
-          "price": 4350.83
+          "price": 52799.12
         },
         {
           "store": "aykom",
