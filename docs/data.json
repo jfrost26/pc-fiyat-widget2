@@ -1,22 +1,21 @@
 {
-  "updated_at": "2026-03-11T13:13:56.805Z",
+  "updated_at": "2026-03-11T19:00:41.731Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
       "name": "AMD Ryzen 7 7800X3D",
       "ref_url": "https://www.akakce.com/islemci/en-ucuz-amd-ryzen-7-7800x3d-sekiz-cekirdek-4-2-ghz-fiyati,334009206.html",
       "best": {
-        "price": 17961.86,
-        "store": "inventus",
-        "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
+        "price": 17848.01,
+        "store": "aykom",
+        "url": "https://www.aykom.com.tr/urun/amd-ryzen-7-7800x3d-4-20-ghz-96mb-am5-tray-islemci-120w",
         "currency": "TRY"
       },
       "offers": [
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/amd-ryzen-7-7800x3d-4-20-ghz-96mb-am5-tray-islemci-120w",
-          "price": null,
-          "error": "PRICE_NOT_FOUND (debug: docs/debug/cpu_amd_ryzen_7_7800x3d_aykom_noprice.png)"
+          "price": 17848.01
         },
         {
           "store": "inventus",
@@ -40,8 +39,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
-          "price": null,
-          "error": "PRICE_NOT_FOUND (debug: docs/debug/mb_gigabyte_x870_gaming_x_wifi7_aykom_noprice.png)"
+          "price": 16162.37
         },
         {
           "store": "gamemar",
