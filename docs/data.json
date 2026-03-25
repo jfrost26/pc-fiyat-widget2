@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-25T02:42:11.812Z",
+  "updated_at": "2026-03-25T07:10:22.733Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -134,7 +134,7 @@
       "id": "gpu_msi_rtx_5070_ti_shadow_3x_oc",
       "name": "MSI GeForce RTX 5070 Ti Shadow 3X OC 16GB GDDR7",
       "best": {
-        "price": 4427.69,
+        "price": 4428.6,
         "store": "revertpro",
         "url": "https://www.revertpro.com/msi-geforce-rtx5070ti-16g-shadow-3x-oc-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6245",
         "currency": "TRY"
@@ -148,7 +148,7 @@
         {
           "store": "revertpro",
           "url": "https://www.revertpro.com/msi-geforce-rtx5070ti-16g-shadow-3x-oc-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6245",
-          "price": 4427.69
+          "price": 4428.6
         },
         {
           "store": "pazarama",
