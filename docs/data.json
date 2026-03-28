@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-28T13:07:01.007Z",
+  "updated_at": "2026-03-28T18:51:13.531Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -49,7 +49,7 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
-          "price": 14696.97
+          "price": 14708.56
         }
       ],
       "error": null
@@ -73,7 +73,7 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr",
-          "price": 25109.2
+          "price": 25129
         }
       ],
       "error": null
@@ -115,7 +115,7 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi",
-          "price": 70114.01
+          "price": 70169.29
         },
         {
           "store": "revertpro",
@@ -177,7 +177,7 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
-          "price": 17079.05
+          "price": 17092.52
         }
       ],
       "error": null
@@ -231,7 +231,7 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
-          "price": 10726.84
+          "price": 10735.3
         }
       ],
       "error": null
