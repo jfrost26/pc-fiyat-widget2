@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-04-06T19:10:03.415Z",
+  "updated_at": "2026-04-07T02:52:43.733Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
       "name": "AMD Ryzen 7 7800X3D",
       "ref_url": "https://www.akakce.com/islemci/en-ucuz-amd-ryzen-7-7800x3d-sekiz-cekirdek-4-2-ghz-fiyati,334009206.html",
       "best": {
-        "price": 16422.35,
+        "price": 16451.12,
         "store": "inventus",
         "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
         "currency": "TRY"
@@ -20,7 +20,7 @@
         {
           "store": "inventus",
           "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
-          "price": 16422.35
+          "price": 16451.12
         }
       ],
       "error": null
