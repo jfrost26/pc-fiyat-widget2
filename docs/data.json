@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-07T02:52:43.733Z",
+  "updated_at": "2026-04-07T07:31:07.546Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -163,7 +163,7 @@
       "name": "Samsung 990 EVO Plus 2TB NVMe M.2 (MZ-V9S2T0BW)",
       "ref_url": "https://www.akakce.com/ssd/en-ucuz-samsung-990-evo-plus-mz-v9s2t0bw-pci-express-2-tb-m-2-fiyati,836325138.html",
       "best": {
-        "price": 19174.07,
+        "price": 27732.93,
         "store": "guvenliticaret",
         "url": "https://www.guvenliticaret.net/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
         "currency": "TRY"
@@ -177,7 +177,7 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
-          "price": 19174.07
+          "price": 27732.93
         }
       ],
       "error": null
