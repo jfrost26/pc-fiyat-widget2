@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-09T02:48:16.840Z",
+  "updated_at": "2026-04-09T07:46:02.233Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -116,7 +116,7 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi",
-          "price": 65932.68
+          "price": 68082.66
         },
         {
           "store": "revertpro",
@@ -144,7 +144,7 @@
         {
           "store": "netsiparis",
           "url": "https://www.netsiparis.com/msi-16gb-geforce-rtx-5070-ti-16g-shadow-3x-oc-gdrr7-256bit-pcie-50-1xhdmi-3x",
-          "price": 62198.21
+          "price": 62304.43
         },
         {
           "store": "revertpro",
@@ -173,7 +173,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
-          "price": 34359.53
+          "price": 28575.68
         },
         {
           "store": "guvenliticaret",
