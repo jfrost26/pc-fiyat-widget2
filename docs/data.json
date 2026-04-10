@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-04-09T19:16:25.958Z",
+  "updated_at": "2026-04-10T03:19:32.615Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
       "name": "AMD Ryzen 7 7800X3D",
       "ref_url": "https://www.akakce.com/islemci/en-ucuz-amd-ryzen-7-7800x3d-sekiz-cekirdek-4-2-ghz-fiyati,334009206.html",
       "best": {
-        "price": 18062.09,
-        "store": "aykom",
-        "url": "https://www.aykom.com.tr/urun/amd-ryzen-7-7800x3d-4-20-ghz-96mb-am5-tray-islemci-120w",
+        "price": 16451.75,
+        "store": "inventus",
+        "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
         "currency": "TRY"
       },
       "offers": [
@@ -20,8 +20,7 @@
         {
           "store": "inventus",
           "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
-          "price": null,
-          "error": "ERROR: page.goto: net::ERR_TIMED_OUT at https://inventus.com.tr/mi_products/Product.aspx?PID=15328\nCall log:\n  - navigating to \"https://inventus.com.tr/mi_products/Product.aspx?PID=15328\", waiting until \"domcontentloaded\"\n (debug: docs/debug/cpu_amd_ryzen_7_7800x3d_inventus_error.png)"
+          "price": 16451.75
         }
       ],
       "error": null
@@ -98,8 +97,7 @@
         {
           "store": "pazarama",
           "url": "https://www.pazarama.com/inno3d-x3-geforce-rtx-5070-ti-oc-16gb-gddr7-256bit-hdmidp-ekran-karti-p-8886307700247",
-          "price": null,
-          "error": "PRICE_NOT_FOUND (debug: docs/debug/gpu_inno3d_rtx_5070_ti_x3_oc_16gb_pazarama_noprice.png)"
+          "price": 48080.68
         }
       ],
       "error": null
