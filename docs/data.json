@@ -1,29 +1,26 @@
 {
-  "updated_at": "2026-04-16T14:00:21.850Z",
+  "updated_at": "2026-04-16T19:23:46.364Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
       "name": "AMD Ryzen 7 7800X3D",
       "ref_url": "https://www.akakce.com/islemci/en-ucuz-amd-ryzen-7-7800x3d-sekiz-cekirdek-4-2-ghz-fiyati,334009206.html",
-      "best": {
-        "price": 16510.1,
-        "store": "inventus",
-        "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
-        "currency": "TRY"
-      },
+      "best": null,
       "offers": [
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/amd-ryzen-7-7800x3d-4-20-ghz-96mb-am5-tray-islemci-120w",
-          "price": 18130.49
+          "price": null,
+          "error": "ERROR: page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.aykom.com.tr/urun/amd-ryzen-7-7800x3d-4-20-ghz-96mb-am5-tray-islemci-120w\", waiting until \"domcontentloaded\"\n (debug: docs/debug/cpu_amd_ryzen_7_7800x3d_aykom_error.png)"
         },
         {
           "store": "inventus",
           "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
-          "price": 16510.1
+          "price": null,
+          "error": "ERROR: page.goto: net::ERR_TIMED_OUT at https://inventus.com.tr/mi_products/Product.aspx?PID=15328\nCall log:\n  - navigating to \"https://inventus.com.tr/mi_products/Product.aspx?PID=15328\", waiting until \"domcontentloaded\"\n (debug: docs/debug/cpu_amd_ryzen_7_7800x3d_inventus_error.png)"
         }
       ],
-      "error": null
+      "error": "NO_PRICES_FOUND"
     },
     {
       "id": "mb_gigabyte_x870_gaming_x_wifi7",
@@ -202,7 +199,7 @@
           "store": "muyubi",
           "url": "https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/",
           "price": null,
-          "error": "BLOCKED (debug: docs/debug/psu_fsp_vita_850gm_850w_muyubi_blocked.png)"
+          "error": "PRICE_NOT_FOUND (debug: docs/debug/psu_fsp_vita_850gm_850w_muyubi_noprice.png)"
         },
         {
           "store": "ucuzsepet",
