@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-16T03:26:09.118Z",
+  "updated_at": "2026-04-16T07:56:44.668Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -30,16 +30,17 @@
       "name": "Gigabyte X870 Gaming X WiFi 7 (AM5, ATX)",
       "ref_url": "https://www.akakce.com/anakart/en-ucuz-gigabyte-x870-gaming-x-wifi7-amd-am5-ddr5-atx-fiyati,812619495.html",
       "best": {
-        "price": 14295.1,
-        "store": "gamemar",
-        "url": "https://www.gamemar.com/gigabyte-x870-gaming-x-wifi7-g10-4xddr5-3xm2-dp-hdmi-type-c-wi-fi-7e-bluetooth-54-am5-gaming-anakart-pmu17866",
+        "price": 13752.04,
+        "store": "guvenliticaret",
+        "url": "https://www.guvenliticaret.net/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
         "currency": "TRY"
       },
       "offers": [
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
-          "price": 16414.24
+          "price": null,
+          "error": "PRICE_NOT_FOUND (debug: docs/debug/mb_gigabyte_x870_gaming_x_wifi7_aykom_noprice.png)"
         },
         {
           "store": "gamemar",
@@ -49,7 +50,7 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
-          "price": 15994.98
+          "price": 13752.04
         }
       ],
       "error": null
@@ -143,7 +144,7 @@
         {
           "store": "netsiparis",
           "url": "https://www.netsiparis.com/msi-16gb-geforce-rtx-5070-ti-16g-shadow-3x-oc-gdrr7-256bit-pcie-50-1xhdmi-3x",
-          "price": 60800.55
+          "price": 60818.21
         },
         {
           "store": "revertpro",
