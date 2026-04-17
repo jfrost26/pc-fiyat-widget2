@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-17T07:57:32.342Z",
+  "updated_at": "2026-04-17T13:42:59.759Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -15,7 +15,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/amd-ryzen-7-7800x3d-4-20-ghz-96mb-am5-tray-islemci-120w",
-          "price": 18130.49
+          "price": 18138.66
         },
         {
           "store": "inventus",
@@ -39,7 +39,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
-          "price": 16418.16
+          "price": 16425.56
         },
         {
           "store": "gamemar",
@@ -68,7 +68,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr",
-          "price": 24116.42
+          "price": 24127.29
         },
         {
           "store": "guvenliticaret",
@@ -115,7 +115,7 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi",
-          "price": 64580.49
+          "price": 64866.25
         },
         {
           "store": "revertpro",
@@ -125,7 +125,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi",
-          "price": 68205.16
+          "price": 68235.9
         }
       ],
       "error": null
@@ -163,7 +163,7 @@
       "name": "Samsung 990 EVO Plus 2TB NVMe M.2 (MZ-V9S2T0BW)",
       "ref_url": "https://www.akakce.com/ssd/en-ucuz-samsung-990-evo-plus-mz-v9s2t0bw-pci-express-2-tb-m-2-fiyati,836325138.html",
       "best": {
-        "price": 27901.01,
+        "price": 28024.47,
         "store": "guvenliticaret",
         "url": "https://www.guvenliticaret.net/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
         "currency": "TRY"
@@ -172,12 +172,12 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
-          "price": 28720.99
+          "price": 28733.93
         },
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
-          "price": 27901.01
+          "price": 28024.47
         }
       ],
       "error": null
@@ -187,7 +187,7 @@
       "name": "FSP VITA GM 850GM 850W 80+ Gold (PCIe 5.x)",
       "ref_url": "https://www.akakce.com/power-supply/en-ucuz-fsp-vita-gm-gen5-1-850-w-fiyati,792425188.html",
       "best": {
-        "price": 7409.8,
+        "price": 7413.14,
         "store": "aykom",
         "url": "https://www.aykom.com.tr/urun/fsp-vita-gm-850w-80-gold-power-supply-vita-850gm",
         "currency": "TRY"
@@ -196,7 +196,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/fsp-vita-gm-850w-80-gold-power-supply-vita-850gm",
-          "price": 7409.8
+          "price": 7413.14
         },
         {
           "store": "muyubi",
@@ -217,7 +217,7 @@
       "name": "Lian Li Lancool III (4 Fan) Beyaz ATX Mid Tower (G99-LAN3RW-00)",
       "ref_url": "https://www.akakce.com/bilgisayar-kasasi/en-ucuz-lian-li-lancool-iii-x-argb-3-fanli-black-e-atx-oyuncu-kasasi-fiyati,120885614.html",
       "best": {
-        "price": 10623.63,
+        "price": 10665.88,
         "store": "guvenliticaret",
         "url": "https://www.guvenliticaret.net/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
         "currency": "TRY"
@@ -226,12 +226,12 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
-          "price": 11151.02
+          "price": 11156.04
         },
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
-          "price": 10623.63
+          "price": 10665.88
         }
       ],
       "error": null
