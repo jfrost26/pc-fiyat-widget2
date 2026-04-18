@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-18T07:17:06.093Z",
+  "updated_at": "2026-04-18T13:14:04.055Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -44,7 +44,7 @@
         {
           "store": "gamemar",
           "url": "https://www.gamemar.com/gigabyte-x870-gaming-x-wifi7-g10-4xddr5-3xm2-dp-hdmi-type-c-wi-fi-7e-bluetooth-54-am5-gaming-anakart-pmu17866",
-          "price": 14295.1
+          "price": 14246.2
         },
         {
           "store": "guvenliticaret",
@@ -207,7 +207,8 @@
         {
           "store": "ucuzsepet",
           "url": "https://www.ucuzsepet.com/urun/fsp-vita-850w-vita-850gm-850w-80gold-psu-7145030",
-          "price": 7601.09
+          "price": null,
+          "error": "PRICE_NOT_FOUND (debug: docs/debug/psu_fsp_vita_850gm_850w_ucuzsepet_noprice.png)"
         }
       ],
       "error": null
