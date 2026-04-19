@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-19T13:13:51.114Z",
+  "updated_at": "2026-04-19T18:59:39.708Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -187,9 +187,9 @@
       "name": "FSP VITA GM 850GM 850W 80+ Gold (PCIe 5.x)",
       "ref_url": "https://www.akakce.com/power-supply/en-ucuz-fsp-vita-gm-gen5-1-850-w-fiyati,792425188.html",
       "best": {
-        "price": 7219.94,
-        "store": "aykom",
-        "url": "https://www.aykom.com.tr/urun/fsp-vita-gm-850w-80-gold-power-supply-vita-850gm",
+        "price": 6498.27,
+        "store": "muyubi",
+        "url": "https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/",
         "currency": "TRY"
       },
       "offers": [
@@ -201,13 +201,13 @@
         {
           "store": "muyubi",
           "url": "https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/",
-          "price": null,
-          "error": "BLOCKED (debug: docs/debug/psu_fsp_vita_850gm_850w_muyubi_blocked.png)"
+          "price": 6498.27
         },
         {
           "store": "ucuzsepet",
           "url": "https://www.ucuzsepet.com/urun/fsp-vita-850w-vita-850gm-850w-80gold-psu-7145030",
-          "price": 7601.09
+          "price": null,
+          "error": "PRICE_NOT_FOUND (debug: docs/debug/psu_fsp_vita_850gm_850w_ucuzsepet_noprice.png)"
         }
       ],
       "error": null
