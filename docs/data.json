@@ -1,27 +1,26 @@
 {
-  "updated_at": "2026-04-22T07:58:27.726Z",
+  "updated_at": "2026-04-22T13:56:07.602Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
       "name": "AMD Ryzen 7 7800X3D",
       "ref_url": "https://www.akakce.com/islemci/en-ucuz-amd-ryzen-7-7800x3d-sekiz-cekirdek-4-2-ghz-fiyati,334009206.html",
       "best": {
-        "price": 18183.79,
-        "store": "aykom",
-        "url": "https://www.aykom.com.tr/urun/amd-ryzen-7-7800x3d-4-20-ghz-96mb-am5-tray-islemci-120w",
+        "price": 16562.6,
+        "store": "inventus",
+        "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
         "currency": "TRY"
       },
       "offers": [
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/amd-ryzen-7-7800x3d-4-20-ghz-96mb-am5-tray-islemci-120w",
-          "price": 18183.79
+          "price": 18185.01
         },
         {
           "store": "inventus",
           "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
-          "price": null,
-          "error": "ERROR: page.goto: net::ERR_TIMED_OUT at https://inventus.com.tr/mi_products/Product.aspx?PID=15328\nCall log:\n  - navigating to \"https://inventus.com.tr/mi_products/Product.aspx?PID=15328\", waiting until \"domcontentloaded\"\n (debug: docs/debug/cpu_amd_ryzen_7_7800x3d_inventus_error.png)"
+          "price": 16562.6
         }
       ],
       "error": null
@@ -40,7 +39,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
-          "price": 14157.38
+          "price": 14158.33
         },
         {
           "store": "gamemar",
@@ -69,7 +68,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr",
-          "price": 24187.33
+          "price": 24188.95
         },
         {
           "store": "guvenliticaret",
@@ -126,7 +125,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi",
-          "price": 66673.91
+          "price": 66678.36
         }
       ],
       "error": null
@@ -173,7 +172,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
-          "price": 28805.44
+          "price": 28807.36
         },
         {
           "store": "guvenliticaret",
@@ -188,7 +187,7 @@
       "name": "FSP VITA GM 850GM 850W 80+ Gold (PCIe 5.x)",
       "ref_url": "https://www.akakce.com/power-supply/en-ucuz-fsp-vita-gm-gen5-1-850-w-fiyati,792425188.html",
       "best": {
-        "price": 7431.59,
+        "price": 7432.09,
         "store": "aykom",
         "url": "https://www.aykom.com.tr/urun/fsp-vita-gm-850w-80-gold-power-supply-vita-850gm",
         "currency": "TRY"
@@ -197,7 +196,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/fsp-vita-gm-850w-80-gold-power-supply-vita-850gm",
-          "price": 7431.59
+          "price": 7432.09
         },
         {
           "store": "muyubi",
@@ -227,7 +226,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
-          "price": 11183.8
+          "price": 11184.55
         },
         {
           "store": "guvenliticaret",
