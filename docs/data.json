@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-04-22T03:20:10.061Z",
+  "updated_at": "2026-04-22T07:58:27.726Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
       "name": "AMD Ryzen 7 7800X3D",
       "ref_url": "https://www.akakce.com/islemci/en-ucuz-amd-ryzen-7-7800x3d-sekiz-cekirdek-4-2-ghz-fiyati,334009206.html",
       "best": {
-        "price": 16562.6,
-        "store": "inventus",
-        "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
+        "price": 18183.79,
+        "store": "aykom",
+        "url": "https://www.aykom.com.tr/urun/amd-ryzen-7-7800x3d-4-20-ghz-96mb-am5-tray-islemci-120w",
         "currency": "TRY"
       },
       "offers": [
@@ -20,7 +20,8 @@
         {
           "store": "inventus",
           "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
-          "price": 16562.6
+          "price": null,
+          "error": "ERROR: page.goto: net::ERR_TIMED_OUT at https://inventus.com.tr/mi_products/Product.aspx?PID=15328\nCall log:\n  - navigating to \"https://inventus.com.tr/mi_products/Product.aspx?PID=15328\", waiting until \"domcontentloaded\"\n (debug: docs/debug/cpu_amd_ryzen_7_7800x3d_inventus_error.png)"
         }
       ],
       "error": null
@@ -143,7 +144,7 @@
         {
           "store": "netsiparis",
           "url": "https://www.netsiparis.com/msi-16gb-geforce-rtx-5070-ti-16g-shadow-3x-oc-gdrr7-256bit-pcie-50-1xhdmi-3x",
-          "price": 60994.84
+          "price": 61002.99
         },
         {
           "store": "revertpro",
