@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-24T13:49:35.314Z",
+  "updated_at": "2026-04-24T19:01:46.293Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -15,7 +15,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/amd-ryzen-7-7800x3d-4-20-ghz-96mb-am5-tray-islemci-120w",
-          "price": 18201.63
+          "price": 18116.58
         },
         {
           "store": "inventus",
@@ -39,7 +39,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
-          "price": 14171.27
+          "price": 14105.05
         },
         {
           "store": "gamemar",
@@ -68,7 +68,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr",
-          "price": 24211.06
+          "price": 24097.92
         },
         {
           "store": "guvenliticaret",
@@ -125,7 +125,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi",
-          "price": 66739.31
+          "price": 66427.45
         }
       ],
       "error": null
