@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-01T08:56:09.080Z",
+  "updated_at": "2026-05-01T14:12:10.080Z",
   "products": {
     "cpu_amd_ryzen_7_7800x3d": [
       {
@@ -652,6 +652,13 @@
         "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
         "first_seen_at": "2026-05-01T03:57:04.582Z",
         "last_seen_at": "2026-05-01T08:23:58.949Z"
+      },
+      {
+        "price": 15286.81,
+        "store": "inventus",
+        "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
+        "first_seen_at": "2026-05-01T13:42:43.989Z",
+        "last_seen_at": "2026-05-01T13:42:43.989Z"
       }
     ],
     "mb_gigabyte_x870_gaming_x_wifi7": [
@@ -1108,7 +1115,7 @@
         "store": "guvenliticaret",
         "url": "https://www.guvenliticaret.net/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
         "first_seen_at": "2026-05-01T08:28:43.606Z",
-        "last_seen_at": "2026-05-01T08:28:43.606Z"
+        "last_seen_at": "2026-05-01T13:47:28.213Z"
       }
     ],
     "ram_kingston_beast_expo_32gb_6000_cl30": [
@@ -1635,7 +1642,7 @@
         "store": "guvenliticaret",
         "url": "https://www.guvenliticaret.net/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr",
         "first_seen_at": "2026-05-01T08:30:50.902Z",
-        "last_seen_at": "2026-05-01T08:30:50.902Z"
+        "last_seen_at": "2026-05-01T13:49:35.372Z"
       }
     ],
     "gpu_inno3d_rtx_5070_ti_x3_oc_16gb": [
@@ -1644,7 +1651,7 @@
         "store": "revertpro",
         "url": "https://www.revertpro.com/inno3d-geforce-rtx-5070-ti-x3-oc-16gb-gddr7-256bit-pcie-5.0-ekran-karti",
         "first_seen_at": "2026-01-27T23:04:21.728Z",
-        "last_seen_at": "2026-05-01T08:35:59.479Z"
+        "last_seen_at": "2026-05-01T13:54:47.178Z"
       }
     ],
     "ssd_samsung_990_evo_plus_2tb": [
@@ -2228,6 +2235,13 @@
         "url": "https://www.guvenliticaret.net/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
         "first_seen_at": "2026-05-01T08:49:00.980Z",
         "last_seen_at": "2026-05-01T08:49:00.980Z"
+      },
+      {
+        "price": 28106.44,
+        "store": "guvenliticaret",
+        "url": "https://www.guvenliticaret.net/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
+        "first_seen_at": "2026-05-01T14:07:49.006Z",
+        "last_seen_at": "2026-05-01T14:07:49.006Z"
       }
     ],
     "psu_fsp_vita_850gm_850w": [
@@ -2936,7 +2950,7 @@
         "store": "aykom",
         "url": "https://www.aykom.com.tr/urun/fsp-vita-gm-850w-80-gold-power-supply-vita-850gm",
         "first_seen_at": "2026-04-30T20:11:45.917Z",
-        "last_seen_at": "2026-05-01T08:54:00.951Z"
+        "last_seen_at": "2026-05-01T14:10:00.078Z"
       }
     ],
     "case_lian_li_lancool_iii_4fan_white": [
@@ -3506,6 +3520,13 @@
         "url": "https://www.guvenliticaret.net/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
         "first_seen_at": "2026-05-01T08:56:08.142Z",
         "last_seen_at": "2026-05-01T08:56:08.142Z"
+      },
+      {
+        "price": 10701.85,
+        "store": "guvenliticaret",
+        "url": "https://www.guvenliticaret.net/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
+        "first_seen_at": "2026-05-01T14:12:09.144Z",
+        "last_seen_at": "2026-05-01T14:12:09.144Z"
       }
     ],
     "gpu_asus_prime_rtx_5070_ti_o16g": [
@@ -4067,7 +4088,7 @@
         "store": "revertpro",
         "url": "https://www.revertpro.com/asus-geforce-prime-rtx5070ti-o16g-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6164",
         "first_seen_at": "2026-05-01T04:13:43.427Z",
-        "last_seen_at": "2026-05-01T08:40:40.611Z"
+        "last_seen_at": "2026-05-01T13:59:29.416Z"
       }
     ],
     "gpu_msi_rtx_5070_ti_shadow_3x_oc": [
@@ -4622,7 +4643,7 @@
         "store": "revertpro",
         "url": "https://www.revertpro.com/msi-geforce-rtx5070ti-16g-shadow-3x-oc-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6245",
         "first_seen_at": "2026-05-01T04:19:55.168Z",
-        "last_seen_at": "2026-05-01T08:46:53.095Z"
+        "last_seen_at": "2026-05-01T14:05:41.696Z"
       }
     ]
   }
