@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-03T08:07:26.549Z",
+  "updated_at": "2026-05-03T13:23:05.254Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -115,7 +115,7 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi",
-          "price": 63995.29
+          "price": 65657.5
         },
         {
           "store": "revertpro",
@@ -125,7 +125,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi",
-          "price": 66910.6
+          "price": 68648.54
         }
       ],
       "error": null
