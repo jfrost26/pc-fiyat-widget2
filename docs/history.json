@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-12T15:15:15.138Z",
+  "updated_at": "2026-05-12T20:38:07.238Z",
   "products": {
     "cpu_amd_ryzen_7_7800x3d": [
       {
@@ -714,7 +714,7 @@
         "store": "inventus",
         "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
         "first_seen_at": "2026-05-12T03:48:26.876Z",
-        "last_seen_at": "2026-05-12T14:42:45.641Z"
+        "last_seen_at": "2026-05-12T20:05:41.328Z"
       }
     ],
     "mb_gigabyte_x870_gaming_x_wifi7": [
@@ -1227,7 +1227,7 @@
         "store": "gamemar",
         "url": "https://www.gamemar.com/gigabyte-x870-gaming-x-wifi7-g10-4xddr5-3xm2-dp-hdmi-type-c-wi-fi-7e-bluetooth-54-am5-gaming-anakart-pmu17866",
         "first_seen_at": "2026-05-11T10:00:49.280Z",
-        "last_seen_at": "2026-05-12T14:47:30.190Z"
+        "last_seen_at": "2026-05-12T20:10:26.357Z"
       }
     ],
     "ram_kingston_beast_expo_32gb_6000_cl30": [
@@ -1810,7 +1810,7 @@
         "store": "guvenliticaret",
         "url": "https://www.guvenliticaret.net/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr",
         "first_seen_at": "2026-05-11T10:04:27.609Z",
-        "last_seen_at": "2026-05-12T14:51:08.534Z"
+        "last_seen_at": "2026-05-12T20:14:03.961Z"
       }
     ],
     "gpu_inno3d_rtx_5070_ti_x3_oc_16gb": [
@@ -1819,7 +1819,7 @@
         "store": "revertpro",
         "url": "https://www.revertpro.com/inno3d-geforce-rtx-5070-ti-x3-oc-16gb-gddr7-256bit-pcie-5.0-ekran-karti",
         "first_seen_at": "2026-01-27T23:04:21.728Z",
-        "last_seen_at": "2026-05-12T14:56:18.325Z"
+        "last_seen_at": "2026-05-12T20:19:13.540Z"
       }
     ],
     "ssd_samsung_990_evo_plus_2tb": [
@@ -2465,7 +2465,7 @@
         "store": "guvenliticaret",
         "url": "https://www.guvenliticaret.net/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
         "first_seen_at": "2026-05-11T10:24:05.497Z",
-        "last_seen_at": "2026-05-12T15:10:50.193Z"
+        "last_seen_at": "2026-05-12T20:33:48.642Z"
       }
     ],
     "psu_fsp_vita_850gm_850w": [
@@ -3265,7 +3265,7 @@
         "store": "aykom",
         "url": "https://www.aykom.com.tr/urun/fsp-vita-gm-850w-80-gold-power-supply-vita-850gm",
         "first_seen_at": "2026-05-12T15:13:02.371Z",
-        "last_seen_at": "2026-05-12T15:13:02.371Z"
+        "last_seen_at": "2026-05-12T20:35:59.033Z"
       }
     ],
     "case_lian_li_lancool_iii_4fan_white": [
@@ -3897,7 +3897,7 @@
         "store": "guvenliticaret",
         "url": "https://www.guvenliticaret.net/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
         "first_seen_at": "2026-05-11T10:28:24.924Z",
-        "last_seen_at": "2026-05-12T15:15:14.200Z"
+        "last_seen_at": "2026-05-12T20:38:06.298Z"
       }
     ],
     "gpu_asus_prime_rtx_5070_ti_o16g": [
@@ -4523,6 +4523,13 @@
         "url": "https://www.revertpro.com/asus-geforce-prime-rtx5070ti-o16g-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6164",
         "first_seen_at": "2026-05-12T09:09:26.342Z",
         "last_seen_at": "2026-05-12T15:02:29.853Z"
+      },
+      {
+        "price": 55236.15,
+        "store": "revertpro",
+        "url": "https://www.revertpro.com/asus-geforce-prime-rtx5070ti-o16g-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6164",
+        "first_seen_at": "2026-05-12T20:25:25.368Z",
+        "last_seen_at": "2026-05-12T20:25:25.368Z"
       }
     ],
     "gpu_msi_rtx_5070_ti_shadow_3x_oc": [
@@ -5141,6 +5148,13 @@
         "url": "https://www.revertpro.com/msi-geforce-rtx5070ti-16g-shadow-3x-oc-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6245",
         "first_seen_at": "2026-05-12T09:15:37.680Z",
         "last_seen_at": "2026-05-12T15:08:42.321Z"
+      },
+      {
+        "price": 4706.51,
+        "store": "revertpro",
+        "url": "https://www.revertpro.com/msi-geforce-rtx5070ti-16g-shadow-3x-oc-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6245",
+        "first_seen_at": "2026-05-12T20:31:41.090Z",
+        "last_seen_at": "2026-05-12T20:31:41.090Z"
       }
     ]
   }
