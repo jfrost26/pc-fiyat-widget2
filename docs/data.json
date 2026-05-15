@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-15T03:56:52.424Z",
+  "updated_at": "2026-05-15T08:55:26.328Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -146,7 +146,7 @@
         {
           "store": "netsiparis",
           "url": "https://www.netsiparis.com/msi-16gb-geforce-rtx-5070-ti-16g-shadow-3x-oc-gdrr7-256bit-pcie-50-1xhdmi-3x",
-          "price": 59972.88
+          "price": 60038.88
         },
         {
           "store": "revertpro",
@@ -156,7 +156,7 @@
         {
           "store": "pazarama",
           "url": "https://www.pazarama.com/msi-vga-geforce-rtx-5070-ti-16g-shadow-3x-oc-p-4711377317184",
-          "price": 54850
+          "price": 54950
         }
       ],
       "error": null
@@ -229,7 +229,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
-          "price": 11400
+          "price": 11318.11
         },
         {
           "store": "guvenliticaret",
