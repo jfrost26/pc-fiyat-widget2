@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-05-15T19:45:24.939Z",
+  "updated_at": "2026-05-16T03:37:55.054Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
       "name": "AMD Ryzen 7 7800X3D",
       "ref_url": "https://www.akakce.com/islemci/en-ucuz-amd-ryzen-7-7800x3d-sekiz-cekirdek-4-2-ghz-fiyati,334009206.html",
       "best": {
-        "price": 15415.67,
+        "price": 15429.08,
         "store": "inventus",
         "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
         "currency": "TRY"
@@ -21,7 +21,7 @@
         {
           "store": "inventus",
           "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
-          "price": 15415.67
+          "price": 15429.08
         }
       ],
       "error": null
@@ -85,16 +85,17 @@
       "name": "Inno3D GeForce RTX 5070 Ti X3 OC 16GB GDDR7",
       "ref_url": "https://www.akakce.com/ekran-karti/en-ucuz-inno3d-rtx-5070-ti-x3-oc-n507t3-16d7x-176068n-256-bit-gddr7-16-gb-fiyati,959886374.html",
       "best": {
-        "price": 48000,
-        "store": "revertpro",
-        "url": "https://www.revertpro.com/inno3d-geforce-rtx-5070-ti-x3-oc-16gb-gddr7-256bit-pcie-5.0-ekran-karti",
+        "price": 48080.68,
+        "store": "pazarama",
+        "url": "https://www.pazarama.com/inno3d-x3-geforce-rtx-5070-ti-oc-16gb-gddr7-256bit-hdmidp-ekran-karti-p-8886307700247",
         "currency": "TRY"
       },
       "offers": [
         {
           "store": "revertpro",
           "url": "https://www.revertpro.com/inno3d-geforce-rtx-5070-ti-x3-oc-16gb-gddr7-256bit-pcie-5.0-ekran-karti",
-          "price": 48000
+          "price": null,
+          "error": "ERROR: page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.revertpro.com/inno3d-geforce-rtx-5070-ti-x3-oc-16gb-gddr7-256bit-pcie-5.0-ekran-karti\", waiting until \"domcontentloaded\"\n (debug: docs/debug/gpu_inno3d_rtx_5070_ti_x3_oc_16gb_revertpro_error.png)"
         },
         {
           "store": "pazarama",
