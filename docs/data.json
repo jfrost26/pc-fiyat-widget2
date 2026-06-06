@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-06T03:58:10.714Z",
+  "updated_at": "2026-06-06T08:40:19.572Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -206,7 +206,8 @@
         {
           "store": "ucuzsepet",
           "url": "https://www.ucuzsepet.com/urun/fsp-vita-850w-vita-850gm-850w-80gold-psu-7145030",
-          "price": 7946.59
+          "price": null,
+          "error": "PRICE_NOT_FOUND (debug: docs/debug/psu_fsp_vita_850gm_850w_ucuzsepet_noprice.png)"
         }
       ],
       "error": null
@@ -225,7 +226,8 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
-          "price": 11510.42
+          "price": null,
+          "error": "PRICE_NOT_FOUND (debug: docs/debug/case_lian_li_lancool_iii_4fan_white_aykom_noprice.png)"
         },
         {
           "store": "guvenliticaret",
