@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-06T20:16:18.186Z",
+  "updated_at": "2026-06-07T05:03:43.254Z",
   "products": {
     "cpu_amd_ryzen_7_7800x3d": [
       {
@@ -819,7 +819,7 @@
         "store": "inventus",
         "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
         "first_seen_at": "2026-06-06T04:03:21.779Z",
-        "last_seen_at": "2026-06-06T19:44:57.079Z"
+        "last_seen_at": "2026-06-07T04:29:54.504Z"
       }
     ],
     "mb_gigabyte_x870_gaming_x_wifi7": [
@@ -1437,7 +1437,7 @@
         "store": "guvenliticaret",
         "url": "https://www.guvenliticaret.net/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
         "first_seen_at": "2026-06-05T15:26:09.799Z",
-        "last_seen_at": "2026-06-06T19:49:41.260Z"
+        "last_seen_at": "2026-06-07T04:34:38.062Z"
       }
     ],
     "ram_kingston_beast_expo_32gb_6000_cl30": [
@@ -2092,7 +2092,7 @@
         "store": "revertpro",
         "url": "https://www.revertpro.com/inno3d-geforce-rtx-5070-ti-x3-oc-16gb-gddr7-256bit-pcie-5.0-ekran-karti",
         "first_seen_at": "2026-05-16T08:29:49.619Z",
-        "last_seen_at": "2026-06-06T19:59:57.146Z"
+        "last_seen_at": "2026-06-07T04:45:14.257Z"
       }
     ],
     "ssd_samsung_990_evo_plus_2tb": [
@@ -6057,7 +6057,7 @@
         "store": "revertpro",
         "url": "https://www.revertpro.com/msi-geforce-rtx5070ti-16g-shadow-3x-oc-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6245",
         "first_seen_at": "2026-06-06T04:28:16.344Z",
-        "last_seen_at": "2026-06-06T20:09:49.898Z"
+        "last_seen_at": "2026-06-07T04:56:01.770Z"
       }
     ]
   }
