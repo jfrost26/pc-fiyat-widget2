@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-08T21:00:36.122Z",
+  "updated_at": "2026-06-09T04:46:08.184Z",
   "products": {
     "cpu_amd_ryzen_7_7800x3d": [
       {
@@ -1472,7 +1472,7 @@
         "store": "gamemar",
         "url": "https://www.gamemar.com/gigabyte-x870-gaming-x-wifi7-g10-4xddr5-3xm2-dp-hdmi-type-c-wi-fi-7e-bluetooth-54-am5-gaming-anakart-pmu17866",
         "first_seen_at": "2026-06-08T20:35:23.952Z",
-        "last_seen_at": "2026-06-08T20:35:23.952Z"
+        "last_seen_at": "2026-06-09T04:10:06.871Z"
       }
     ],
     "ram_kingston_beast_expo_32gb_6000_cl30": [
@@ -2127,7 +2127,7 @@
         "store": "revertpro",
         "url": "https://www.revertpro.com/inno3d-geforce-rtx-5070-ti-x3-oc-16gb-gddr7-256bit-pcie-5.0-ekran-karti",
         "first_seen_at": "2026-05-16T08:29:49.619Z",
-        "last_seen_at": "2026-06-08T20:43:52.603Z"
+        "last_seen_at": "2026-06-09T04:20:21.943Z"
       }
     ],
     "ssd_samsung_990_evo_plus_2tb": [
@@ -2892,7 +2892,7 @@
         "store": "guvenliticaret",
         "url": "https://www.guvenliticaret.net/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
         "first_seen_at": "2026-06-08T16:34:35.708Z",
-        "last_seen_at": "2026-06-08T20:56:06.805Z"
+        "last_seen_at": "2026-06-09T04:35:25.293Z"
       }
     ],
     "psu_fsp_vita_850gm_850w": [
@@ -5397,7 +5397,7 @@
         "store": "revertpro",
         "url": "https://www.revertpro.com/asus-geforce-prime-rtx5070ti-o16g-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6164",
         "first_seen_at": "2026-06-08T11:34:03.059Z",
-        "last_seen_at": "2026-06-08T20:48:46.384Z"
+        "last_seen_at": "2026-06-09T04:26:35.840Z"
       }
     ],
     "gpu_msi_rtx_5070_ti_shadow_3x_oc": [
@@ -6148,7 +6148,7 @@
         "store": "revertpro",
         "url": "https://www.revertpro.com/msi-geforce-rtx5070ti-16g-shadow-3x-oc-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6245",
         "first_seen_at": "2026-06-08T11:39:14.012Z",
-        "last_seen_at": "2026-06-08T20:53:58.203Z"
+        "last_seen_at": "2026-06-09T04:31:46.524Z"
       }
     ]
   }
