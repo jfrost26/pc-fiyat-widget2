@@ -1,11 +1,16 @@
 {
-  "updated_at": "2026-06-11T16:12:00.922Z",
+  "updated_at": "2026-06-11T20:27:42.938Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
       "name": "AMD Ryzen 7 7800X3D",
       "ref_url": "https://www.akakce.com/islemci/en-ucuz-amd-ryzen-7-7800x3d-sekiz-cekirdek-4-2-ghz-fiyati,334009206.html",
-      "best": null,
+      "best": {
+        "price": 15045.14,
+        "store": "inventus",
+        "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
+        "currency": "TRY"
+      },
       "offers": [
         {
           "store": "aykom",
@@ -16,11 +21,10 @@
         {
           "store": "inventus",
           "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
-          "price": null,
-          "error": "ERROR: page.goto: net::ERR_TIMED_OUT at https://inventus.com.tr/mi_products/Product.aspx?PID=15328\nCall log:\n  - navigating to \"https://inventus.com.tr/mi_products/Product.aspx?PID=15328\", waiting until \"domcontentloaded\"\n (debug: docs/debug/cpu_amd_ryzen_7_7800x3d_inventus_error.png)"
+          "price": 15045.14
         }
       ],
-      "error": "NO_PRICES_FOUND"
+      "error": null
     },
     {
       "id": "mb_gigabyte_x870_gaming_x_wifi7",
