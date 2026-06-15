@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-15T04:59:09.608Z",
+  "updated_at": "2026-06-15T12:26:57.190Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -17,7 +17,7 @@
           "store": "inventus",
           "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
           "price": null,
-          "error": "ERROR: page.goto: net::ERR_TIMED_OUT at https://inventus.com.tr/mi_products/Product.aspx?PID=15328\nCall log:\n  - navigating to \"https://inventus.com.tr/mi_products/Product.aspx?PID=15328\", waiting until \"domcontentloaded\"\n (debug: docs/debug/cpu_amd_ryzen_7_7800x3d_inventus_error.png)"
+          "error": "ERROR: page.goto: net::ERR_CONNECTION_RESET at https://inventus.com.tr/mi_products/Product.aspx?PID=15328\nCall log:\n  - navigating to \"https://inventus.com.tr/mi_products/Product.aspx?PID=15328\", waiting until \"domcontentloaded\"\n (debug: docs/debug/cpu_amd_ryzen_7_7800x3d_inventus_error.png)"
         }
       ],
       "error": "NO_PRICES_FOUND"
@@ -36,7 +36,8 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
-          "price": 14000.4
+          "price": null,
+          "error": "PRICE_NOT_FOUND (debug: docs/debug/mb_gigabyte_x870_gaming_x_wifi7_aykom_noprice.png)"
         },
         {
           "store": "gamemar",
@@ -100,7 +101,7 @@
       "id": "gpu_asus_prime_rtx_5070_ti_o16g",
       "name": "ASUS Prime GeForce RTX 5070 Ti O16G 16GB GDDR7",
       "best": {
-        "price": 51008.05,
+        "price": 51020.39,
         "store": "revertpro",
         "url": "https://www.revertpro.com/asus-geforce-prime-rtx5070ti-o16g-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6164",
         "currency": "TRY"
@@ -114,7 +115,7 @@
         {
           "store": "revertpro",
           "url": "https://www.revertpro.com/asus-geforce-prime-rtx5070ti-o16g-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6164",
-          "price": 51008.05
+          "price": 51020.39
         },
         {
           "store": "aykom",
@@ -128,7 +129,7 @@
       "id": "gpu_msi_rtx_5070_ti_shadow_3x_oc",
       "name": "MSI GeForce RTX 5070 Ti Shadow 3X OC 16GB GDDR7",
       "best": {
-        "price": 4797.27,
+        "price": 4798.43,
         "store": "revertpro",
         "url": "https://www.revertpro.com/msi-geforce-rtx5070ti-16g-shadow-3x-oc-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6245",
         "currency": "TRY"
@@ -143,12 +144,13 @@
         {
           "store": "revertpro",
           "url": "https://www.revertpro.com/msi-geforce-rtx5070ti-16g-shadow-3x-oc-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6245",
-          "price": 4797.27
+          "price": 4798.43
         },
         {
           "store": "pazarama",
           "url": "https://www.pazarama.com/msi-vga-geforce-rtx-5070-ti-16g-shadow-3x-oc-p-4711377317184",
-          "price": 56798.95
+          "price": null,
+          "error": "PRICE_NOT_FOUND (debug: docs/debug/gpu_msi_rtx_5070_ti_shadow_3x_oc_pazarama_noprice.png)"
         }
       ],
       "error": null
@@ -182,9 +184,9 @@
       "name": "FSP VITA GM 850GM 850W 80+ Gold (PCIe 5.x)",
       "ref_url": "https://www.akakce.com/power-supply/en-ucuz-fsp-vita-gm-gen5-1-850-w-fiyati,792425188.html",
       "best": {
-        "price": 7677.82,
-        "store": "aykom",
-        "url": "https://www.aykom.com.tr/urun/fsp-vita-gm-850w-80-gold-power-supply-vita-850gm",
+        "price": 6715.52,
+        "store": "muyubi",
+        "url": "https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/",
         "currency": "TRY"
       },
       "offers": [
@@ -196,8 +198,7 @@
         {
           "store": "muyubi",
           "url": "https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/",
-          "price": null,
-          "error": "BLOCKED (debug: docs/debug/psu_fsp_vita_850gm_850w_muyubi_blocked.png)"
+          "price": 6715.52
         },
         {
           "store": "ucuzsepet",
