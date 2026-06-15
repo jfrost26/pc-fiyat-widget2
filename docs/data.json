@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-14T19:43:47.326Z",
+  "updated_at": "2026-06-15T04:59:09.608Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -36,8 +36,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
-          "price": null,
-          "error": "PRICE_NOT_FOUND (debug: docs/debug/mb_gigabyte_x870_gaming_x_wifi7_aykom_noprice.png)"
+          "price": 14000.4
         },
         {
           "store": "gamemar",
