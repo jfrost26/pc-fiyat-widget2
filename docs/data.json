@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-03T19:36:43.780Z",
+  "updated_at": "2026-07-04T03:37:40.003Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -201,8 +201,7 @@
         {
           "store": "ucuzsepet",
           "url": "https://www.ucuzsepet.com/urun/fsp-vita-850w-vita-850gm-850w-80gold-psu-7145030",
-          "price": null,
-          "error": "PRICE_NOT_FOUND (debug: docs/debug/psu_fsp_vita_850gm_850w_ucuzsepet_noprice.png)"
+          "price": 8205.72
         }
       ],
       "error": null
