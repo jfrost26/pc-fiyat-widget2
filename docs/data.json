@@ -1,11 +1,16 @@
 {
-  "updated_at": "2026-07-07T14:48:27.098Z",
+  "updated_at": "2026-07-07T20:03:07.549Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
       "name": "AMD Ryzen 7 7800X3D",
       "ref_url": "https://www.akakce.com/islemci/en-ucuz-amd-ryzen-7-7800x3d-sekiz-cekirdek-4-2-ghz-fiyati,334009206.html",
-      "best": null,
+      "best": {
+        "price": 15269.64,
+        "store": "inventus",
+        "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
+        "currency": "TRY"
+      },
       "offers": [
         {
           "store": "aykom",
@@ -16,11 +21,10 @@
         {
           "store": "inventus",
           "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
-          "price": null,
-          "error": "ERROR: page.goto: net::ERR_TIMED_OUT at https://inventus.com.tr/mi_products/Product.aspx?PID=15328\nCall log:\n  - navigating to \"https://inventus.com.tr/mi_products/Product.aspx?PID=15328\", waiting until \"domcontentloaded\"\n (debug: docs/debug/cpu_amd_ryzen_7_7800x3d_inventus_error.png)"
+          "price": 15269.64
         }
       ],
-      "error": "NO_PRICES_FOUND"
+      "error": null
     },
     {
       "id": "mb_gigabyte_x870_gaming_x_wifi7",
@@ -167,8 +171,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
-          "price": null,
-          "error": "PRICE_NOT_FOUND (debug: docs/debug/ssd_samsung_990_evo_plus_2tb_aykom_noprice.png)"
+          "price": 30194.51
         },
         {
           "store": "guvenliticaret",
@@ -192,8 +195,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/fsp-vita-gm-850w-80-gold-power-supply-vita-850gm",
-          "price": null,
-          "error": "PRICE_NOT_FOUND (debug: docs/debug/psu_fsp_vita_850gm_850w_aykom_noprice.png)"
+          "price": 7788.91
         },
         {
           "store": "muyubi",
@@ -222,8 +224,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
-          "price": null,
-          "error": "PRICE_NOT_FOUND (debug: docs/debug/case_lian_li_lancool_iii_4fan_white_aykom_noprice.png)"
+          "price": 11722.06
         },
         {
           "store": "guvenliticaret",
