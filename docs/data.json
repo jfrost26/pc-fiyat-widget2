@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-09T15:20:34.534Z",
+  "updated_at": "2026-07-09T19:53:08.223Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -50,7 +50,8 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
-          "price": 15676.56
+          "price": null,
+          "error": "PRICE_NOT_FOUND (debug: docs/debug/mb_gigabyte_x870_gaming_x_wifi7_guvenliticaret_noprice.png)"
         }
       ],
       "error": null
