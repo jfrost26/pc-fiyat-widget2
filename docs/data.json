@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-10T09:44:37.995Z",
+  "updated_at": "2026-07-10T14:39:07.334Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -40,7 +40,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
-          "price": 16562.4
+          "price": 16570.52
         },
         {
           "store": "gamemar",
@@ -123,7 +123,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi",
-          "price": 75294.76
+          "price": 75331.66
         }
       ],
       "error": null
@@ -171,7 +171,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
-          "price": 30496.82
+          "price": 30511.77
         },
         {
           "store": "guvenliticaret",
@@ -186,7 +186,7 @@
       "name": "FSP VITA GM 850GM 850W 80+ Gold (PCIe 5.x)",
       "ref_url": "https://www.akakce.com/power-supply/en-ucuz-fsp-vita-gm-gen5-1-850-w-fiyati,792425188.html",
       "best": {
-        "price": 6801.61,
+        "price": 6804.94,
         "store": "muyubi",
         "url": "https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/",
         "currency": "TRY"
@@ -195,12 +195,12 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/fsp-vita-gm-850w-80-gold-power-supply-vita-850gm",
-          "price": 7864.8
+          "price": 7868.65
         },
         {
           "store": "muyubi",
           "url": "https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/",
-          "price": 6801.61
+          "price": 6804.94
         },
         {
           "store": "ucuzsepet",
@@ -224,7 +224,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
-          "price": 11837.33
+          "price": 11843.13
         },
         {
           "store": "guvenliticaret",
