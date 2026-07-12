@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-12T08:24:44.363Z",
+  "updated_at": "2026-07-12T13:38:00.373Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -205,7 +205,8 @@
         {
           "store": "ucuzsepet",
           "url": "https://www.ucuzsepet.com/urun/fsp-vita-850w-vita-850gm-850w-80gold-psu-7145030",
-          "price": 8205.72
+          "price": null,
+          "error": "PRICE_NOT_FOUND (debug: docs/debug/psu_fsp_vita_850gm_850w_ucuzsepet_noprice.png)"
         }
       ],
       "error": null
@@ -215,9 +216,9 @@
       "name": "Lian Li Lancool III (4 Fan) Beyaz ATX Mid Tower (G99-LAN3RW-00)",
       "ref_url": "https://www.akakce.com/bilgisayar-kasasi/en-ucuz-lian-li-lancool-iii-x-argb-3-fanli-black-e-atx-oyuncu-kasasi-fiyati,120885614.html",
       "best": {
-        "price": 11843.13,
-        "store": "aykom",
-        "url": "https://www.aykom.com.tr/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
+        "price": 11188.21,
+        "store": "guvenliticaret",
+        "url": "https://www.guvenliticaret.net/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
         "currency": "TRY"
       },
       "offers": [
@@ -229,8 +230,7 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
-          "price": null,
-          "error": "PRICE_NOT_FOUND (debug: docs/debug/case_lian_li_lancool_iii_4fan_white_guvenliticaret_noprice.png)"
+          "price": 11188.21
         }
       ],
       "error": null
