@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-07-17T19:17:34.918Z",
+  "updated_at": "2026-07-18T02:51:47.279Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
       "name": "AMD Ryzen 7 7800X3D",
       "ref_url": "https://www.akakce.com/islemci/en-ucuz-amd-ryzen-7-7800x3d-sekiz-cekirdek-4-2-ghz-fiyati,334009206.html",
       "best": {
-        "price": 15345.06,
+        "price": 15351.22,
         "store": "inventus",
         "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
         "currency": "TRY"
@@ -21,7 +21,7 @@
         {
           "store": "inventus",
           "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
-          "price": 15345.06
+          "price": 15351.22
         }
       ],
       "error": null
@@ -96,7 +96,7 @@
           "store": "pazarama",
           "url": "https://www.pazarama.com/inno3d-x3-geforce-rtx-5070-ti-oc-16gb-gddr7-256bit-hdmidp-ekran-karti-p-8886307700247",
           "price": null,
-          "error": "BLOCKED (debug: docs/debug/gpu_inno3d_rtx_5070_ti_x3_oc_16gb_pazarama_blocked.png)"
+          "error": "ERROR: page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.pazarama.com/inno3d-x3-geforce-rtx-5070-ti-oc-16gb-gddr7-256bit-hdmidp-ekran-karti-p-8886307700247\nCall log:\n  - navigating to \"https://www.pazarama.com/inno3d-x3-geforce-rtx-5070-ti-oc-16gb-gddr7-256bit-hdmidp-ekran-karti-p-8886307700247\", waiting until \"domcontentloaded\"\n (debug: docs/debug/gpu_inno3d_rtx_5070_ti_x3_oc_16gb_pazarama_error.png)"
         }
       ],
       "error": null
@@ -154,7 +154,7 @@
           "store": "pazarama",
           "url": "https://www.pazarama.com/msi-vga-geforce-rtx-5070-ti-16g-shadow-3x-oc-p-4711377317184",
           "price": null,
-          "error": "PRICE_NOT_FOUND (debug: docs/debug/gpu_msi_rtx_5070_ti_shadow_3x_oc_pazarama_noprice.png)"
+          "error": "BLOCKED (debug: docs/debug/gpu_msi_rtx_5070_ti_shadow_3x_oc_pazarama_blocked.png)"
         }
       ],
       "error": null
