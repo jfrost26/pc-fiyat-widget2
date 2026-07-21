@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-21T14:04:40.825Z",
+  "updated_at": "2026-07-21T19:38:16.210Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -96,7 +96,7 @@
           "store": "pazarama",
           "url": "https://www.pazarama.com/inno3d-x3-geforce-rtx-5070-ti-oc-16gb-gddr7-256bit-hdmidp-ekran-karti-p-8886307700247",
           "price": null,
-          "error": "PRICE_NOT_FOUND (debug: docs/debug/gpu_inno3d_rtx_5070_ti_x3_oc_16gb_pazarama_noprice.png)"
+          "error": "BLOCKED (debug: docs/debug/gpu_inno3d_rtx_5070_ti_x3_oc_16gb_pazarama_blocked.png)"
         }
       ],
       "error": null
@@ -153,7 +153,8 @@
         {
           "store": "pazarama",
           "url": "https://www.pazarama.com/msi-vga-geforce-rtx-5070-ti-16g-shadow-3x-oc-p-4711377317184",
-          "price": 72375.7
+          "price": null,
+          "error": "PRICE_NOT_FOUND (debug: docs/debug/gpu_msi_rtx_5070_ti_shadow_3x_oc_pazarama_noprice.png)"
         }
       ],
       "error": null
