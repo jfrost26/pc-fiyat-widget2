@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-23T08:37:33.532Z",
+  "updated_at": "2026-07-23T14:12:14.433Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -31,7 +31,7 @@
       "name": "Gigabyte X870 Gaming X WiFi 7 (AM5, ATX)",
       "ref_url": "https://www.akakce.com/anakart/en-ucuz-gigabyte-x870-gaming-x-wifi7-amd-am5-ddr5-atx-fiyati,812619495.html",
       "best": {
-        "price": 13478.35,
+        "price": 13489.76,
         "store": "guvenliticaret",
         "url": "https://www.guvenliticaret.net/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
         "currency": "TRY"
@@ -40,7 +40,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
-          "price": 14448.99
+          "price": 14453.85
         },
         {
           "store": "gamemar",
@@ -50,7 +50,7 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
-          "price": 13478.35
+          "price": 13489.76
         }
       ],
       "error": null
@@ -114,7 +114,7 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi",
-          "price": 67216.72
+          "price": 67273.62
         },
         {
           "store": "revertpro",
@@ -124,7 +124,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi",
-          "price": 70925.36
+          "price": 70949.21
         }
       ],
       "error": null
@@ -173,7 +173,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
-          "price": 30722.01
+          "price": 30732.34
         },
         {
           "store": "guvenliticaret",
@@ -188,7 +188,7 @@
       "name": "FSP VITA GM 850GM 850W 80+ Gold (PCIe 5.x)",
       "ref_url": "https://www.akakce.com/power-supply/en-ucuz-fsp-vita-gm-gen5-1-850-w-fiyati,792425188.html",
       "best": {
-        "price": 7149.73,
+        "price": 7152.14,
         "store": "muyubi",
         "url": "https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/",
         "currency": "TRY"
@@ -197,12 +197,12 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/fsp-vita-gm-850w-80-gold-power-supply-vita-850gm",
-          "price": 7922.87
+          "price": 7925.53
         },
         {
           "store": "muyubi",
           "url": "https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/",
-          "price": 7149.73
+          "price": 7152.14
         },
         {
           "store": "ucuzsepet",
@@ -226,7 +226,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
-          "price": 11924.73
+          "price": 11928.74
         },
         {
           "store": "guvenliticaret",
