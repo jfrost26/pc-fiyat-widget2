@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-28T14:21:00.577Z",
+  "updated_at": "2026-07-28T19:39:15.402Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -40,8 +40,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
-          "price": null,
-          "error": "PRICE_NOT_FOUND (debug: docs/debug/mb_gigabyte_x870_gaming_x_wifi7_aykom_noprice.png)"
+          "price": 14497.73
         },
         {
           "store": "gamemar",
@@ -66,7 +65,7 @@
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr",
           "price": null,
-          "error": "ERROR: page.evaluate: Execution context was destroyed, most likely because of a navigation (debug: docs/debug/ram_kingston_beast_expo_32gb_6000_cl30_aykom_error.png)"
+          "error": "PRICE_NOT_FOUND (debug: docs/debug/ram_kingston_beast_expo_32gb_6000_cl30_aykom_noprice.png)"
         },
         {
           "store": "guvenliticaret",
@@ -124,7 +123,8 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi",
-          "price": 71164.6
+          "price": null,
+          "error": "PRICE_NOT_FOUND (debug: docs/debug/gpu_asus_prime_rtx_5070_ti_o16g_aykom_noprice.png)"
         }
       ],
       "error": null
