@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-04T14:27:01.532Z",
+  "updated_at": "2026-08-04T19:42:49.845Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -50,7 +50,7 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
-          "price": 15929.39
+          "price": 15946.13
         }
       ],
       "error": null
@@ -113,7 +113,7 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi",
-          "price": 72417.02
+          "price": 72493.09
         },
         {
           "store": "revertpro",
