@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-08T12:57:35.626Z",
+  "updated_at": "2026-08-08T18:44:14.938Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -40,8 +40,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
-          "price": null,
-          "error": "PRICE_NOT_FOUND (debug: docs/debug/mb_gigabyte_x870_gaming_x_wifi7_aykom_noprice.png)"
+          "price": 16823.47
         },
         {
           "store": "gamemar",
@@ -66,7 +65,7 @@
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr",
           "price": null,
-          "error": "ERROR: page.evaluate: Execution context was destroyed, most likely because of a navigation (debug: docs/debug/ram_kingston_beast_expo_32gb_6000_cl30_aykom_error.png)"
+          "error": "PRICE_NOT_FOUND (debug: docs/debug/ram_kingston_beast_expo_32gb_6000_cl30_aykom_noprice.png)"
         },
         {
           "store": "guvenliticaret",
@@ -96,8 +95,7 @@
         {
           "store": "pazarama",
           "url": "https://www.pazarama.com/inno3d-x3-geforce-rtx-5070-ti-oc-16gb-gddr7-256bit-hdmidp-ekran-karti-p-8886307700247",
-          "price": null,
-          "error": "BLOCKED (debug: docs/debug/gpu_inno3d_rtx_5070_ti_x3_oc_16gb_pazarama_blocked.png)"
+          "price": 61749.05
         }
       ],
       "error": null
@@ -125,8 +123,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi",
-          "price": null,
-          "error": "ERROR: page.evaluate: Execution context was destroyed, most likely because of a navigation (debug: docs/debug/gpu_asus_prime_rtx_5070_ti_o16g_aykom_error.png)"
+          "price": 72756.86
         }
       ],
       "error": null
@@ -174,8 +171,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
-          "price": null,
-          "error": "ERROR: page.evaluate: Execution context was destroyed, most likely because of a navigation (debug: docs/debug/ssd_samsung_990_evo_plus_2tb_aykom_error.png)"
+          "price": 23528.03
         },
         {
           "store": "guvenliticaret",
@@ -190,17 +186,16 @@
       "name": "FSP VITA GM 850GM 850W 80+ Gold (PCIe 5.x)",
       "ref_url": "https://www.akakce.com/power-supply/en-ucuz-fsp-vita-gm-gen5-1-850-w-fiyati,792425188.html",
       "best": {
-        "price": 8205.72,
-        "store": "ucuzsepet",
-        "url": "https://www.ucuzsepet.com/urun/fsp-vita-850w-vita-850gm-850w-80gold-psu-7145030",
+        "price": 7988.77,
+        "store": "aykom",
+        "url": "https://www.aykom.com.tr/urun/fsp-vita-gm-850w-80-gold-power-supply-vita-850gm",
         "currency": "TRY"
       },
       "offers": [
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/fsp-vita-gm-850w-80-gold-power-supply-vita-850gm",
-          "price": null,
-          "error": "ERROR: page.evaluate: Execution context was destroyed, most likely because of a navigation (debug: docs/debug/psu_fsp_vita_850gm_850w_aykom_error.png)"
+          "price": 7988.77
         },
         {
           "store": "muyubi",
@@ -230,8 +225,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
-          "price": null,
-          "error": "ERROR: page.evaluate: Execution context was destroyed, most likely because of a navigation (debug: docs/debug/case_lian_li_lancool_iii_4fan_white_aykom_error.png)"
+          "price": 12023.92
         },
         {
           "store": "guvenliticaret",
