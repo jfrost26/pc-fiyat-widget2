@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-09T13:00:14.756Z",
+  "updated_at": "2026-08-09T18:48:24.571Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -95,7 +95,7 @@
         {
           "store": "pazarama",
           "url": "https://www.pazarama.com/inno3d-x3-geforce-rtx-5070-ti-oc-16gb-gddr7-256bit-hdmidp-ekran-karti-p-8886307700247",
-          "price": 61749.05
+          "price": 64773.14
         }
       ],
       "error": null
