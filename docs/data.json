@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-17T12:52:51.031Z",
+  "updated_at": "2026-08-17T18:46:08.179Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -31,7 +31,7 @@
       "name": "Gigabyte X870 Gaming X WiFi 7 (AM5, ATX)",
       "ref_url": "https://www.akakce.com/anakart/en-ucuz-gigabyte-x870-gaming-x-wifi7-amd-am5-ddr5-atx-fiyati,812619495.html",
       "best": {
-        "price": 15110.84,
+        "price": 15143.54,
         "store": "gamemar",
         "url": "https://www.gamemar.com/gigabyte-x870-gaming-x-wifi7-g10-4xddr5-3xm2-dp-hdmi-type-c-wi-fi-7e-bluetooth-54-am5-gaming-anakart-pmu17866",
         "currency": "TRY"
@@ -40,12 +40,12 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
-          "price": 16893.48
+          "price": 16925.41
         },
         {
           "store": "gamemar",
           "url": "https://www.gamemar.com/gigabyte-x870-gaming-x-wifi7-g10-4xddr5-3xm2-dp-hdmi-type-c-wi-fi-7e-bluetooth-54-am5-gaming-anakart-pmu17866",
-          "price": 15110.84
+          "price": 15143.54
         },
         {
           "store": "guvenliticaret",
@@ -95,7 +95,8 @@
         {
           "store": "pazarama",
           "url": "https://www.pazarama.com/inno3d-x3-geforce-rtx-5070-ti-oc-16gb-gddr7-256bit-hdmidp-ekran-karti-p-8886307700247",
-          "price": 64773.14
+          "price": null,
+          "error": "BLOCKED (debug: docs/debug/gpu_inno3d_rtx_5070_ti_x3_oc_16gb_pazarama_blocked.png)"
         }
       ],
       "error": null
@@ -123,7 +124,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi",
-          "price": 73059.6
+          "price": 73197.7
         }
       ],
       "error": null
@@ -152,7 +153,8 @@
         {
           "store": "pazarama",
           "url": "https://www.pazarama.com/msi-vga-geforce-rtx-5070-ti-16g-shadow-3x-oc-p-4711377317184",
-          "price": 542465.15
+          "price": null,
+          "error": "BLOCKED (debug: docs/debug/gpu_msi_rtx_5070_ti_shadow_3x_oc_pazarama_blocked.png)"
         }
       ],
       "error": null
@@ -186,9 +188,9 @@
       "name": "FSP VITA GM 850GM 850W 80+ Gold (PCIe 5.x)",
       "ref_url": "https://www.akakce.com/power-supply/en-ucuz-fsp-vita-gm-gen5-1-850-w-fiyati,792425188.html",
       "best": {
-        "price": 7252.88,
-        "store": "muyubi",
-        "url": "https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/",
+        "price": 8037.17,
+        "store": "aykom",
+        "url": "https://www.aykom.com.tr/urun/fsp-vita-gm-850w-80-gold-power-supply-vita-850gm",
         "currency": "TRY"
       },
       "offers": [
@@ -200,7 +202,8 @@
         {
           "store": "muyubi",
           "url": "https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/",
-          "price": 7252.88
+          "price": null,
+          "error": "BLOCKED (debug: docs/debug/psu_fsp_vita_850gm_850w_muyubi_blocked.png)"
         },
         {
           "store": "ucuzsepet",
