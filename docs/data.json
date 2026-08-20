@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20T12:57:27.441Z",
+  "updated_at": "2026-08-20T18:46:38.531Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -40,7 +40,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
-          "price": 16938.11
+          "price": 16944.32
         },
         {
           "store": "gamemar",
@@ -124,7 +124,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi",
-          "price": 73252.64
+          "price": 73279.49
         }
       ],
       "error": null
@@ -153,8 +153,7 @@
         {
           "store": "pazarama",
           "url": "https://www.pazarama.com/msi-vga-geforce-rtx-5070-ti-16g-shadow-3x-oc-p-4711377317184",
-          "price": null,
-          "error": "PRICE_NOT_FOUND (debug: docs/debug/gpu_msi_rtx_5070_ti_shadow_3x_oc_pazarama_noprice.png)"
+          "price": 542465.15
         }
       ],
       "error": null
