@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22T01:27:33.339Z",
+  "updated_at": "2026-08-22T06:47:51.439Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -152,7 +152,8 @@
         {
           "store": "pazarama",
           "url": "https://www.pazarama.com/msi-vga-geforce-rtx-5070-ti-16g-shadow-3x-oc-p-4711377317184",
-          "price": 72963.2
+          "price": null,
+          "error": "BLOCKED (debug: docs/debug/gpu_msi_rtx_5070_ti_shadow_3x_oc_pazarama_blocked.png)"
         }
       ],
       "error": null
