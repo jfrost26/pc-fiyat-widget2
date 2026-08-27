@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-26T19:52:23.703Z",
+  "updated_at": "2026-08-27T08:32:23.846Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
       "name": "AMD Ryzen 7 7800X3D",
       "ref_url": "https://www.akakce.com/islemci/en-ucuz-amd-ryzen-7-7800x3d-sekiz-cekirdek-4-2-ghz-fiyati,334009206.html",
       "best": {
-        "price": 15686.37,
+        "price": 15692.1,
         "store": "inventus",
         "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
         "currency": "TRY"
@@ -21,7 +21,7 @@
         {
           "store": "inventus",
           "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
-          "price": 15686.37
+          "price": 15692.1
         }
       ],
       "error": null
@@ -152,7 +152,7 @@
         {
           "store": "pazarama",
           "url": "https://www.pazarama.com/msi-vga-geforce-rtx-5070-ti-16g-shadow-3x-oc-p-4711377317184",
-          "price": 69564.5
+          "price": 77644.5
         }
       ],
       "error": null
@@ -216,7 +216,7 @@
       "name": "Lian Li Lancool III (4 Fan) Beyaz ATX Mid Tower (G99-LAN3RW-00)",
       "ref_url": "https://www.akakce.com/bilgisayar-kasasi/en-ucuz-lian-li-lancool-iii-x-argb-3-fanli-black-e-atx-oyuncu-kasasi-fiyati,120885614.html",
       "best": {
-        "price": 11486.41,
+        "price": 11492.37,
         "store": "guvenliticaret",
         "url": "https://www.guvenliticaret.net/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
         "currency": "TRY"
@@ -230,7 +230,7 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
-          "price": 11486.41
+          "price": 11492.37
         }
       ],
       "error": null
