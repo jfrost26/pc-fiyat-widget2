@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-28T22:01:31.543Z",
+  "updated_at": "2026-08-29T06:32:52.407Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -80,13 +80,17 @@
       "id": "gpu_inno3d_rtx_5070_ti_x3_oc_16gb",
       "name": "Inno3D GeForce RTX 5070 Ti X3 OC 16GB GDDR7",
       "ref_url": "https://www.akakce.com/ekran-karti/en-ucuz-inno3d-rtx-5070-ti-x3-oc-n507t3-16d7x-176068n-256-bit-gddr7-16-gb-fiyati,959886374.html",
-      "best": null,
+      "best": {
+        "price": 48000,
+        "store": "revertpro",
+        "url": "https://www.revertpro.com/inno3d-geforce-rtx-5070-ti-x3-oc-16gb-gddr7-256bit-pcie-5.0-ekran-karti",
+        "currency": "TRY"
+      },
       "offers": [
         {
           "store": "revertpro",
           "url": "https://www.revertpro.com/inno3d-geforce-rtx-5070-ti-x3-oc-16gb-gddr7-256bit-pcie-5.0-ekran-karti",
-          "price": null,
-          "error": "PRICE_NOT_FOUND (debug: docs/debug/gpu_inno3d_rtx_5070_ti_x3_oc_16gb_revertpro_noprice.png)"
+          "price": 48000
         },
         {
           "store": "pazarama",
@@ -95,15 +99,15 @@
           "error": "BLOCKED (debug: docs/debug/gpu_inno3d_rtx_5070_ti_x3_oc_16gb_pazarama_blocked.png)"
         }
       ],
-      "error": "NO_PRICES_FOUND"
+      "error": null
     },
     {
       "id": "gpu_asus_prime_rtx_5070_ti_o16g",
       "name": "ASUS Prime GeForce RTX 5070 Ti O16G 16GB GDDR7",
       "best": {
-        "price": 69951.61,
-        "store": "guvenliticaret",
-        "url": "https://www.guvenliticaret.net/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi",
+        "price": 4991.16,
+        "store": "revertpro",
+        "url": "https://www.revertpro.com/asus-geforce-prime-rtx5070ti-o16g-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6164",
         "currency": "TRY"
       },
       "offers": [
@@ -115,8 +119,7 @@
         {
           "store": "revertpro",
           "url": "https://www.revertpro.com/asus-geforce-prime-rtx5070ti-o16g-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6164",
-          "price": null,
-          "error": "PRICE_NOT_FOUND (debug: docs/debug/gpu_asus_prime_rtx_5070_ti_o16g_revertpro_noprice.png)"
+          "price": 4991.16
         },
         {
           "store": "aykom",
@@ -130,9 +133,9 @@
       "id": "gpu_msi_rtx_5070_ti_shadow_3x_oc",
       "name": "MSI GeForce RTX 5070 Ti Shadow 3X OC 16GB GDDR7",
       "best": {
-        "price": 66499.01,
-        "store": "pazarama",
-        "url": "https://www.pazarama.com/msi-vga-geforce-rtx-5070-ti-16g-shadow-3x-oc-p-4711377317184",
+        "price": 4991.16,
+        "store": "revertpro",
+        "url": "https://www.revertpro.com/msi-geforce-rtx5070ti-16g-shadow-3x-oc-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6245",
         "currency": "TRY"
       },
       "offers": [
@@ -145,13 +148,13 @@
         {
           "store": "revertpro",
           "url": "https://www.revertpro.com/msi-geforce-rtx5070ti-16g-shadow-3x-oc-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6245",
-          "price": null,
-          "error": "PRICE_NOT_FOUND (debug: docs/debug/gpu_msi_rtx_5070_ti_shadow_3x_oc_revertpro_noprice.png)"
+          "price": 4991.16
         },
         {
           "store": "pazarama",
           "url": "https://www.pazarama.com/msi-vga-geforce-rtx-5070-ti-16g-shadow-3x-oc-p-4711377317184",
-          "price": 66499.01
+          "price": null,
+          "error": "BLOCKED (debug: docs/debug/gpu_msi_rtx_5070_ti_shadow_3x_oc_pazarama_blocked.png)"
         }
       ],
       "error": null
@@ -200,7 +203,7 @@
           "store": "muyubi",
           "url": "https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/",
           "price": null,
-          "error": "PRICE_NOT_FOUND (debug: docs/debug/psu_fsp_vita_850gm_850w_muyubi_noprice.png)"
+          "error": "BLOCKED (debug: docs/debug/psu_fsp_vita_850gm_850w_muyubi_blocked.png)"
         },
         {
           "store": "ucuzsepet",
