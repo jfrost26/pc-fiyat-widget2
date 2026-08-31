@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-31T13:13:46.591Z",
+  "updated_at": "2026-08-31T22:41:21.409Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
       "name": "AMD Ryzen 7 7800X3D",
       "ref_url": "https://www.akakce.com/islemci/en-ucuz-amd-ryzen-7-7800x3d-sekiz-cekirdek-4-2-ghz-fiyati,334009206.html",
       "best": {
-        "price": 15706.49,
+        "price": 15739.58,
         "store": "inventus",
         "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
         "currency": "TRY"
@@ -21,7 +21,7 @@
         {
           "store": "inventus",
           "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
-          "price": 15706.49
+          "price": 15739.58
         }
       ],
       "error": null
@@ -40,7 +40,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
-          "price": 17018.31
+          "price": 17054.16
         },
         {
           "store": "gamemar",
@@ -152,8 +152,7 @@
         {
           "store": "pazarama",
           "url": "https://www.pazarama.com/msi-vga-geforce-rtx-5070-ti-16g-shadow-3x-oc-p-4711377317184",
-          "price": null,
-          "error": "BLOCKED (debug: docs/debug/gpu_msi_rtx_5070_ti_shadow_3x_oc_pazarama_blocked.png)"
+          "price": 542465.15
         }
       ],
       "error": null
