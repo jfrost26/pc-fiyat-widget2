@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30T20:49:42.489Z",
+  "updated_at": "2026-08-31T04:48:55.109Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -71,7 +71,7 @@
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr",
           "price": null,
-          "error": "ERROR: page.evaluate: Execution context was destroyed, most likely because of a navigation (debug: docs/debug/ram_kingston_beast_expo_32gb_6000_cl30_guvenliticaret_error.png)"
+          "error": "PRICE_NOT_FOUND (debug: docs/debug/ram_kingston_beast_expo_32gb_6000_cl30_guvenliticaret_noprice.png)"
         }
       ],
       "error": "NO_PRICES_FOUND"
@@ -114,8 +114,7 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi",
-          "price": null,
-          "error": "ERROR: page.evaluate: Execution context was destroyed, most likely because of a navigation (debug: docs/debug/gpu_asus_prime_rtx_5070_ti_o16g_guvenliticaret_error.png)"
+          "price": 70038.64
         },
         {
           "store": "revertpro",
@@ -155,7 +154,7 @@
           "store": "pazarama",
           "url": "https://www.pazarama.com/msi-vga-geforce-rtx-5070-ti-16g-shadow-3x-oc-p-4711377317184",
           "price": null,
-          "error": "PRICE_NOT_FOUND (debug: docs/debug/gpu_msi_rtx_5070_ti_shadow_3x_oc_pazarama_noprice.png)"
+          "error": "BLOCKED (debug: docs/debug/gpu_msi_rtx_5070_ti_shadow_3x_oc_pazarama_blocked.png)"
         }
       ],
       "error": null
@@ -204,7 +203,7 @@
           "store": "muyubi",
           "url": "https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/",
           "price": null,
-          "error": "BLOCKED (debug: docs/debug/psu_fsp_vita_850gm_850w_muyubi_blocked.png)"
+          "error": "PRICE_NOT_FOUND (debug: docs/debug/psu_fsp_vita_850gm_850w_muyubi_noprice.png)"
         },
         {
           "store": "ucuzsepet",
