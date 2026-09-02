@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-02T16:19:11.294Z",
+  "updated_at": "2026-09-02T20:50:19.016Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -95,8 +95,7 @@
         {
           "store": "pazarama",
           "url": "https://www.pazarama.com/inno3d-x3-geforce-rtx-5070-ti-oc-16gb-gddr7-256bit-hdmidp-ekran-karti-p-8886307700247",
-          "price": null,
-          "error": "BLOCKED (debug: docs/debug/gpu_inno3d_rtx_5070_ti_x3_oc_16gb_pazarama_blocked.png)"
+          "price": 48080.68
         }
       ],
       "error": null
@@ -187,9 +186,9 @@
       "name": "FSP VITA GM 850GM 850W 80+ Gold (PCIe 5.x)",
       "ref_url": "https://www.akakce.com/power-supply/en-ucuz-fsp-vita-gm-gen5-1-850-w-fiyati,792425188.html",
       "best": {
-        "price": 8103.86,
-        "store": "aykom",
-        "url": "https://www.aykom.com.tr/urun/fsp-vita-gm-850w-80-gold-power-supply-vita-850gm",
+        "price": 7313.06,
+        "store": "muyubi",
+        "url": "https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/",
         "currency": "TRY"
       },
       "offers": [
@@ -201,8 +200,7 @@
         {
           "store": "muyubi",
           "url": "https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/",
-          "price": null,
-          "error": "BLOCKED (debug: docs/debug/psu_fsp_vita_850gm_850w_muyubi_blocked.png)"
+          "price": 7313.06
         },
         {
           "store": "ucuzsepet",
