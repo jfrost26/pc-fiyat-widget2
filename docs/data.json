@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T21:19:34.964Z",
+  "updated_at": "2026-09-24T04:05:38.959Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -16,7 +16,7 @@
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/amd-ryzen-7-7800x3d-4-20-ghz-96mb-am5-tray-islemci-120w",
           "price": null,
-          "error": "PRICE_NOT_FOUND (debug: docs/debug/cpu_amd_ryzen_7_7800x3d_aykom_noprice.png)"
+          "error": "ERROR: page.evaluate: Execution context was destroyed, most likely because of a navigation (debug: docs/debug/cpu_amd_ryzen_7_7800x3d_aykom_error.png)"
         },
         {
           "store": "inventus",
@@ -41,7 +41,7 @@
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
           "price": null,
-          "error": "ERROR: page.evaluate: Execution context was destroyed, most likely because of a navigation (debug: docs/debug/mb_gigabyte_x870_gaming_x_wifi7_aykom_error.png)"
+          "error": "PRICE_NOT_FOUND (debug: docs/debug/mb_gigabyte_x870_gaming_x_wifi7_aykom_noprice.png)"
         },
         {
           "store": "gamemar",
@@ -66,7 +66,7 @@
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr",
           "price": null,
-          "error": "PRICE_NOT_FOUND (debug: docs/debug/ram_kingston_beast_expo_32gb_6000_cl30_aykom_noprice.png)"
+          "error": "ERROR: page.evaluate: Execution context was destroyed, most likely because of a navigation (debug: docs/debug/ram_kingston_beast_expo_32gb_6000_cl30_aykom_error.png)"
         },
         {
           "store": "guvenliticaret",
@@ -176,7 +176,7 @@
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
           "price": null,
-          "error": "PRICE_NOT_FOUND (debug: docs/debug/ssd_samsung_990_evo_plus_2tb_aykom_noprice.png)"
+          "error": "ERROR: page.evaluate: Execution context was destroyed, most likely because of a navigation (debug: docs/debug/ssd_samsung_990_evo_plus_2tb_aykom_error.png)"
         },
         {
           "store": "guvenliticaret",
@@ -201,7 +201,7 @@
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/fsp-vita-gm-850w-80-gold-power-supply-vita-850gm",
           "price": null,
-          "error": "ERROR: page.evaluate: Execution context was destroyed, most likely because of a navigation (debug: docs/debug/psu_fsp_vita_850gm_850w_aykom_error.png)"
+          "error": "PRICE_NOT_FOUND (debug: docs/debug/psu_fsp_vita_850gm_850w_aykom_noprice.png)"
         },
         {
           "store": "muyubi",
