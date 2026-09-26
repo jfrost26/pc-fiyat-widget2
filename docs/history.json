@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T21:48:02.323Z",
+  "updated_at": "2026-09-26T05:05:26.576Z",
   "products": {
     "cpu_amd_ryzen_7_7800x3d": [
       {
@@ -1372,7 +1372,7 @@
         "store": "inventus",
         "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
         "first_seen_at": "2026-09-25T21:24:14.327Z",
-        "last_seen_at": "2026-09-25T21:24:14.327Z"
+        "last_seen_at": "2026-09-26T04:29:55.567Z"
       }
     ],
     "mb_gigabyte_x870_gaming_x_wifi7": [
@@ -2536,7 +2536,7 @@
         "store": "gamemar",
         "url": "https://www.gamemar.com/gigabyte-x870-gaming-x-wifi7-g10-4xddr5-3xm2-dp-hdmi-type-c-wi-fi-7e-bluetooth-54-am5-gaming-anakart-pmu17866",
         "first_seen_at": "2026-09-24T11:37:20.357Z",
-        "last_seen_at": "2026-09-25T21:26:28.592Z"
+        "last_seen_at": "2026-09-26T04:33:52.618Z"
       }
     ],
     "ram_kingston_beast_expo_32gb_6000_cl30": [
@@ -3191,7 +3191,7 @@
         "store": "revertpro",
         "url": "https://www.revertpro.com/inno3d-geforce-rtx-5070-ti-x3-oc-16gb-gddr7-256bit-pcie-5.0-ekran-karti",
         "first_seen_at": "2026-05-16T08:29:49.619Z",
-        "last_seen_at": "2026-09-25T21:34:14.489Z"
+        "last_seen_at": "2026-09-26T04:41:51.917Z"
       }
     ],
     "ssd_samsung_990_evo_plus_2tb": [
@@ -4593,17 +4593,10 @@
         "store": "guvenliticaret",
         "url": "https://www.guvenliticaret.net/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
         "first_seen_at": "2026-09-24T11:59:23.518Z",
-        "last_seen_at": "2026-09-25T21:43:43.356Z"
+        "last_seen_at": "2026-09-26T04:55:39.936Z"
       }
     ],
     "psu_fsp_vita_850gm_850w": [
-      {
-        "price": 6381.14,
-        "store": "muyubi",
-        "url": "https://muyubi.com/urun/fsp-850w-80-gold-pcie5-vita-gm-850w/",
-        "first_seen_at": "2026-03-04T13:41:39.326Z",
-        "last_seen_at": "2026-03-05T07:32:40.971Z"
-      },
       {
         "price": 6384.09,
         "store": "muyubi",
@@ -5996,6 +5989,13 @@
         "url": "https://www.aykom.com.tr/urun/fsp-vita-gm-850w-80-gold-power-supply-vita-850gm",
         "first_seen_at": "2026-09-25T17:21:18.156Z",
         "last_seen_at": "2026-09-25T21:45:53.907Z"
+      },
+      {
+        "price": 8551.22,
+        "store": "ucuzsepet",
+        "url": "https://www.ucuzsepet.com/urun/fsp-vita-850w-vita-850gm-850w-80gold-psu-7145030",
+        "first_seen_at": "2026-09-26T04:59:19.804Z",
+        "last_seen_at": "2026-09-26T04:59:19.804Z"
       }
     ],
     "case_lian_li_lancool_iii_4fan_white": [
@@ -8750,7 +8750,7 @@
         "store": "revertpro",
         "url": "https://www.revertpro.com/asus-geforce-prime-rtx5070ti-o16g-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6164",
         "first_seen_at": "2026-09-25T21:38:56.269Z",
-        "last_seen_at": "2026-09-25T21:38:56.269Z"
+        "last_seen_at": "2026-09-26T04:48:32.802Z"
       }
     ],
     "gpu_msi_rtx_5070_ti_shadow_3x_oc": [
@@ -10075,7 +10075,7 @@
         "store": "revertpro",
         "url": "https://www.revertpro.com/msi-geforce-rtx5070ti-16g-shadow-3x-oc-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6245",
         "first_seen_at": "2026-09-25T21:41:36.006Z",
-        "last_seen_at": "2026-09-25T21:41:36.006Z"
+        "last_seen_at": "2026-09-26T04:51:11.711Z"
       }
     ]
   }

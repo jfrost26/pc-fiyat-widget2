@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T21:20:30.804Z",
+  "updated_at": "2026-09-26T04:23:45.918Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -15,7 +15,8 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/amd-ryzen-7-7800x3d-4-20-ghz-96mb-am5-tray-islemci-120w",
-          "price": 18419.33
+          "price": null,
+          "error": "ERROR: page.evaluate: Execution context was destroyed, most likely because of a navigation (debug: docs/debug/cpu_amd_ryzen_7_7800x3d_aykom_error.png)"
         },
         {
           "store": "inventus",
@@ -39,7 +40,8 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
-          "price": 17272.11
+          "price": null,
+          "error": "ERROR: page.evaluate: Execution context was destroyed, most likely because of a navigation (debug: docs/debug/mb_gigabyte_x870_gaming_x_wifi7_aykom_error.png)"
         },
         {
           "store": "gamemar",
@@ -64,7 +66,7 @@
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr",
           "price": null,
-          "error": "PRICE_NOT_FOUND (debug: docs/debug/ram_kingston_beast_expo_32gb_6000_cl30_aykom_noprice.png)"
+          "error": "ERROR: page.evaluate: Execution context was destroyed, most likely because of a navigation (debug: docs/debug/ram_kingston_beast_expo_32gb_6000_cl30_aykom_error.png)"
         },
         {
           "store": "guvenliticaret",
@@ -123,7 +125,8 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi",
-          "price": 94327.39
+          "price": null,
+          "error": "PRICE_NOT_FOUND (debug: docs/debug/gpu_asus_prime_rtx_5070_ti_o16g_aykom_noprice.png)"
         }
       ],
       "error": null
@@ -172,7 +175,8 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
-          "price": 26449.91
+          "price": null,
+          "error": "ERROR: page.evaluate: Execution context was destroyed, most likely because of a navigation (debug: docs/debug/ssd_samsung_990_evo_plus_2tb_aykom_error.png)"
         },
         {
           "store": "guvenliticaret",
@@ -187,16 +191,17 @@
       "name": "FSP VITA GM 850GM 850W 80+ Gold (PCIe 5.x)",
       "ref_url": "https://www.akakce.com/power-supply/en-ucuz-fsp-vita-gm-gen5-1-850-w-fiyati,792425188.html",
       "best": {
-        "price": 8201.81,
-        "store": "aykom",
-        "url": "https://www.aykom.com.tr/urun/fsp-vita-gm-850w-80-gold-power-supply-vita-850gm",
+        "price": 8551.22,
+        "store": "ucuzsepet",
+        "url": "https://www.ucuzsepet.com/urun/fsp-vita-850w-vita-850gm-850w-80gold-psu-7145030",
         "currency": "TRY"
       },
       "offers": [
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/fsp-vita-gm-850w-80-gold-power-supply-vita-850gm",
-          "price": 8201.81
+          "price": null,
+          "error": "PRICE_NOT_FOUND (debug: docs/debug/psu_fsp_vita_850gm_850w_aykom_noprice.png)"
         },
         {
           "store": "muyubi",
@@ -216,25 +221,22 @@
       "id": "case_lian_li_lancool_iii_4fan_white",
       "name": "Lian Li Lancool III (4 Fan) Beyaz ATX Mid Tower (G99-LAN3RW-00)",
       "ref_url": "https://www.akakce.com/bilgisayar-kasasi/en-ucuz-lian-li-lancool-iii-x-argb-3-fanli-black-e-atx-oyuncu-kasasi-fiyati,120885614.html",
-      "best": {
-        "price": 11687.87,
-        "store": "guvenliticaret",
-        "url": "https://www.guvenliticaret.net/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
-        "currency": "TRY"
-      },
+      "best": null,
       "offers": [
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
-          "price": 12344.56
+          "price": null,
+          "error": "PRICE_NOT_FOUND (debug: docs/debug/case_lian_li_lancool_iii_4fan_white_aykom_noprice.png)"
         },
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
-          "price": 11687.87
+          "price": null,
+          "error": "ERROR: page.evaluate: Execution context was destroyed, most likely because of a navigation (debug: docs/debug/case_lian_li_lancool_iii_4fan_white_guvenliticaret_error.png)"
         }
       ],
-      "error": null
+      "error": "NO_PRICES_FOUND"
     }
   ]
 }
