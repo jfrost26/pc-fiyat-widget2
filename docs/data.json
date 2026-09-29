@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28T23:05:29.468Z",
+  "updated_at": "2026-09-29T05:09:33.351Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -49,7 +49,8 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
-          "price": 16444.82
+          "price": null,
+          "error": "PRICE_NOT_FOUND (debug: docs/debug/mb_gigabyte_x870_gaming_x_wifi7_guvenliticaret_noprice.png)"
         }
       ],
       "error": null
@@ -113,7 +114,8 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi",
-          "price": 89809.33
+          "price": null,
+          "error": "ERROR: page.evaluate: Execution context was destroyed, most likely because of a navigation (debug: docs/debug/gpu_asus_prime_rtx_5070_ti_o16g_guvenliticaret_error.png)"
         },
         {
           "store": "revertpro",
@@ -163,9 +165,9 @@
       "name": "Samsung 990 EVO Plus 2TB NVMe M.2 (MZ-V9S2T0BW)",
       "ref_url": "https://www.akakce.com/ssd/en-ucuz-samsung-990-evo-plus-mz-v9s2t0bw-pci-express-2-tb-m-2-fiyati,836325138.html",
       "best": {
-        "price": 25183.02,
-        "store": "guvenliticaret",
-        "url": "https://www.guvenliticaret.net/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
+        "price": 26509.83,
+        "store": "aykom",
+        "url": "https://www.aykom.com.tr/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
         "currency": "TRY"
       },
       "offers": [
@@ -177,7 +179,8 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
-          "price": 25183.02
+          "price": null,
+          "error": "PRICE_NOT_FOUND (debug: docs/debug/ssd_samsung_990_evo_plus_2tb_guvenliticaret_noprice.png)"
         }
       ],
       "error": null
