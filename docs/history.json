@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T04:46:27.974Z",
+  "updated_at": "2026-10-14T11:58:58.823Z",
   "products": {
     "cpu_amd_ryzen_7_7800x3d": [
       {
@@ -1400,7 +1400,7 @@
         "store": "inventus",
         "url": "https://inventus.com.tr/mi_products/Product.aspx?PID=15328",
         "first_seen_at": "2026-10-13T22:31:49.197Z",
-        "last_seen_at": "2026-10-14T04:22:43.817Z"
+        "last_seen_at": "2026-10-14T11:35:09.113Z"
       }
     ],
     "mb_gigabyte_x870_gaming_x_wifi7": [
@@ -2572,6 +2572,13 @@
         "url": "https://www.gamemar.com/gigabyte-x870-gaming-x-wifi7-g10-4xddr5-3xm2-dp-hdmi-type-c-wi-fi-7e-bluetooth-54-am5-gaming-anakart-pmu17866",
         "first_seen_at": "2026-10-07T13:06:36.334Z",
         "last_seen_at": "2026-10-14T04:24:55.649Z"
+      },
+      {
+        "price": 15634.16,
+        "store": "gamemar",
+        "url": "https://www.gamemar.com/gigabyte-x870-gaming-x-wifi7-g10-4xddr5-3xm2-dp-hdmi-type-c-wi-fi-7e-bluetooth-54-am5-gaming-anakart-pmu17866",
+        "first_seen_at": "2026-10-14T11:37:20.875Z",
+        "last_seen_at": "2026-10-14T11:37:20.875Z"
       }
     ],
     "ram_kingston_beast_expo_32gb_6000_cl30": [
@@ -3226,17 +3233,10 @@
         "store": "revertpro",
         "url": "https://www.revertpro.com/inno3d-geforce-rtx-5070-ti-x3-oc-16gb-gddr7-256bit-pcie-5.0-ekran-karti",
         "first_seen_at": "2026-05-16T08:29:49.619Z",
-        "last_seen_at": "2026-10-14T04:32:41.018Z"
+        "last_seen_at": "2026-10-14T11:45:07.661Z"
       }
     ],
     "ssd_samsung_990_evo_plus_2tb": [
-      {
-        "price": 14382.81,
-        "store": "guvenliticaret",
-        "url": "https://www.guvenliticaret.net/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
-        "first_seen_at": "2026-02-24T13:49:56.678Z",
-        "last_seen_at": "2026-02-26T03:05:50.650Z"
-      },
       {
         "price": 14386.09,
         "store": "guvenliticaret",
@@ -4629,6 +4629,13 @@
         "url": "https://www.guvenliticaret.net/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
         "first_seen_at": "2026-10-13T14:17:43.408Z",
         "last_seen_at": "2026-10-14T04:42:09.947Z"
+      },
+      {
+        "price": 25328.98,
+        "store": "guvenliticaret",
+        "url": "https://www.guvenliticaret.net/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
+        "first_seen_at": "2026-10-14T11:54:38.049Z",
+        "last_seen_at": "2026-10-14T11:54:38.049Z"
       }
     ],
     "psu_fsp_vita_850gm_850w": [
@@ -6030,17 +6037,10 @@
         "store": "ucuzsepet",
         "url": "https://www.ucuzsepet.com/urun/fsp-vita-850w-vita-850gm-850w-80gold-psu-7145030",
         "first_seen_at": "2026-10-13T22:53:28.786Z",
-        "last_seen_at": "2026-10-14T04:44:19.917Z"
+        "last_seen_at": "2026-10-14T11:56:50.498Z"
       }
     ],
     "case_lian_li_lancool_iii_4fan_white": [
-      {
-        "price": 9754.2,
-        "store": "guvenliticaret",
-        "url": "https://www.guvenliticaret.net/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
-        "first_seen_at": "2026-02-26T07:42:04.544Z",
-        "last_seen_at": "2026-02-26T13:54:09.064Z"
-      },
       {
         "price": 9757.54,
         "store": "guvenliticaret",
@@ -7433,16 +7433,16 @@
         "url": "https://www.guvenliticaret.net/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
         "first_seen_at": "2026-10-13T14:22:07.342Z",
         "last_seen_at": "2026-10-14T04:46:27.032Z"
+      },
+      {
+        "price": 11784.45,
+        "store": "guvenliticaret",
+        "url": "https://www.guvenliticaret.net/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
+        "first_seen_at": "2026-10-14T11:58:57.883Z",
+        "last_seen_at": "2026-10-14T11:58:57.883Z"
       }
     ],
     "gpu_asus_prime_rtx_5070_ti_o16g": [
-      {
-        "price": 4502.03,
-        "store": "revertpro",
-        "url": "https://www.revertpro.com/asus-geforce-prime-rtx5070ti-o16g-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6164",
-        "first_seen_at": "2026-01-29T19:17:00.861Z",
-        "last_seen_at": "2026-01-30T13:28:29.551Z"
-      },
       {
         "price": 4501.73,
         "store": "revertpro",
@@ -8835,6 +8835,13 @@
         "url": "https://www.revertpro.com/asus-geforce-prime-rtx5070ti-o16g-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6164",
         "first_seen_at": "2026-10-09T22:49:02.401Z",
         "last_seen_at": "2026-10-14T04:37:22.759Z"
+      },
+      {
+        "price": 82428.84,
+        "store": "revertpro",
+        "url": "https://www.revertpro.com/asus-geforce-prime-rtx5070ti-o16g-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6164",
+        "first_seen_at": "2026-10-14T11:49:50.198Z",
+        "last_seen_at": "2026-10-14T11:49:50.198Z"
       }
     ],
     "gpu_msi_rtx_5070_ti_shadow_3x_oc": [
@@ -10223,6 +10230,13 @@
         "url": "https://www.revertpro.com/msi-geforce-rtx5070ti-16g-shadow-3x-oc-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6245",
         "first_seen_at": "2026-10-09T22:51:41.313Z",
         "last_seen_at": "2026-10-14T04:40:02.616Z"
+      },
+      {
+        "price": 82428.84,
+        "store": "revertpro",
+        "url": "https://www.revertpro.com/msi-geforce-rtx5070ti-16g-shadow-3x-oc-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6245",
+        "first_seen_at": "2026-10-14T11:52:31.102Z",
+        "last_seen_at": "2026-10-14T11:52:31.102Z"
       }
     ]
   }
