@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T04:07:05.643Z",
+  "updated_at": "2026-10-26T12:35:15.390Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -15,8 +15,7 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/amd-ryzen-7-7800x3d-4-20-ghz-96mb-am5-tray-islemci-120w",
-          "price": null,
-          "error": "PRICE_NOT_FOUND (debug: docs/debug/cpu_amd_ryzen_7_7800x3d_aykom_noprice.png)"
+          "price": 19315.35
         },
         {
           "store": "inventus",
@@ -31,7 +30,7 @@
       "name": "Gigabyte X870 Gaming X WiFi 7 (AM5, ATX)",
       "ref_url": "https://www.akakce.com/anakart/en-ucuz-gigabyte-x870-gaming-x-wifi7-amd-am5-ddr5-atx-fiyati,812619495.html",
       "best": {
-        "price": 15699.57,
+        "price": 15764.99,
         "store": "gamemar",
         "url": "https://www.gamemar.com/gigabyte-x870-gaming-x-wifi7-g10-4xddr5-3xm2-dp-hdmi-type-c-wi-fi-7e-bluetooth-54-am5-gaming-anakart-pmu17866",
         "currency": "TRY"
@@ -40,18 +39,17 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
-          "price": null,
-          "error": "ERROR: page.evaluate: Execution context was destroyed, most likely because of a navigation (debug: docs/debug/mb_gigabyte_x870_gaming_x_wifi7_aykom_error.png)"
+          "price": 18112.31
         },
         {
           "store": "gamemar",
           "url": "https://www.gamemar.com/gigabyte-x870-gaming-x-wifi7-g10-4xddr5-3xm2-dp-hdmi-type-c-wi-fi-7e-bluetooth-54-am5-gaming-anakart-pmu17866",
-          "price": 15699.57
+          "price": 15764.99
         },
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/gigabyte-x870-gaming-x-wifi7-4xddr5-2xtype-c-1xhdmi-3xm-2-am5-anakart",
-          "price": 16686.31
+          "price": 16694.69
         }
       ],
       "error": null
@@ -66,7 +64,7 @@
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/kingston-beast-black-expo-32gb-2x16gb-6000mhz-ddr5-pc-ram-kf560c30bbek2-32tr",
           "price": null,
-          "error": "ERROR: page.evaluate: Execution context was destroyed, most likely because of a navigation (debug: docs/debug/ram_kingston_beast_expo_32gb_6000_cl30_aykom_error.png)"
+          "error": "PRICE_NOT_FOUND (debug: docs/debug/ram_kingston_beast_expo_32gb_6000_cl30_aykom_noprice.png)"
         },
         {
           "store": "guvenliticaret",
@@ -106,7 +104,7 @@
       "id": "gpu_asus_prime_rtx_5070_ti_o16g",
       "name": "ASUS Prime GeForce RTX 5070 Ti O16G 16GB GDDR7",
       "best": {
-        "price": 6949.97,
+        "price": 6963.41,
         "store": "revertpro",
         "url": "https://www.revertpro.com/asus-geforce-prime-rtx5070ti-o16g-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6164",
         "currency": "TRY"
@@ -115,18 +113,17 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi",
-          "price": 115757.4
+          "price": 115815.57
         },
         {
           "store": "revertpro",
           "url": "https://www.revertpro.com/asus-geforce-prime-rtx5070ti-o16g-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6164",
-          "price": 6949.97
+          "price": 6963.41
         },
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi",
-          "price": null,
-          "error": "ERROR: page.evaluate: Execution context was destroyed, most likely because of a navigation (debug: docs/debug/gpu_asus_prime_rtx_5070_ti_o16g_aykom_error.png)"
+          "price": 125650
         }
       ],
       "error": null
@@ -135,7 +132,7 @@
       "id": "gpu_msi_rtx_5070_ti_shadow_3x_oc",
       "name": "MSI GeForce RTX 5070 Ti Shadow 3X OC 16GB GDDR7",
       "best": {
-        "price": 83657.06,
+        "price": 83818.8,
         "store": "revertpro",
         "url": "https://www.revertpro.com/msi-geforce-rtx5070ti-16g-shadow-3x-oc-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6245",
         "currency": "TRY"
@@ -150,7 +147,7 @@
         {
           "store": "revertpro",
           "url": "https://www.revertpro.com/msi-geforce-rtx5070ti-16g-shadow-3x-oc-16gb-gddr7-256bit-1xhdmi-3xdp-ekran-karti-6245",
-          "price": 83657.06
+          "price": 83818.8
         },
         {
           "store": "pazarama",
@@ -166,7 +163,7 @@
       "name": "Samsung 990 EVO Plus 2TB NVMe M.2 (MZ-V9S2T0BW)",
       "ref_url": "https://www.akakce.com/ssd/en-ucuz-samsung-990-evo-plus-mz-v9s2t0bw-pci-express-2-tb-m-2-fiyati,836325138.html",
       "best": {
-        "price": 25552.83,
+        "price": 25565.67,
         "store": "guvenliticaret",
         "url": "https://www.guvenliticaret.net/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
         "currency": "TRY"
@@ -175,13 +172,12 @@
         {
           "store": "aykom",
           "url": "https://www.aykom.com.tr/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
-          "price": null,
-          "error": "ERROR: page.evaluate: Execution context was destroyed, most likely because of a navigation (debug: docs/debug/ssd_samsung_990_evo_plus_2tb_aykom_error.png)"
+          "price": 27736.57
         },
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/samsung-990-evo-plus-2tb-7250-6300mb-s-pcie-4-0-nvme-ssd-mz-v9s2t0bw",
-          "price": 25552.83
+          "price": 25565.67
         }
       ],
       "error": null
@@ -221,7 +217,7 @@
       "name": "Lian Li Lancool III (4 Fan) Beyaz ATX Mid Tower (G99-LAN3RW-00)",
       "ref_url": "https://www.akakce.com/bilgisayar-kasasi/en-ucuz-lian-li-lancool-iii-x-argb-3-fanli-black-e-atx-oyuncu-kasasi-fiyati,120885614.html",
       "best": {
-        "price": 11888.6,
+        "price": 11894.57,
         "store": "guvenliticaret",
         "url": "https://www.guvenliticaret.net/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
         "currency": "TRY"
@@ -235,7 +231,7 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/lian-li-lancool-iii-4x-fan-mid-tower-beyaz-atx-kasa-g99-lan3rw-00",
-          "price": 11888.6
+          "price": 11894.57
         }
       ],
       "error": null
