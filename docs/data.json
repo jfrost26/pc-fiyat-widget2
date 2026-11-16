@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15T22:39:39.315Z",
+  "updated_at": "2026-11-16T05:45:19.817Z",
   "products": [
     {
       "id": "cpu_amd_ryzen_7_7800x3d",
@@ -113,7 +113,8 @@
         {
           "store": "guvenliticaret",
           "url": "https://www.guvenliticaret.net/urun/asus-prime-rtx5070ti-o16g-rtx5070ti-16gb-gddr7-256bit-3xdp-1xhdmi",
-          "price": 117269.81
+          "price": null,
+          "error": "ERROR: page.evaluate: Execution context was destroyed, most likely because of a navigation (debug: docs/debug/gpu_asus_prime_rtx_5070_ti_o16g_guvenliticaret_error.png)"
         },
         {
           "store": "revertpro",
